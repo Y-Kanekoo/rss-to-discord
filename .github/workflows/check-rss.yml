@@ -1,0 +1,42 @@
+name: Check RSS Feed
+
+on:
+  schedule:
+    # 毎時0分に実行（UTC）
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: rss-check
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  check-and-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 依存パッケージのインストール
+        run: pip install -r requirements.txt
+
+      - name: RSSフィードをチェックしてDiscordに通知
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scripts/check_rss.py
+
+      - name: 状態ファイルをコミット
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sent_articles.json
+          git diff --cached --quiet || git commit -m "[chore] 送信済み記事の状態を更新"
+          git push
