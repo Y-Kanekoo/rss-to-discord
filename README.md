@@ -2,6 +2,18 @@
 
 テスト・QA関連ブログの[RSSフィード](https://yoshikiito.github.io/test-qa-rss-feed/)を1時間ごとにチェックし、新着記事をDiscordに通知します。
 
+```mermaid
+flowchart LR
+    RSS[📡 RSSフィード] -->|毎時チェック| Actions[⚙️ GitHub Actions]
+    Actions -->|新着記事を検知| Discord[💬 Discord]
+    Actions -->|送信済みIDを記録| State[📄 sent_articles.json]
+```
+
+## 前提条件
+
+- GitHubアカウント
+- Discordサーバーの管理権限（Webhook作成に必要）
+
 ## セットアップ
 
 ### 1. Discord Webhookの作成
@@ -13,7 +25,7 @@
 
 ### 2. GitHubリポジトリの設定
 
-1. このリポジトリをGitHubにプッシュ
+1. このリポジトリをForkまたはクローンしてGitHubにプッシュ
 2. **Settings** → **Secrets and variables** → **Actions** を開く
 3. **New repository secret** をクリック
 4. Name: `DISCORD_WEBHOOK_URL`、Secret: コピーしたWebhook URL を入力
@@ -24,14 +36,57 @@
 
 ## 仕組み
 
-- GitHub Actionsが毎時0分にRSSフィードをチェック
-- 送信済み記事のIDを `data/sent_articles.json` で管理し、重複送信を防止
-- 新着記事はDiscord Embed形式で送信（タイトル・リンク・要約・サムネイル付き）
+| ステップ | 処理内容 |
+|---|---|
+| 1. トリガー | GitHub Actionsが毎時0分に起動（手動実行も可） |
+| 2. 状態読み込み | `data/sent_articles.json` から送信済み記事IDを取得 |
+| 3. RSS取得 | フィードをパースし、未送信の記事を抽出 |
+| 4. Discord送信 | Embed形式で送信（タイトル・リンク・要約・サムネイル付き） |
+| 5. 状態保存 | 送信済みIDをJSONに記録し、自動コミット・プッシュ |
+
 - 初回実行時は最新5件のみ送信（チャンネルが埋まるのを防止）
+- 送信失敗した記事は次回実行時に自動リトライ
+
+## カスタマイズ
+
+`scripts/check_rss.py` の定数を編集してください。
+
+| 定数 | デフォルト | 説明 |
+|---|---|---|
+| `RSS_URL` | テスト・QAフィード | 監視するRSSフィードのURL |
+| `MAX_ARTICLES_FIRST_RUN` | `5` | 初回実行時の最大送信数 |
+| `RATE_LIMIT_INTERVAL` | `2.0` | 送信間隔（秒） |
+| `DESCRIPTION_MAX_LENGTH` | `300` | 要約の最大文字数 |
+
+チェック頻度を変更する場合は `.github/workflows/check-rss.yml` の cron 式を編集してください。
+
+```yaml
+# 例: 6時間ごと
+- cron: '0 */6 * * *'
+```
+
+## ローカルテスト
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/..." python scripts/check_rss.py
+```
+
+## トラブルシューティング
+
+| 症状 | 原因と対処 |
+|---|---|
+| 通知が来ない | Actionsタブでワークフローの実行履歴を確認。赤い×ならログを見る |
+| `DISCORD_WEBHOOK_URL環境変数が設定されていません` | GitHub Secretsの設定を確認（名前が正確に `DISCORD_WEBHOOK_URL` か） |
+| 同じ記事が何度も届く | `data/sent_articles.json` が壊れている可能性。ファイルを確認し、不正なJSONなら `{"sent_guids": [], "last_checked": null}` にリセット |
+| Actionsが実行されない | リポジトリの **Settings** → **Actions** → **General** で Actions が有効か確認 |
 
 ## 設計図
 
-### クラス図
+<details>
+<summary>クラス図（クリックで展開）</summary>
 
 ```mermaid
 classDiagram
@@ -103,7 +158,10 @@ classDiagram
     DiscordWebhook --> DiscordEmbed : 受信
 ```
 
-### シーケンス図
+</details>
+
+<details>
+<summary>シーケンス図（クリックで展開）</summary>
 
 ```mermaid
 sequenceDiagram
@@ -119,7 +177,7 @@ sequenceDiagram
     JSON-->>Script: sent_guids, last_checked
 
     Script->>RSS: feedparser.parse(RSS_URL)
-    RSS-->>Script: feed.entries (45件)
+    RSS-->>Script: feed.entries
 
     Script->>Script: 新着記事を抽出<br/>(guid ∉ sent_guids)
 
@@ -150,9 +208,4 @@ sequenceDiagram
     Cron->>Cron: git add → commit → push<br/>(変更がある場合のみ)
 ```
 
-## ローカルテスト
-
-```bash
-pip install -r requirements.txt
-DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/..." python scripts/check_rss.py
-```
+</details>
