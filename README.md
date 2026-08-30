@@ -1,6 +1,6 @@
 # RSS to Discord 通知
 
-テスト・QA関連ブログの[RSSフィード](https://yoshikiito.github.io/test-qa-rss-feed/)を1時間ごとにチェックし、新着記事をDiscordに通知します。
+テスト・QA関連ブログの[RSSフィード](https://yoshikiito.github.io/test-qa-rss-feed/)を毎時23分にチェックし、新着記事をDiscordに通知します。
 
 ```mermaid
 flowchart LR
@@ -38,7 +38,7 @@ flowchart LR
 
 | ステップ | 処理内容 |
 |---|---|
-| 1. トリガー | GitHub Actionsが毎時0分に起動（手動実行も可） |
+| 1. トリガー | GitHub Actionsが毎時23分に起動（手動実行も可） |
 | 2. 状態読み込み | `data/sent_articles.json` から送信済み記事IDを取得 |
 | 3. RSS取得 | フィードをパースし、未送信の記事を抽出 |
 | 4. Discord送信 | Embed形式で送信（タイトル・リンク・要約・サムネイル付き） |
@@ -165,7 +165,7 @@ classDiagram
 
 ```mermaid
 sequenceDiagram
-    participant Cron as GitHub Actions<br/>(毎時0分)
+    participant Cron as GitHub Actions<br/>(毎時23分)
     participant Script as check_rss.py
     participant JSON as sent_articles.json
     participant RSS as RSSフィード<br/>(GitHub Pages)
