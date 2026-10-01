@@ -69,7 +69,7 @@ flowchart LR
 
 Python 3.12 と [uv 0.12.19](https://docs.astral.sh/uv/getting-started/installation/) を使います。
 依存の宣言は `pyproject.toml`、解決済みバージョンと配布物のハッシュは `uv.lock` で管理します。
-旧 `requirements.txt` の直接依存バージョンは、そのまま `pyproject.toml` に移しています。
+旧 `requirements.txt` の直接依存を `pyproject.toml` に移し、Requestsは別のセキュリティ更新として2.33.0に更新しています。
 
 ```bash
 uv sync --locked --no-dev
@@ -92,8 +92,8 @@ uv run --locked --no-dev python scripts/check_rss.py
 PyPIとuv既定の `first-index` 方針を使い、追加indexや認証情報は設定しません。
 
 uvへの移行だけでは脆弱な依存や悪意あるパッケージは安全になりません。
-この移行段階で保持する `requests==2.32.3` は既知の脆弱性の対象範囲なので、
-本番反映前に別の依存更新差分も適用・検証してください。
+Requestsは2.33.0へ更新し、CVE-2024-47081とCVE-2026-25645の対象範囲を外しています。
+依存・実行環境の継続的な確認は引き続き必要です。
 詳細は [Requestsの公式セキュリティ情報](https://github.com/psf/requests/security/advisories) を参照してください。
 
 ## トラブルシューティング

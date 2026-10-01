@@ -98,6 +98,18 @@ class OfflineTests(unittest.TestCase):
         post.assert_called_once_with("https://example.invalid/webhook", json={"embeds": [{"title": "Offline"}]}, headers={"Content-Type": "application/json"}, timeout=30)
         response.raise_for_status.assert_called_once()
 
+    def test_requests_prepares_webhook_payload_without_credentials(self):
+        # 実際のRequestsのシリアライズを検証する。送信や環境の認証情報参照はしない。
+        with requests.Session() as session:
+            session.trust_env = False
+            prepared = session.prepare_request(requests.Request(
+                "POST", "https://example.invalid/webhook", json={"embeds": [{"title": "検証"}]}
+            ))
+        self.assertEqual(prepared.method, "POST")
+        self.assertEqual(prepared.headers["Content-Type"], "application/json")
+        self.assertNotIn("Authorization", prepared.headers)
+        self.assertEqual(json.loads(prepared.body), {"embeds": [{"title": "検証"}]})
+
     def test_rate_limit_retries_once(self):
         limited = Mock(status_code=429)
         limited.json.return_value = {"retry_after": 1.5}
