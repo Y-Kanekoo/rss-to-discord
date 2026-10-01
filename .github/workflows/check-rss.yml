@@ -11,27 +11,33 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   check-and-notify:
+    # 状態ファイルの既存コミット処理にだけ書き込み権限を付与
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: リポジトリをチェックアウト
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
-      - name: Python セットアップ
-        uses: actions/setup-python@v7
+      - name: uv と Python をセットアップ
+        uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
         with:
+          version: '0.12.19'
           python-version: '3.12'
+          enable-cache: false
+          checksum: '23bf5552d220e0842b65c862097b2ebaeba0064b74eda5e565e77fd25969d8c8'
 
       - name: 依存パッケージのインストール
-        run: pip install -r requirements.txt
+        run: uv sync --locked --no-dev
 
       - name: RSSフィードをチェックしてDiscordに通知
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: python scripts/check_rss.py
+        run: uv run --locked --no-dev python scripts/check_rss.py
 
       - name: 状態ファイルをコミット
         run: |

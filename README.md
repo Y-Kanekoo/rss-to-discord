@@ -65,14 +65,36 @@ flowchart LR
 - cron: '0 */6 * * *'
 ```
 
-## ローカルテスト
+## ローカル開発と依存管理
+
+Python 3.12 と [uv 0.12.19](https://docs.astral.sh/uv/getting-started/installation/) を使います。
+依存の宣言は `pyproject.toml`、解決済みバージョンと配布物のハッシュは `uv.lock` で管理します。
+旧 `requirements.txt` の直接依存バージョンは、そのまま `pyproject.toml` に移しています。
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-DISCORD_WEBHOOK_URL="https://discord.com/api/webhooks/..." python scripts/check_rss.py
+uv sync --locked --no-dev
+uv run --locked --no-dev python -m unittest discover -s tests -v
 ```
+
+ユニットテストは外部通信をブロックし、RSS取得・Discord送信をモックに置き換えます。
+実際のWebhook URLやトークンは不要です。CIのテストジョブにもSecretsを渡しません。
+
+実運用の通知をローカルで実行する場合のみ、事前に `DISCORD_WEBHOOK_URL` を設定して実行します。
+このコマンドはDiscordへ送信し、状態ファイルも更新します。
+
+```bash
+uv run --locked --no-dev python scripts/check_rss.py
+```
+
+依存を意図的に変更するときは `pyproject.toml` を変更して `uv lock` を実行し、
+両ファイルの差分とユニットテストを確認してください。通常のCI・通知処理では `--locked` により
+宣言とlockの不一致をエラーにし、暗黙の更新を防ぎます。
+PyPIとuv既定の `first-index` 方針を使い、追加indexや認証情報は設定しません。
+
+uvへの移行だけでは脆弱な依存や悪意あるパッケージは安全になりません。
+この移行段階で保持する `requests==2.32.3` は既知の脆弱性の対象範囲なので、
+本番反映前に別の依存更新差分も適用・検証してください。
+詳細は [Requestsの公式セキュリティ情報](https://github.com/psf/requests/security/advisories) を参照してください。
 
 ## トラブルシューティング
 
