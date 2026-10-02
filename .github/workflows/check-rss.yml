@@ -15,6 +15,8 @@ permissions:
 
 jobs:
   check-and-notify:
+    # 手動実行でもfeature branchから本番状態を書き換えない。
+    if: github.ref == 'refs/heads/main'
     # 状態ファイルの既存コミット処理にだけ書き込み権限を付与
     permissions:
       contents: write
@@ -22,6 +24,9 @@ jobs:
     steps:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          # queued runの古いtrigger SHAではなく、送信開始時点の状態を使う。
+          ref: main
 
       - name: uv と Python をセットアップ
         uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
@@ -35,14 +40,25 @@ jobs:
         run: uv sync --locked --no-dev
 
       - name: RSSフィードをチェックしてDiscordに通知
+        id: notify
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: uv run --locked --no-dev python scripts/check_rss.py
 
-      - name: 状態ファイルをコミット
+      - name: 成功済みの状態を競合安全にコミット
+        id: persist
+        # 部分失敗でも送信成功分を保存する。通知stepの失敗はjobに残る。
+        if: ${{ always() && (steps.notify.outcome == 'success' || steps.notify.outcome == 'failure') }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/sent_articles.json
-          git diff --cached --quiet || git commit -m "[chore] 送信済み記事の状態を更新"
-          git push
+          uv run --locked --no-dev python scripts/persist_state.py
+
+      - name: 永続化失敗時の検証済み状態を保管
+        if: ${{ always() && steps.persist.outcome == 'failure' }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: sent-state-recovery-${{ github.run_id }}
+          path: recovery/sent_articles.json
+          if-no-files-found: warn
+          retention-days: 7

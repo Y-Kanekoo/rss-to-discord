@@ -1,9 +1,13 @@
 """RSSフィードの新着記事をDiscord Webhookに送信するスクリプト"""
 
+import argparse
 import json
+import math
 import os
 import sys
 import time
+import tempfile
+from pathlib import Path
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
@@ -19,30 +23,75 @@ EMBED_COLOR = 0x5865F2
 DESCRIPTION_MAX_LENGTH = 300
 
 
+class StateError(ValueError):
+    """A state snapshot cannot safely be used; never reset it automatically."""
+
+
+def validate_state(state: object) -> dict:
+    if not isinstance(state, dict):
+        raise StateError("state_invalid")
+    guids = state.get("sent_guids")
+    if not isinstance(guids, list) or any(not isinstance(g, str) or not g for g in guids):
+        raise StateError("state_invalid")
+    if "last_checked" not in state or not (
+        state["last_checked"] is None
+        or isinstance(state["last_checked"], str) and bool(state["last_checked"])
+    ):
+        raise StateError("state_invalid")
+    if state["last_checked"] is not None:
+        try:
+            datetime.fromisoformat(state["last_checked"])
+        except ValueError as error:
+            raise StateError("state_invalid") from error
+    return state
+
+
+def _unique_keys(pairs: list) -> dict:
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise StateError("state_invalid")
+        result[key] = value
+    return result
+
+
 def load_state(path: str) -> dict:
-    """送信済み記事IDをロード"""
-    if not os.path.exists(path):
-        return {"sent_guids": [], "last_checked": None}
+    """Missing is a first run; unreadable, malformed or invalid state is fatal."""
     try:
         with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except json.JSONDecodeError:
-        print("警告: 状態ファイルが破損。初期状態で再開します", file=sys.stderr)
+            return validate_state(json.load(f, object_pairs_hook=_unique_keys))
+    except FileNotFoundError:
         return {"sent_guids": [], "last_checked": None}
+    except (OSError, ValueError, UnicodeError) as error:
+        raise StateError("state_unreadable_or_invalid") from error
 
 
 def save_state(path: str, state: dict) -> None:
-    """送信済み記事IDを保存"""
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False, indent=2)
+    """Replace atomically in the same directory; a failure keeps the old file."""
+    validate_state(state)
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=target.parent,
+                                         prefix=".sent-state-", delete=False) as f:
+            temporary = f.name
+            json.dump(state, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(temporary, target)
+    finally:
+        if temporary is not None and os.path.exists(temporary):
+            os.unlink(temporary)
 
 
 def fetch_feed(url: str) -> feedparser.FeedParserDict:
-    """RSSフィードを取得してパース"""
+    """Fetch RSS; HTTP errors and unparseable feeds must not look like no news."""
     feed = feedparser.parse(url)
-    if feed.bozo and not feed.entries:
-        raise RuntimeError(f"RSSフィードのパースに失敗: {feed.bozo_exception}")
+    if (feed.get("status", 200) >= 400 or not feed.get("version")
+            or (feed.bozo and not feed.entries)):
+        raise RuntimeError("feed_unavailable_or_invalid")
     return feed
 
 
@@ -90,89 +139,130 @@ def build_embed(entry: feedparser.FeedParserDict) -> dict:
 
 
 def send_to_discord(webhook_url: str, embed: dict) -> None:
-    """Discord WebhookにEmbed付きメッセージを送信"""
+    """Retry only an explicit 429, once. Do not retry an ambiguous response."""
     payload = {"embeds": [embed]}
-    response = requests.post(
-        webhook_url,
-        json=payload,
-        headers={"Content-Type": "application/json"},
-        timeout=30,
-    )
-
-    # レート制限対応
-    if response.status_code == 429:
-        retry_after = response.json().get("retry_after", 5)
-        print(f"レート制限。{retry_after}秒待機します...")
-        time.sleep(retry_after)
+    for attempt in range(2):
         response = requests.post(
             webhook_url,
             json=payload,
             headers={"Content-Type": "application/json"},
             timeout=30,
+            allow_redirects=False,
         )
+        if response.status_code == 429 and attempt == 0:
+            retry_after = response.json().get("retry_after", 5)
+            if (isinstance(retry_after, bool) or not isinstance(retry_after, (int, float))
+                    or not math.isfinite(retry_after) or not 0 <= retry_after <= 60):
+                raise ValueError("invalid_retry_after")
+            time.sleep(retry_after)
+            continue
+        response.raise_for_status()
+        if not 200 <= response.status_code < 300:
+            raise requests.HTTPError("unexpected_discord_status")
+        return
 
-    response.raise_for_status()
 
+def main(*, dry_run: bool = False) -> int:
+    result = {"status": "ok", "dry_run": dry_run, "selected": 0, "sent": 0,
+              "failed": 0, "delivery_unknown": 0, "unpersisted_sent": 0, "errors": []}
 
-def main() -> None:
-    webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
-    if not webhook_url:
-        print("エラー: DISCORD_WEBHOOK_URL環境変数が設定されていません", file=sys.stderr)
-        sys.exit(1)
+    def fail(code: str) -> None:
+        if code not in result["errors"]:
+            result["errors"].append(code)
+        # Never print exception text, URLs, response bodies, titles or GUIDs.
+        print(f"エラー: {code}", file=sys.stderr)
 
-    state = load_state(STATE_FILE)
-    sent_guids = set(state.get("sent_guids", []))
-    is_first_run = state.get("last_checked") is None
+    def finish() -> int:
+        failed = bool(result["errors"])
+        result["status"] = "failed" if failed else ("dry_run" if dry_run else "ok")
+        print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+        return 1 if failed else 0
 
-    # RSSフィードを取得
+    webhook_url = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
+    if not dry_run and not webhook_url:
+        fail("missing_webhook")
+        return finish()
+    try:
+        state = load_state(STATE_FILE)
+    except StateError:
+        fail("state_unreadable_or_invalid")
+        return finish()
+    sent_guids = set(state["sent_guids"])
+    is_first_run = state["last_checked"] is None
+
     try:
         feed = fetch_feed(RSS_URL)
-    except Exception as e:
-        print(f"エラー: RSSフィードの取得に失敗: {e}", file=sys.stderr)
-        sys.exit(1)
+        # Deduplicate before selection, including failed IDs, so a feed cannot
+        # cause an immediate retry of an unknown delivery in the same run.
+        seen = set(sent_guids)
+        new_entries = []
+        for entry in feed.entries:
+            guid = entry.get("id") or entry.get("link")
+            if not isinstance(guid, str) or not guid:
+                result["failed"] += 1
+                fail("entry_invalid")
+                continue
+            if guid not in seen:
+                seen.add(guid)
+                new_entries.append((guid, entry))
+        new_entries.sort(key=lambda item: item[1].get("published_parsed", ()))
+    except Exception:
+        fail("feed_unavailable_or_invalid")
+        return finish()
 
-    # 新着記事を抽出（古い順にソート）
-    new_entries = [e for e in feed.entries if e.get("id", e.get("link")) not in sent_guids]
-    new_entries.sort(key=lambda e: e.get("published_parsed", ()), reverse=False)
-
-    # 初回実行時は最新N件のみ送信
     if is_first_run and len(new_entries) > MAX_ARTICLES_FIRST_RUN:
-        print(f"初回実行: {len(new_entries)}件中、最新{MAX_ARTICLES_FIRST_RUN}件のみ送信します")
-        skipped = new_entries[:-MAX_ARTICLES_FIRST_RUN]
-        for e in skipped:
-            sent_guids.add(e.get("id", e.get("link")))
+        # Keep the existing first-run latest-five policy. Record the skipped
+        # backlog before sending, so failures are not skipped on the next run.
+        sent_guids.update(guid for guid, _ in new_entries[:-MAX_ARTICLES_FIRST_RUN])
         new_entries = new_entries[-MAX_ARTICLES_FIRST_RUN:]
+    result["selected"] = len(new_entries)
+    if dry_run:
+        return finish()
 
-    if not new_entries:
-        print("新着記事はありません")
-    else:
-        print(f"{len(new_entries)}件の新着記事を送信します")
+    state["sent_guids"] = sorted(sent_guids)
+    state["last_checked"] = datetime.now(timezone.utc).isoformat()
+    try:
+        # Prove state is writable before any irreversible external send.
+        save_state(STATE_FILE, state)
+    except Exception:
+        fail("state_save_failed")
+        return finish()
 
-    sent_count = 0
-    for entry in new_entries:
-        guid = entry.get("id", entry.get("link"))
+    for index, (guid, entry) in enumerate(new_entries):
         try:
             embed = build_embed(entry)
+        except Exception:
+            result["failed"] += 1
+            fail("entry_invalid")
+            continue
+        try:
             send_to_discord(webhook_url, embed)
+        except (requests.Timeout, requests.ConnectionError):
+            # The server may have accepted the message. Leave it retryable, but
+            # make ambiguity explicit: Discord has no idempotency key here.
+            result["failed"] += 1
+            result["delivery_unknown"] += 1
+            fail("delivery_unknown")
+        except Exception:
+            result["failed"] += 1
+            fail("delivery_failed")
+        else:
+            result["sent"] += 1
             sent_guids.add(guid)
-            sent_count += 1
-            print(f"送信完了: {entry.title[:60]}")
-            # レート制限対策: 送信間隔を空ける
-            if sent_count < len(new_entries):
-                time.sleep(RATE_LIMIT_INTERVAL)
-        except requests.exceptions.HTTPError as e:
-            print(f"Discord送信エラー: {entry.title[:60]} - {e}", file=sys.stderr)
-            continue
-        except Exception as e:
-            print(f"予期しないエラー: {entry.title[:60]} - {e}", file=sys.stderr)
-            continue
-
-    # 状態を保存
-    state["sent_guids"] = list(sent_guids)
-    state["last_checked"] = datetime.now(timezone.utc).isoformat()
-    save_state(STATE_FILE, state)
-    print(f"完了: {sent_count}/{len(new_entries)}件送信成功")
+            state["sent_guids"] = sorted(sent_guids)
+            try:
+                save_state(STATE_FILE, state)
+            except Exception:
+                result["unpersisted_sent"] += 1
+                fail("state_save_failed_after_send")
+                break
+        if index < len(new_entries) - 1:
+            time.sleep(RATE_LIMIT_INTERVAL)
+    return finish()
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--dry-run", action="store_true", help="Fetch and count only; never send or save state")
+    args = parser.parse_args()
+    sys.exit(main(dry_run=args.dry_run))
