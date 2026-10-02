@@ -61,10 +61,11 @@ class OfflineTests(unittest.TestCase):
         check_rss.save_state(str(self.state), expected)
         self.assertEqual(check_rss.load_state(str(self.state)), expected)
 
-    def test_malformed_state_retains_existing_fallback(self):
+    def test_malformed_state_fails_closed(self):
         self.state.parent.mkdir(parents=True)
         self.state.write_text("{broken", encoding="utf-8")
-        self.assertEqual(check_rss.load_state(str(self.state))["sent_guids"], [])
+        with self.assertRaises(check_rss.StateError):
+            check_rss.load_state(str(self.state))
 
     def test_local_xml_can_be_parsed(self):
         xml = b'<rss version="2.0"><channel><title>Test</title><link>https://example.invalid</link><description>Test</description><item><title>Offline</title><link>https://example.invalid/1</link><guid>1</guid></item></channel></rss>'
@@ -95,7 +96,7 @@ class OfflineTests(unittest.TestCase):
         response = Mock(status_code=204)
         with patch.object(check_rss.requests, "post", return_value=response) as post:
             check_rss.send_to_discord("https://example.invalid/webhook", {"title": "Offline"})
-        post.assert_called_once_with("https://example.invalid/webhook", json={"embeds": [{"title": "Offline"}]}, headers={"Content-Type": "application/json"}, timeout=30)
+        post.assert_called_once_with("https://example.invalid/webhook", json={"embeds": [{"title": "Offline"}]}, headers={"Content-Type": "application/json"}, timeout=30, allow_redirects=False)
         response.raise_for_status.assert_called_once()
 
     def test_requests_prepares_webhook_payload_without_credentials(self):
@@ -122,9 +123,7 @@ class OfflineTests(unittest.TestCase):
 
     def test_missing_webhook_exits_before_fetch(self):
         with patch.object(check_rss, "fetch_feed") as fetch:
-            with self.assertRaises(SystemExit) as error:
-                check_rss.main()
-        self.assertEqual(error.exception.code, 1)
+            self.assertEqual(check_rss.main(), 1)
         fetch.assert_not_called()
         self.assertFalse(self.state.exists())
 
@@ -151,9 +150,7 @@ class OfflineTests(unittest.TestCase):
 
     def test_fetch_failure_does_not_write_state(self):
         with patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "https://example.invalid/webhook"}), patch.object(check_rss, "fetch_feed", side_effect=RuntimeError("mock fetch failure")), patch.object(check_rss, "send_to_discord") as send:
-            with self.assertRaises(SystemExit) as error:
-                check_rss.main()
-        self.assertEqual(error.exception.code, 1)
+            self.assertEqual(check_rss.main(), 1)
         send.assert_not_called()
         self.assertFalse(self.state.exists())
 

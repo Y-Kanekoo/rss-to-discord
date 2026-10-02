@@ -42,10 +42,14 @@ flowchart LR
 | 2. 状態読み込み | `data/sent_articles.json` から送信済み記事IDを取得 |
 | 3. RSS取得 | フィードをパースし、未送信の記事を抽出 |
 | 4. Discord送信 | Embed形式で送信（タイトル・リンク・要約・サムネイル付き） |
-| 5. 状態保存 | 送信済みIDをJSONに記録し、自動コミット・プッシュ |
+| 5. 状態保存 | 送信前と各成功直後に原子的保存。部分失敗でも成功分をmainへ競合安全にコミット・プッシュ |
 
 - 初回実行時は最新5件のみ送信（チャンネルが埋まるのを防止）
-- 送信失敗した記事は次回実行時に自動リトライ
+- 送信失敗した記事は送信済み扱いにせず、フィードに残っていれば次回実行で再試行
+- 同じGUIDは1回の実行で1度のみ処理。429のみ最大1回再試行（待機は0〜60秒）
+- 部分失敗・状態破損・設定不足は非ゼロ終了。stdout末尾のJSONで結果を判定
+- タイムアウト等は配信済みか不明。次回の再試行で重複し得るため、exactly-onceは保証しません
+- 通知ワークフローはmain限定。通常のpush/PRで通知は実行されません
 
 ## カスタマイズ
 
@@ -79,6 +83,13 @@ uv run --locked --no-dev python -m unittest discover -s tests -v
 ユニットテストは外部通信をブロックし、RSS取得・Discord送信をモックに置き換えます。
 実際のWebhook URLやトークンは不要です。CIのテストジョブにもSecretsを渡しません。
 
+送信せず確認する場合は、明示的なdry-runを使います。RSS取得は行いますが、
+Webhook不要でDiscord送信・状態更新は行いません。
+
+```bash
+uv run --locked --no-dev python scripts/check_rss.py --dry-run
+```
+
 実運用の通知をローカルで実行する場合のみ、事前に `DISCORD_WEBHOOK_URL` を設定して実行します。
 このコマンドはDiscordへ送信し、状態ファイルも更新します。
 
@@ -101,9 +112,15 @@ Requestsは2.33.0へ更新し、CVE-2024-47081とCVE-2026-25645の対象範囲�
 | 症状 | 原因と対処 |
 |---|---|
 | 通知が来ない | Actionsタブでワークフローの実行履歴を確認。赤い×ならログを見る |
-| `DISCORD_WEBHOOK_URL環境変数が設定されていません` | GitHub Secretsの設定を確認（名前が正確に `DISCORD_WEBHOOK_URL` か） |
-| 同じ記事が何度も届く | `data/sent_articles.json` が壊れている可能性。ファイルを確認し、不正なJSONなら `{"sent_guids": [], "last_checked": null}` にリセット |
+| `missing_webhook` | GitHub Secretsの設定を確認（名前が正確に `DISCORD_WEBHOOK_URL` か） |
+| `state_unreadable_or_invalid` | 送信せず停止します。空状態へリセットせず、正常な履歴・最新の状態・回復artifactを比較し、送信済みGUIDを失わないよう手動で復旧 |
+| `delivery_unknown` | 応答を確認できず配信結果が不明。Discordの実投稿を確認してから必要な復旧を判断 |
+| `state_save_failed_after_send` | 成功応答後のローカル保存失敗。次の送信は停止し、`unpersisted_sent` を報告。Discordを確認して状態を修復 |
+| `state_persistence_failed` | mainへの保存に失敗。Actionsの `sent-state-recovery-<run_id>` artifact（7日間）を確認し、最新mainの状態とのGUID和集合で復旧。古いsnapshotで上書きしない |
 | Actionsが実行されない | リポジトリの **Settings** → **Actions** → **General** で Actions が有効か確認 |
+
+失敗時の意味・復旧条件は [ADR 001](docs/adr/001-failure-and-state.md)、
+検証範囲は [機能別テスト方針](docs/testing-failure-contract.md) を参照してください。
 
 ## 設計図
 
@@ -113,7 +130,7 @@ Requestsは2.33.0へ更新し、CVE-2024-47081とCVE-2026-25645の対象範囲�
 ```mermaid
 classDiagram
     class GitHubActions {
-        +cron: 毎時0分
+        +cron: 毎時23分
         +workflow_dispatch: 手動実行
         +concurrency: rss-check
         checkout()
