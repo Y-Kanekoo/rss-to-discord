@@ -609,6 +609,7 @@
     "https://zenn.dev/fixu/articles/ai-multi-agent-verify-authenticity",
     "https://zenn.dev/fixu/articles/ai-native-qcd-large-scale-two-weeks",
     "https://zenn.dev/fixu/articles/ai-native-qcd-measured-evaluation",
+    "https://zenn.dev/fixu/articles/duplicated-pricing-logic-signup-stopped-incident",
     "https://zenn.dev/fixu/articles/outside-the-diff-batch-double-run-incident",
     "https://zenn.dev/flinters_blog/articles/23dec74646d902",
     "https://zenn.dev/flip451/articles/sotohe-test-obligation-gate",
@@ -692,6 +693,7 @@
     "https://zenn.dev/ikurah/articles/predeploy-gate-design",
     "https://zenn.dev/imyaaiteam/articles/a5840ee692a064",
     "https://zenn.dev/indigo165e83/articles/f9aae4116a105b",
+    "https://zenn.dev/inflab/articles/927ba40fedd02e",
     "https://zenn.dev/innovation/articles/e84f8ccca8e6da",
     "https://zenn.dev/ino_h/articles/2026-06-06-llm-app-aws-spec-driven-guardrails",
     "https://zenn.dev/ishizakahiroshi/articles/20261005-dots-dev-flow",
@@ -1067,6 +1069,7 @@
     "https://zenn.dev/shinkano/articles/4ad88d17e435d8",
     "https://zenn.dev/shintaroamaike/articles/1d73c017285bdc",
     "https://zenn.dev/shoebill_dev27/books/python-pitfalls",
+    "https://zenn.dev/shoyomayabot/articles/ai-coding-beta-quality-gates",
     "https://zenn.dev/shuent/articles/a14f435eb03927",
     "https://zenn.dev/shunsuke_stack/articles/ai-qa-career-strategy",
     "https://zenn.dev/singularity/articles/stopped-reviewing-my-code",
@@ -1170,6 +1173,7 @@
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-structure",
     "https://zenn.dev/tsukimi_soba/articles/sos-how-to-improve-quality-first-step",
     "https://zenn.dev/tyler0702/articles/9be3e93935d19f",
+    "https://zenn.dev/tzp/articles/db03567f248575",
     "https://zenn.dev/ukintech/articles/build-time-safety-invariants",
     "https://zenn.dev/ukintech/articles/jimny-parts-regex-classification-bug",
     "https://zenn.dev/ukintech/articles/jsx-japanese-stray-space",
@@ -1247,5 +1251,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-07T16:37:27.306612+00:00"
+  "last_checked": "2026-10-07T22:03:39.576230+00:00"
 }
