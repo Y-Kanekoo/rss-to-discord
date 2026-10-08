@@ -98,6 +98,7 @@
     "https://arxiv.org/abs/2609.37526v1",
     "https://arxiv.org/abs/2609.39297v1",
     "https://arxiv.org/abs/2610.04461v1",
+    "https://arxiv.org/abs/2610.10448v1",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -464,6 +465,7 @@
     "https://zenn.dev/akring/articles/11e668bae28707",
     "https://zenn.dev/aldagram_tech/articles/316c4d944fd9d5",
     "https://zenn.dev/aldagram_tech/articles/4aea4b13671ae3",
+    "https://zenn.dev/aldagram_tech/articles/b34049a1af68ec",
     "https://zenn.dev/aldagram_tech/articles/c407ae672c9c0e",
     "https://zenn.dev/aldagram_tech/articles/e3f8d39f6eb5a1",
     "https://zenn.dev/alpaca_village/articles/alpaca-fw-06-traceability",
@@ -1101,6 +1103,7 @@
     "https://zenn.dev/sunnyside/articles/qa-20years-relearning-list",
     "https://zenn.dev/sunnyside/articles/yumotsuyo-method-in-genai-era",
     "https://zenn.dev/sunnyside/books/qa-ai-skills-2026",
+    "https://zenn.dev/sutokei/articles/wait-two-seconds-short",
     "https://zenn.dev/suwash/articles/ai-assurance-enterprise-testing-strategy_20260526",
     "https://zenn.dev/suzuki_tech/articles/e90b94e1bce2cf",
     "https://zenn.dev/syuya2036/articles/gpui-testing-guide",
@@ -1251,5 +1254,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-08T02:02:54.529971+00:00"
+  "last_checked": "2026-10-08T09:07:38.527769+00:00"
 }
