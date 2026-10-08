@@ -260,6 +260,7 @@
     "https://prtimes.jp/main/html/rd/p/000000056.000054604.html",
     "https://prtimes.jp/main/html/rd/p/000000057.000054604.html",
     "https://prtimes.jp/main/html/rd/p/000000058.000054604.html",
+    "https://prtimes.jp/main/html/rd/p/000000059.000054604.html",
     "https://qiita.com/0903osa/items/053eb1bcbca9ad1b5b55",
     "https://qiita.com/0903osa/items/9545b46aa29fc3676553",
     "https://qiita.com/0903osa/items/e9f2dc5906c9c0ac635c",
@@ -1008,6 +1009,7 @@
     "https://zenn.dev/pdfractal/articles/9a3f002d6cc448",
     "https://zenn.dev/pepabo/articles/slack-review-notify-off-hours-defer",
     "https://zenn.dev/personal/articles/12fc3536575d47",
+    "https://zenn.dev/pgm/articles/db37ecf6c9996a",
     "https://zenn.dev/pikuto/books/playwright-jitsumu-jirai",
     "https://zenn.dev/pivotmedia/articles/why-we-switched-from-saas-to-maestro",
     "https://zenn.dev/playpark/articles/test-green-is-not-proof-of-fix",
@@ -1254,5 +1256,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-08T09:07:38.527769+00:00"
+  "last_checked": "2026-10-08T16:36:11.996009+00:00"
 }
