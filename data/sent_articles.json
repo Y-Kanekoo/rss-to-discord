@@ -99,6 +99,7 @@
     "https://arxiv.org/abs/2609.39297v1",
     "https://arxiv.org/abs/2610.04461v1",
     "https://arxiv.org/abs/2610.10448v1",
+    "https://arxiv.org/abs/2610.11130v1",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -720,6 +721,7 @@
     "https://zenn.dev/jinjer_techblog/articles/f2f7cf347f39a3",
     "https://zenn.dev/jinno_ai/articles/japanese-rag-test-case-design",
     "https://zenn.dev/jinno_ai/articles/poc-success-metrics",
+    "https://zenn.dev/jisaku_net/articles/cloudflare-oauth-fetch-redirect-manual",
     "https://zenn.dev/jissokulog/articles/074daf7039d080",
     "https://zenn.dev/jissokulog/articles/498e691f7f287d",
     "https://zenn.dev/jissokulog/books/80bd312adb868e",
@@ -1256,5 +1258,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-09T02:16:06.351123+00:00"
+  "last_checked": "2026-10-09T09:14:05.010681+00:00"
 }
