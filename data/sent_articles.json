@@ -474,6 +474,7 @@
     "https://zenn.dev/alpaca_village/articles/system-development-work-02-arpca-overview",
     "https://zenn.dev/alphapolis_tech/articles/4b81005f615b1a",
     "https://zenn.dev/amamiya_chan/articles/a0f68ec5d3e1ab",
+    "https://zenn.dev/anikuma/articles/ffmpeg-contact-sheet-review",
     "https://zenn.dev/anzy/articles/367090a9f9a409",
     "https://zenn.dev/aoi_0411/articles/github-actions-ci-beginner",
     "https://zenn.dev/aoki_monpro/articles/0ce2ce91a3cf93",
@@ -649,7 +650,9 @@
     "https://zenn.dev/gunma/articles/agent-exploratory-qa-playwright",
     "https://zenn.dev/gyu07/articles/224d0518adeb50",
     "https://zenn.dev/gyu07/articles/5bbe48279ec7bc",
+    "https://zenn.dev/gyu07/articles/cb07e6d4a8ed81",
     "https://zenn.dev/gyu07/articles/f54295ba3a441d",
+    "https://zenn.dev/gzer0/articles/local-llm-fallback-hides-context-overflow",
     "https://zenn.dev/habco/articles/21e80182787df3",
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
     "https://zenn.dev/hampen2929/books/ai-agent-evaluation-guide",
@@ -804,6 +807,7 @@
     "https://zenn.dev/kodomo_news/articles/71-build-cache-stamp",
     "https://zenn.dev/koenigwolf/articles/226b3bc22e918f",
     "https://zenn.dev/koheikameyama/articles/334549ad830a49",
+    "https://zenn.dev/kokeshi_gnome/articles/104b1a96566716",
     "https://zenn.dev/koojy/articles/limit-ai-generated-tests-with-test-decisions",
     "https://zenn.dev/korimu/articles/a0e54f95a390bd",
     "https://zenn.dev/kotaro_y/books/go-test-strategy",
@@ -1044,6 +1048,7 @@
     "https://zenn.dev/revo1290/articles/a8f3c2d91b4e7f",
     "https://zenn.dev/revo1290/articles/slicetest-between-unit-and-e2e",
     "https://zenn.dev/risa1123/articles/test-first-zenn-post",
+    "https://zenn.dev/ritsuhayase/articles/049a2f6659e777",
     "https://zenn.dev/ritsuhayase/articles/ab8e0c9f2dd66e",
     "https://zenn.dev/rna4219/articles/0c51e22473e3c8",
     "https://zenn.dev/rna4219/articles/a1bd8f0f54b99f",
@@ -1258,5 +1263,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-09T16:19:08.922125+00:00"
+  "last_checked": "2026-10-09T21:00:19.160286+00:00"
 }
