@@ -529,6 +529,7 @@
     "https://zenn.dev/bricks/articles/dev-env-hid-eight-bugs",
     "https://zenn.dev/bricks/articles/no-network-test-needs-negative-control",
     "https://zenn.dev/bswebdev/articles/where-the-check-was-01-retry-interceptor",
+    "https://zenn.dev/bugitdev/articles/dbfa1909be1dec",
     "https://zenn.dev/canly/articles/cba399cbfb112f",
     "https://zenn.dev/catatsuy/articles/254b155f8d5992",
     "https://zenn.dev/catatsuy/articles/8e8dbf6afd1196",
@@ -545,6 +546,7 @@
     "https://zenn.dev/codecraft/articles/backtest-unbuyable-symbols-spread-guard-gap",
     "https://zenn.dev/codecraft/articles/bootstrap-null-test-trade-count-confound",
     "https://zenn.dev/codecraft/articles/daytrade-grid-design-days-overfit",
+    "https://zenn.dev/codecraft/articles/event-driven-edges-already-taken",
     "https://zenn.dev/codecraft/articles/fx-bot-exit-check-frequency-freeze",
     "https://zenn.dev/codecraft/articles/jp-stock-197-ideas-all-failed",
     "https://zenn.dev/codecraft/articles/nikkei-200day-filter-61years",
@@ -973,6 +975,7 @@
     "https://zenn.dev/norihashimo/articles/a28f2f0d893123",
     "https://zenn.dev/norman6464/articles/go-fake-codegen",
     "https://zenn.dev/norman6464/articles/go-testing-basics",
+    "https://zenn.dev/nozeon/articles/unit-test-minimum-understanding",
     "https://zenn.dev/nttdata_tech/articles/14a0528ac5c085",
     "https://zenn.dev/nttdata_tech/articles/2520a84d392c8e",
     "https://zenn.dev/nttdata_tech/articles/313886880cae85",
@@ -1036,6 +1039,7 @@
     "https://zenn.dev/rapls/articles/05894e145f3cf5",
     "https://zenn.dev/rapls/articles/19e32792bcc096",
     "https://zenn.dev/rapls/articles/29aa3225e6aea0",
+    "https://zenn.dev/rapls/articles/949cf199a26b07",
     "https://zenn.dev/rapls/articles/bf29a2e1696437",
     "https://zenn.dev/rb_engineering/articles/08da796df3d58d",
     "https://zenn.dev/realbios/articles/084389cc44ff5a",
@@ -1263,5 +1267,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-10T00:57:51.310654+00:00"
+  "last_checked": "2026-10-10T07:15:12.178489+00:00"
 }
