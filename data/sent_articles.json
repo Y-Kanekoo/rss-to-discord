@@ -266,6 +266,7 @@
     "https://qiita.com/0903osa/items/053eb1bcbca9ad1b5b55",
     "https://qiita.com/0903osa/items/9545b46aa29fc3676553",
     "https://qiita.com/0903osa/items/e9f2dc5906c9c0ac635c",
+    "https://qiita.com/Archie_notes/items/0ad98d397d89907af2cc",
     "https://qiita.com/BEETLE1101/items/6077396532c02cbc7407",
     "https://qiita.com/BEETLE1101/items/7e12f70063135c7b4945",
     "https://qiita.com/BeginnerTK/items/700c87f46d612bb08382",
@@ -283,6 +284,7 @@
     "https://qiita.com/akihidem/items/6e7d55c8d59b3e5526e8",
     "https://qiita.com/daikou223/items/664f60ab8232b51a2d26",
     "https://qiita.com/daikou223/items/bb50627a899ef1dc2da8",
+    "https://qiita.com/engchina/items/94d33d0f1e4bf91cac01",
     "https://qiita.com/fd_ai_teacher/items/7023eb67489994307ec4",
     "https://qiita.com/fd_ai_teacher/items/eedfdb420e8e27efada6",
     "https://qiita.com/jqit_suwa/items/9cf8152a99b1d178a4fd",
@@ -571,6 +573,7 @@
     "https://zenn.dev/cyber_hacnosuke/articles/50d1e577ec3055",
     "https://zenn.dev/cyberdog_ai_lab/articles/20260817-ai-degrade-guard",
     "https://zenn.dev/d_treasure0712/articles/20260706-swift-import-smoke-test",
+    "https://zenn.dev/daichi01278/articles/billing-api-parsers-without-keys",
     "https://zenn.dev/daisuke37/articles/20260910_zenn_github_yato",
     "https://zenn.dev/daisuke37/articles/20260915_zenn_github_yato",
     "https://zenn.dev/danilapryadko/articles/184624e3f3ff21",
@@ -974,6 +977,7 @@
     "https://zenn.dev/nijima/articles/e85b8f98bcbf0e",
     "https://zenn.dev/noah11/articles/cec5a2c07f5f60",
     "https://zenn.dev/noah11/articles/d7248386582cc5",
+    "https://zenn.dev/nomunomu0504/articles/hidane-firestore-emulator",
     "https://zenn.dev/nonejp/articles/68a46497f122f1",
     "https://zenn.dev/noprogllama/articles/4f1a53c1e9b779",
     "https://zenn.dev/norihashimo/articles/a28f2f0d893123",
@@ -1001,6 +1005,7 @@
     "https://zenn.dev/ohmiyamizuki/articles/llm-demo-to-production-eval",
     "https://zenn.dev/okamyuji/articles/ai-tests-coverage-blindspot",
     "https://zenn.dev/okamyuji/articles/ai-writes-code-so-no-design-doc-fallacy",
+    "https://zenn.dev/okamyuji/articles/rails-invariants-evilution-crap",
     "https://zenn.dev/okinawasoftware/articles/82606f3abe1027",
     "https://zenn.dev/okotokoto/articles/7ff83548142243",
     "https://zenn.dev/okssusucha/articles/af5ed1f7518dd5",
@@ -1192,6 +1197,7 @@
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-flow",
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-structure",
     "https://zenn.dev/tsukimi_soba/articles/sos-how-to-improve-quality-first-step",
+    "https://zenn.dev/tsumu26/articles/da753f20f98df7",
     "https://zenn.dev/tyler0702/articles/9be3e93935d19f",
     "https://zenn.dev/tzp/articles/db03567f248575",
     "https://zenn.dev/ukintech/articles/build-time-safety-invariants",
@@ -1271,5 +1277,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-11T09:01:40.476794+00:00"
+  "last_checked": "2026-10-11T15:47:26.837451+00:00"
 }
