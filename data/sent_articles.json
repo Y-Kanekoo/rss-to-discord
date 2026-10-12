@@ -100,6 +100,7 @@
     "https://arxiv.org/abs/2610.04461v1",
     "https://arxiv.org/abs/2610.10448v1",
     "https://arxiv.org/abs/2610.11130v1",
+    "https://arxiv.org/abs/2610.12515v1",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -763,6 +764,7 @@
     "https://zenn.dev/kanai/articles/jimuya-holiday-csv-full-match",
     "https://zenn.dev/kanata_o/articles/framework-upgrade-pitfalls",
     "https://zenn.dev/kanta13jp1/articles/academy-sns-csv-twelve-cases",
+    "https://zenn.dev/kanta13jp1/articles/astra-price-boundary-fifteen-cases",
     "https://zenn.dev/kanta13jp1/articles/flutter-adaptive-inbox-dismissal",
     "https://zenn.dev/karamage/articles/4788b0b791ef2d",
     "https://zenn.dev/karamage/articles/bbc1d1861f2bab",
@@ -1279,5 +1281,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-11T23:45:27.487088+00:00"
+  "last_checked": "2026-10-12T06:08:59.023489+00:00"
 }
