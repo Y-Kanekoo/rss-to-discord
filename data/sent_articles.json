@@ -265,6 +265,7 @@
     "https://prtimes.jp/main/html/rd/p/000000057.000054604.html",
     "https://prtimes.jp/main/html/rd/p/000000058.000054604.html",
     "https://prtimes.jp/main/html/rd/p/000000059.000054604.html",
+    "https://prtimes.jp/main/html/rd/p/000000060.000054604.html",
     "https://qiita.com/0903osa/items/053eb1bcbca9ad1b5b55",
     "https://qiita.com/0903osa/items/9545b46aa29fc3676553",
     "https://qiita.com/0903osa/items/e9f2dc5906c9c0ac635c",
@@ -495,6 +496,7 @@
     "https://zenn.dev/ara_ta3/articles/thinking-about-obscure-test-with-working-memory",
     "https://zenn.dev/arsaga/articles/laravel-ai-quality-gates",
     "https://zenn.dev/arufian/articles/aeb300d7cf9b1b",
+    "https://zenn.dev/asayi_megumi/articles/8e137fa95f5481",
     "https://zenn.dev/asuene/articles/e2e-test-ai-driven-management",
     "https://zenn.dev/atamaplus/articles/ef919329f4cc12",
     "https://zenn.dev/atlassystemtech/articles/33c863d520a15e",
@@ -649,6 +651,7 @@
     "https://zenn.dev/genda_jp/articles/59f1b9bf9c5561",
     "https://zenn.dev/genda_jp/articles/641c492c4730f0",
     "https://zenn.dev/genda_jp/articles/70c29cc3fed698",
+    "https://zenn.dev/genda_jp/articles/72d17bdd972bef",
     "https://zenn.dev/genda_jp/articles/e2697df23813a5",
     "https://zenn.dev/genda_jp/articles/ec3e59c156925f",
     "https://zenn.dev/genkunjc/articles/9f9ebc54a18544",
@@ -665,6 +668,8 @@
     "https://zenn.dev/gyu07/articles/5bbe48279ec7bc",
     "https://zenn.dev/gyu07/articles/cb07e6d4a8ed81",
     "https://zenn.dev/gyu07/articles/f54295ba3a441d",
+    "https://zenn.dev/gzer0/articles/godot-headless-measure-sprites-by-raster",
+    "https://zenn.dev/gzer0/articles/godot-lineedit-keep-editing-on-submit",
     "https://zenn.dev/gzer0/articles/local-llm-fallback-hides-context-overflow",
     "https://zenn.dev/habco/articles/21e80182787df3",
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
@@ -1287,5 +1292,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-13T03:37:44.976749+00:00"
+  "last_checked": "2026-10-13T11:54:16.785203+00:00"
 }
