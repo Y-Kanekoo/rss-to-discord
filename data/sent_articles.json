@@ -385,6 +385,7 @@
     "https://tech.smarthr.jp/entry/2026/09/03/070000",
     "https://tech.smarthr.jp/entry/2026/09/08/093129",
     "https://tech.smarthr.jp/entry/2026/09/29/142202",
+    "https://tech.smarthr.jp/entry/2026/10/14/145752",
     "https://tech.smarthr.jp/entry/qa_summit",
     "https://tech.yappli.io/entry/apitestautomation",
     "https://tech.yappli.io/entry/create-e2e-test-with-claude-code",
@@ -437,6 +438,7 @@
     "https://zenn.dev/acacia1027/articles/bf062784a8287f",
     "https://zenn.dev/acntechjp/articles/183ee14d2ca77b",
     "https://zenn.dev/acntechjp/articles/fc7566e51482ec",
+    "https://zenn.dev/acntechjp/articles/zenn-spanner-omni-vs-emulator",
     "https://zenn.dev/acomo/articles/progress-acomo-2026-07-21-12-54-00",
     "https://zenn.dev/activecore/articles/a3d90e45ecff2a",
     "https://zenn.dev/adachi_builds/articles/2b15fd36f4bfde",
@@ -763,6 +765,7 @@
     "https://zenn.dev/junsuke0825/articles/pc-monitor-2026-04-14",
     "https://zenn.dev/jutaro0428/articles/911bdeafd49c57",
     "https://zenn.dev/jwcalendar/articles/7a88ee9a4eb264",
+    "https://zenn.dev/k_iijima/articles/c93db4323345ec",
     "https://zenn.dev/k_sak/articles/b45763b0cb9434",
     "https://zenn.dev/kagu3/articles/3a4280aaf3e9f7",
     "https://zenn.dev/kai_kou/books/nextjs16-clean-arch-tdd-e2e-guide",
@@ -919,6 +922,7 @@
     "https://zenn.dev/minami0601/articles/303e41b6254686",
     "https://zenn.dev/miraigent/articles/ai-reply-golden-test-set",
     "https://zenn.dev/mitna/books/context-rot-qa-defense",
+    "https://zenn.dev/miyakona/articles/buttons-from-posted-panel",
     "https://zenn.dev/miyan/articles/ai-driven-dev-testing-tdd",
     "https://zenn.dev/miyan/articles/ci-pact-contract-testing-guide",
     "https://zenn.dev/miyan/articles/ci-test-bloat-pipeline-optimization-guide",
@@ -1065,6 +1069,7 @@
     "https://zenn.dev/rapls/articles/05894e145f3cf5",
     "https://zenn.dev/rapls/articles/19e32792bcc096",
     "https://zenn.dev/rapls/articles/29aa3225e6aea0",
+    "https://zenn.dev/rapls/articles/359c2c49d9b764",
     "https://zenn.dev/rapls/articles/949cf199a26b07",
     "https://zenn.dev/rapls/articles/bf29a2e1696437",
     "https://zenn.dev/rb_engineering/articles/08da796df3d58d",
@@ -1214,6 +1219,7 @@
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-flow",
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-structure",
     "https://zenn.dev/tsukimi_soba/articles/sos-how-to-improve-quality-first-step",
+    "https://zenn.dev/tsumu26/articles/526ce667f80d21",
     "https://zenn.dev/tsumu26/articles/da753f20f98df7",
     "https://zenn.dev/tyler0702/articles/9be3e93935d19f",
     "https://zenn.dev/tzp/articles/db03567f248575",
@@ -1224,6 +1230,7 @@
     "https://zenn.dev/urario/articles/deterministic-output",
     "https://zenn.dev/urario/articles/tests-that-pass",
     "https://zenn.dev/ushibutatory/articles/4624baa67a9acc",
+    "https://zenn.dev/vaonvn/articles/0fbeb2f9a2e57d",
     "https://zenn.dev/vaonvn/articles/56d2d637dc6956",
     "https://zenn.dev/viralana/articles/viralana-auto-post-test-jaao",
     "https://zenn.dev/voidmatcha/articles/b0e9b9d33407c7",
@@ -1294,5 +1301,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-14T01:59:16.292594+00:00"
+  "last_checked": "2026-10-14T07:46:16.361446+00:00"
 }
