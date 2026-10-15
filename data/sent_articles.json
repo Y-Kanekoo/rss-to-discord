@@ -286,6 +286,7 @@
     "https://qiita.com/QAmah/items/cf96a81f36454c96e91f",
     "https://qiita.com/SystemConcierge/items/00f053b3139026772087",
     "https://qiita.com/YuukiYoshida/items/ca4b49b847825f6971e2",
+    "https://qiita.com/acsuzuki/items/a1f4533a4d7c724c097f",
     "https://qiita.com/aipapalog/items/25c03a629f807d35f5ca",
     "https://qiita.com/akihidem/items/6e7d55c8d59b3e5526e8",
     "https://qiita.com/daikou223/items/664f60ab8232b51a2d26",
@@ -604,6 +605,7 @@
     "https://zenn.dev/dip_techblog/articles/property-based-testing-rapid",
     "https://zenn.dev/dog_dog_3dog/articles/b835322e1bfb8e",
     "https://zenn.dev/dog_dog_3dog/articles/ed800fbd8c4793",
+    "https://zenn.dev/dokokade/articles/8d7756c7056a24",
     "https://zenn.dev/dress_code/articles/4df9132fc28b4f",
     "https://zenn.dev/dstudylab/articles/trust-but-verify-ai-output",
     "https://zenn.dev/edash_tech_blog/articles/0d49bd338b64f0",
@@ -678,6 +680,7 @@
     "https://zenn.dev/gyu07/articles/f54295ba3a441d",
     "https://zenn.dev/gzer0/articles/godot-headless-measure-sprites-by-raster",
     "https://zenn.dev/gzer0/articles/godot-lineedit-keep-editing-on-submit",
+    "https://zenn.dev/gzer0/articles/godot-write-movie-script-capture-with-audio",
     "https://zenn.dev/gzer0/articles/local-llm-fallback-hides-context-overflow",
     "https://zenn.dev/habco/articles/21e80182787df3",
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
@@ -1228,6 +1231,7 @@
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-structure",
     "https://zenn.dev/tsukimi_soba/articles/sos-how-to-improve-quality-first-step",
     "https://zenn.dev/tsumu26/articles/526ce667f80d21",
+    "https://zenn.dev/tsumu26/articles/d8321d5adfe42e",
     "https://zenn.dev/tsumu26/articles/da753f20f98df7",
     "https://zenn.dev/tyler0702/articles/9be3e93935d19f",
     "https://zenn.dev/tzp/articles/db03567f248575",
@@ -1309,5 +1313,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-15T11:41:18.055474+00:00"
+  "last_checked": "2026-10-15T17:08:55.128624+00:00"
 }
