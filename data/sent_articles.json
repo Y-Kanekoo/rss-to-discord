@@ -759,6 +759,7 @@
     "https://zenn.dev/jinno_ai/articles/japanese-rag-test-case-design",
     "https://zenn.dev/jinno_ai/articles/poc-success-metrics",
     "https://zenn.dev/jisaku_net/articles/cloudflare-oauth-fetch-redirect-manual",
+    "https://zenn.dev/jisaku_net/articles/json-import-stable-id-local-edits",
     "https://zenn.dev/jisaku_net/articles/weekly-calculation-exhaustive-tests",
     "https://zenn.dev/jissokulog/articles/074daf7039d080",
     "https://zenn.dev/jissokulog/articles/498e691f7f287d",
@@ -1041,6 +1042,7 @@
     "https://zenn.dev/okamyuji/articles/ai-tests-coverage-blindspot",
     "https://zenn.dev/okamyuji/articles/ai-writes-code-so-no-design-doc-fallacy",
     "https://zenn.dev/okamyuji/articles/rails-invariants-evilution-crap",
+    "https://zenn.dev/okamyuji/books/rails-ai-review-invariants",
     "https://zenn.dev/okinawasoftware/articles/82606f3abe1027",
     "https://zenn.dev/okotokoto/articles/7ff83548142243",
     "https://zenn.dev/okssusucha/articles/af5ed1f7518dd5",
@@ -1318,5 +1320,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-16T23:41:50.006726+00:00"
+  "last_checked": "2026-10-17T04:38:36.986633+00:00"
 }
