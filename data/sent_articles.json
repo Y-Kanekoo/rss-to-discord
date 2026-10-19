@@ -571,6 +571,7 @@
     "https://zenn.dev/codecraft/articles/backtest-exit-price-granularity-mismatch",
     "https://zenn.dev/codecraft/articles/backtest-unbuyable-symbols-spread-guard-gap",
     "https://zenn.dev/codecraft/articles/bootstrap-null-test-trade-count-confound",
+    "https://zenn.dev/codecraft/articles/daytrade-core-and-basics-94-variants",
     "https://zenn.dev/codecraft/articles/daytrade-grid-design-days-overfit",
     "https://zenn.dev/codecraft/articles/event-driven-edges-already-taken",
     "https://zenn.dev/codecraft/articles/fx-bot-exit-check-frequency-freeze",
@@ -702,6 +703,7 @@
     "https://zenn.dev/hawk_claws/articles/zenn-02-independent-crosscheck",
     "https://zenn.dev/hchwr01/articles/10121283d2c6d6",
     "https://zenn.dev/headwaters/articles/579d5f94907dcd",
+    "https://zenn.dev/heftykoo/articles/19bf8f1ed6638c",
     "https://zenn.dev/heftykoo/articles/634c18e93e11c4",
     "https://zenn.dev/heftykoo/articles/b754c6bee93d0c",
     "https://zenn.dev/heftykoo/articles/c4866f6b416ea8",
@@ -921,6 +923,7 @@
     "https://zenn.dev/marvel/articles/f3c32245dfd7b3",
     "https://zenn.dev/masa1990/articles/claude-code-large-refactoring",
     "https://zenn.dev/masafumi_ai/articles/00001-ai-output-quality-gates",
+    "https://zenn.dev/masahiroid/articles/a2b-api-authorization",
     "https://zenn.dev/masatake_i/articles/e46bd37ec019f3",
     "https://zenn.dev/massanjp/articles/fd731a347dc7b4",
     "https://zenn.dev/matsutake_prgrm/articles/the-coincidence-promoted-a-wrong-explanation",
@@ -1091,6 +1094,7 @@
     "https://zenn.dev/quintetkit/articles/verification-that-verifies-nothing",
     "https://zenn.dev/rakko_inc/articles/55f9f424e6cdf6",
     "https://zenn.dev/rakuwork_kobo/articles/gas-ai-code-proxy-mock-test",
+    "https://zenn.dev/rakuwork_kobo/articles/sheets-formula-python-eval-test",
     "https://zenn.dev/rakuya/articles/02_ai-built-business-system-quality",
     "https://zenn.dev/rankly/articles/d17dc99dbf7276",
     "https://zenn.dev/rapls/articles/05894e145f3cf5",
@@ -1320,6 +1324,7 @@
     "https://zenn.dev/yuninaka/articles/ai-review-philosophy",
     "https://zenn.dev/yuninaka/articles/characterization-testing-blind-spot",
     "https://zenn.dev/yuralume/articles/4d66cd990ca5bc",
+    "https://zenn.dev/yushiyamamoto/articles/ai-approval-bound-execution-security-2026",
     "https://zenn.dev/yusuke_shiki/articles/ee2753984e4ca3",
     "https://zenn.dev/yx_xy/articles/5102413f722901",
     "https://zenn.dev/yx_xy/articles/ff3eafc84e5974",
@@ -1335,5 +1340,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-19T15:42:17.901834+00:00"
+  "last_checked": "2026-10-19T21:08:10.687317+00:00"
 }
