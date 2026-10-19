@@ -413,6 +413,7 @@
     "https://testradio.fm/?p=1800",
     "https://testradio.fm/?p=1804",
     "https://testradio.fm/?p=1809",
+    "https://testradio.fm/?p=1811",
     "https://tonono.hatenablog.com/entry/2026/06/23/083000",
     "https://toshimana.hatenablog.com/entry/2026/08/08/201941",
     "https://underscore42rina.hatenablog.com/entry/8years",
@@ -550,6 +551,7 @@
     "https://zenn.dev/bricks/articles/csv-results-expire-with-inputs",
     "https://zenn.dev/bricks/articles/dev-env-hid-eight-bugs",
     "https://zenn.dev/bricks/articles/no-network-test-needs-negative-control",
+    "https://zenn.dev/bricks/articles/verify-video-receipt-and-release",
     "https://zenn.dev/bswebdev/articles/where-the-check-was-01-retry-interceptor",
     "https://zenn.dev/bugitdev/articles/dbfa1909be1dec",
     "https://zenn.dev/canly/articles/cba399cbfb112f",
@@ -1090,6 +1092,7 @@
     "https://zenn.dev/rankly/articles/d17dc99dbf7276",
     "https://zenn.dev/rapls/articles/05894e145f3cf5",
     "https://zenn.dev/rapls/articles/19e32792bcc096",
+    "https://zenn.dev/rapls/articles/289163eb5a40fd",
     "https://zenn.dev/rapls/articles/29aa3225e6aea0",
     "https://zenn.dev/rapls/articles/359c2c49d9b764",
     "https://zenn.dev/rapls/articles/7c6221a96e847d",
@@ -1327,5 +1330,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-18T23:20:35.021443+00:00"
+  "last_checked": "2026-10-19T01:23:40.336350+00:00"
 }
