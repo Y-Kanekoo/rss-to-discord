@@ -104,6 +104,7 @@
     "https://arxiv.org/abs/2610.16594v1",
     "https://arxiv.org/abs/2610.18004v1",
     "https://arxiv.org/abs/2610.22089v1",
+    "https://arxiv.org/abs/2610.22089v2",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -810,6 +811,7 @@
     "https://zenn.dev/keitayamamoto/articles/d053a6cc096287",
     "https://zenn.dev/keito654/articles/4734aa8eb2f824",
     "https://zenn.dev/ken1min86/articles/5db5829f1013fc",
+    "https://zenn.dev/ken2618/articles/2ea704c57730ef",
     "https://zenn.dev/ken2618/articles/e0a998a638ac98",
     "https://zenn.dev/kenimo49/articles/ai-vague-spec-quality-collapse",
     "https://zenn.dev/kenimo49/articles/claude-code-npm-test-3-split-completion",
@@ -857,6 +859,7 @@
     "https://zenn.dev/kokeshi_gnome/articles/104b1a96566716",
     "https://zenn.dev/koojy/articles/limit-ai-generated-tests-with-test-decisions",
     "https://zenn.dev/korimu/articles/a0e54f95a390bd",
+    "https://zenn.dev/kotanpolin/articles/trajexa-revision-and-trial-history",
     "https://zenn.dev/kotaro_y/books/go-test-strategy",
     "https://zenn.dev/kswr/books/opt_production",
     "https://zenn.dev/kt3k/articles/b41b78ba6ae65f",
@@ -1115,6 +1118,7 @@
     "https://zenn.dev/rna4219/articles/a1bd8f0f54b99f",
     "https://zenn.dev/rna4219/articles/f4a45fd0c0196d",
     "https://zenn.dev/room310/articles/diff-zero-is-not-a-pass-condition",
+    "https://zenn.dev/ryoro777/articles/5e3ca719019a90",
     "https://zenn.dev/ryujiyasuko/articles/oxi-docx-word-blind-benchmark",
     "https://zenn.dev/ryun_log/articles/8a9bfd0740d0e5",
     "https://zenn.dev/safie_inc/articles/b8c3bcabc07ea4",
@@ -1322,6 +1326,7 @@
     "https://zenn.dev/yymm/articles/20260915-agent-ops",
     "https://zenn.dev/zenkigen_tech/articles/2e78ec498b5434",
     "https://zenn.dev/zenkigen_tech/articles/5b408ae9311bb1",
+    "https://zenn.dev/zenkigen_tech/articles/6582574fc862fb",
     "https://zenn.dev/zenkigen_tech/articles/c2904044e4fe70",
     "https://zenn.dev/zenn_kado/articles/2ae20695cb1235",
     "https://zenn.dev/zephris/articles/079eb7824c1768",
@@ -1330,5 +1335,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-19T07:53:47.499908+00:00"
+  "last_checked": "2026-10-19T15:42:17.901834+00:00"
 }
