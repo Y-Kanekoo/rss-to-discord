@@ -105,6 +105,7 @@
     "https://arxiv.org/abs/2610.18004v1",
     "https://arxiv.org/abs/2610.22089v1",
     "https://arxiv.org/abs/2610.22089v2",
+    "https://arxiv.org/abs/2610.25233v1",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -691,6 +692,7 @@
     "https://zenn.dev/gzer0/articles/godot-lineedit-keep-editing-on-submit",
     "https://zenn.dev/gzer0/articles/godot-write-movie-script-capture-with-audio",
     "https://zenn.dev/gzer0/articles/local-llm-fallback-hides-context-overflow",
+    "https://zenn.dev/gzer0/articles/real-play-save-fixtures-for-ai-tests",
     "https://zenn.dev/habco/articles/21e80182787df3",
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
     "https://zenn.dev/hampen2929/books/ai-agent-evaluation-guide",
@@ -1343,5 +1345,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-20T06:06:41.550994+00:00"
+  "last_checked": "2026-10-20T11:49:25.265153+00:00"
 }
