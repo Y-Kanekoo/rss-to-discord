@@ -512,6 +512,7 @@
     "https://zenn.dev/ap_ike_gagagami/articles/ef919329f4cc12",
     "https://zenn.dev/appleworld/articles/advanced-container-presentational-pattern",
     "https://zenn.dev/appleworld/articles/unit-test-arch-with-spec-driven",
+    "https://zenn.dev/ar1/articles/sasurahime-v030-internals",
     "https://zenn.dev/ar1/articles/yasumaro-68-connection-test",
     "https://zenn.dev/ara_ta3/articles/thinking-about-obscure-test-with-working-memory",
     "https://zenn.dev/arsaga/articles/laravel-ai-quality-gates",
@@ -1114,6 +1115,7 @@
     "https://zenn.dev/quintetkit/articles/blind-spot-from-refusing-to-check",
     "https://zenn.dev/quintetkit/articles/fixtures-encode-your-assumptions",
     "https://zenn.dev/quintetkit/articles/verification-that-verifies-nothing",
+    "https://zenn.dev/r2_san/articles/75724fb15adb70",
     "https://zenn.dev/rakko_inc/articles/55f9f424e6cdf6",
     "https://zenn.dev/rakuwork_kobo/articles/gas-ai-code-proxy-mock-test",
     "https://zenn.dev/rakuwork_kobo/articles/sheets-formula-python-eval-test",
@@ -1269,6 +1271,7 @@
     "https://zenn.dev/toshikun/articles/markdown-test",
     "https://zenn.dev/tottoko_hamu/articles/claude-todo-test-selfdestruct",
     "https://zenn.dev/trustdock/articles/3c810da3d5e422",
+    "https://zenn.dev/trustdock/articles/e5fef73a67382d",
     "https://zenn.dev/tsukimi_soba/articles/def-beyond-coding",
     "https://zenn.dev/tsukimi_soba/articles/exe-how-to-improve-quality-first-step",
     "https://zenn.dev/tsukimi_soba/articles/exe-long-term-quality-improvement",
@@ -1364,5 +1367,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-22T07:43:04.564714+00:00"
+  "last_checked": "2026-10-22T13:53:47.078727+00:00"
 }
