@@ -564,6 +564,7 @@
     "https://zenn.dev/bricks/articles/csv-results-expire-with-inputs",
     "https://zenn.dev/bricks/articles/dev-env-hid-eight-bugs",
     "https://zenn.dev/bricks/articles/no-network-test-needs-negative-control",
+    "https://zenn.dev/bricks/articles/unknown-note-category-stops-write",
     "https://zenn.dev/bricks/articles/verify-video-receipt-and-release",
     "https://zenn.dev/bswebdev/articles/where-the-check-was-01-retry-interceptor",
     "https://zenn.dev/bugitdev/articles/dbfa1909be1dec",
@@ -679,6 +680,7 @@
     "https://zenn.dev/gakken_leap/articles/72b7b800d164e9",
     "https://zenn.dev/gallu/books/18b1859947da0e",
     "https://zenn.dev/garplab/articles/083e25df1be2fa",
+    "https://zenn.dev/garplab/articles/4470e6091528d0",
     "https://zenn.dev/garplab/articles/569d598941c00f",
     "https://zenn.dev/garplab/articles/b64873fd4c4685",
     "https://zenn.dev/garplab/articles/cd93e0c5cac832",
@@ -911,6 +913,7 @@
     "https://zenn.dev/logdriven/articles/ai-filter-8-reviews-missed-katakana",
     "https://zenn.dev/logdriven/books/verify-ai-written-code",
     "https://zenn.dev/loglass/articles/54c4f9688dab9f",
+    "https://zenn.dev/loglass/articles/b6c1a24c7e4759",
     "https://zenn.dev/loglass/articles/ef099b123153cf",
     "https://zenn.dev/lux123/articles/9ed63128152e3e",
     "https://zenn.dev/lxdesign_blog/articles/c57e8c62404005",
@@ -1187,6 +1190,7 @@
     "https://zenn.dev/sheep431/articles/25c2b37417a8d8",
     "https://zenn.dev/shin2738/articles/970e57aed6c1b1",
     "https://zenn.dev/shinkano/articles/4ad88d17e435d8",
+    "https://zenn.dev/shinsei99/articles/rounded-the-parts-not-the-whole",
     "https://zenn.dev/shintaroamaike/articles/1d73c017285bdc",
     "https://zenn.dev/shoebill_dev27/articles/ai-code-silent-bugs-checklist",
     "https://zenn.dev/shoebill_dev27/books/python-pitfalls",
@@ -1392,5 +1396,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-25T16:32:47.471186+00:00"
+  "last_checked": "2026-10-25T19:44:23.366721+00:00"
 }
