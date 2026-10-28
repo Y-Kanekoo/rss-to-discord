@@ -386,6 +386,7 @@
     "https://sqripts.com/?p=106520",
     "https://sqripts.com/?p=106538",
     "https://sqripts.com/?p=106586",
+    "https://sqripts.com/?p=106597",
     "https://tech-blog.tabelog.com/entry/ai-e2e-test-autonomous-generation",
     "https://tech.layerx.co.jp/entry/2026/05/taming-llm-overquestioning",
     "https://tech.layerx.co.jp/entry/articulatin_quality",
@@ -596,6 +597,7 @@
     "https://zenn.dev/codecraft/articles/fx-bot-exit-check-frequency-freeze",
     "https://zenn.dev/codecraft/articles/gmo-5min-cache-day-boundary-6am",
     "https://zenn.dev/codecraft/articles/index-open-is-not-tradeable",
+    "https://zenn.dev/codecraft/articles/intraday-4h-bar-boundary-luck",
     "https://zenn.dev/codecraft/articles/jp-stock-197-ideas-all-failed",
     "https://zenn.dev/codecraft/articles/nikkei-200day-filter-61years",
     "https://zenn.dev/coffee_break/books/bi-dashboard-test-design",
@@ -862,6 +864,7 @@
     "https://zenn.dev/kinzal/articles/80d230f075f4b1",
     "https://zenn.dev/kipcop/articles/f35-vue-20-vitest",
     "https://zenn.dev/kipcop/articles/f35-vue-21-component-testing",
+    "https://zenn.dev/kipcop/articles/f35-vue-22-msw",
     "https://zenn.dev/kiri_kunn/articles/47cec7b22e4ab1",
     "https://zenn.dev/kiribako_dev/articles/eval-pipeline-stale-detector",
     "https://zenn.dev/kiritani_r/articles/a16f25f3390246",
@@ -1413,5 +1416,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-28T00:34:41.954808+00:00"
+  "last_checked": "2026-10-28T06:54:20.599138+00:00"
 }
