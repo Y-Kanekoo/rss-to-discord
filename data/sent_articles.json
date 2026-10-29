@@ -278,6 +278,7 @@
     "https://prtimes.jp/main/html/rd/p/000000058.000054604.html",
     "https://prtimes.jp/main/html/rd/p/000000059.000054604.html",
     "https://prtimes.jp/main/html/rd/p/000000060.000054604.html",
+    "https://prtimes.jp/main/html/rd/p/000000061.000054604.html",
     "https://qiita.com/0903osa/items/053eb1bcbca9ad1b5b55",
     "https://qiita.com/0903osa/items/9545b46aa29fc3676553",
     "https://qiita.com/0903osa/items/e9f2dc5906c9c0ac635c",
@@ -508,6 +509,7 @@
     "https://zenn.dev/aldagram_tech/articles/4aea4b13671ae3",
     "https://zenn.dev/aldagram_tech/articles/b34049a1af68ec",
     "https://zenn.dev/aldagram_tech/articles/c407ae672c9c0e",
+    "https://zenn.dev/aldagram_tech/articles/c49627d2b063b8",
     "https://zenn.dev/aldagram_tech/articles/e3f8d39f6eb5a1",
     "https://zenn.dev/alpaca_village/articles/alpaca-fw-06-traceability",
     "https://zenn.dev/alpaca_village/articles/system-development-work-02-arpca-overview",
@@ -776,6 +778,7 @@
     "https://zenn.dev/imyaaiteam/articles/a5840ee692a064",
     "https://zenn.dev/indigo165e83/articles/f9aae4116a105b",
     "https://zenn.dev/inflab/articles/927ba40fedd02e",
+    "https://zenn.dev/inflab/articles/c45d9174219d8a",
     "https://zenn.dev/innovation/articles/e84f8ccca8e6da",
     "https://zenn.dev/ino_h/articles/2026-06-06-llm-app-aws-spec-driven-guardrails",
     "https://zenn.dev/ishizakahiroshi/articles/20261005-dots-dev-flow",
@@ -842,6 +845,7 @@
     "https://zenn.dev/kanta13jp1/articles/astra-price-boundary-fifteen-cases",
     "https://zenn.dev/kanta13jp1/articles/flutter-adaptive-inbox-dismissal",
     "https://zenn.dev/karamage/articles/4788b0b791ef2d",
+    "https://zenn.dev/karamage/articles/ac71f1c89c73ff",
     "https://zenn.dev/karamage/articles/bbc1d1861f2bab",
     "https://zenn.dev/karamem0/articles/2026_05_09_090000",
     "https://zenn.dev/kauche/articles/722e642a6692a1",
@@ -914,6 +918,7 @@
     "https://zenn.dev/kswr/books/opt_production",
     "https://zenn.dev/kt3k/articles/b41b78ba6ae65f",
     "https://zenn.dev/ktg/articles/cookiejar-tips",
+    "https://zenn.dev/kuroikotech/articles/pwnbridge-release-tests-toml",
     "https://zenn.dev/kuromame_kunn/articles/4311c6161286ae",
     "https://zenn.dev/kuroniku_qa/articles/4dddf2cadd8e9e",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -1238,6 +1243,7 @@
     "https://zenn.dev/sonicmoov/articles/design-standardization-project-collaboration",
     "https://zenn.dev/sorapenguin/articles/ai-agent-qa-story-2026-08",
     "https://zenn.dev/sotakobayashi/articles/prereg-discipline-solo-research",
+    "https://zenn.dev/sre_holdings/articles/d4acb079680a79",
     "https://zenn.dev/stadium/articles/5ec31c631f574d",
     "https://zenn.dev/stagea_tech/articles/20260824-pj14-devlog",
     "https://zenn.dev/stockdev_sho/articles/54c3430b36811e",
@@ -1339,6 +1345,7 @@
     "https://zenn.dev/ukintech/articles/build-time-safety-invariants",
     "https://zenn.dev/ukintech/articles/jimny-parts-regex-classification-bug",
     "https://zenn.dev/ukintech/articles/jsx-japanese-stray-space",
+    "https://zenn.dev/ukir/articles/0627f644b14a3f",
     "https://zenn.dev/untactit/articles/9e7ed2a4c5f818",
     "https://zenn.dev/urario/articles/deterministic-output",
     "https://zenn.dev/urario/articles/tests-that-pass",
@@ -1423,5 +1430,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-29T05:58:20.011919+00:00"
+  "last_checked": "2026-10-29T13:17:45.291814+00:00"
 }
