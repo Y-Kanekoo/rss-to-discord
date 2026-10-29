@@ -389,6 +389,7 @@
     "https://sqripts.com/?p=106538",
     "https://sqripts.com/?p=106586",
     "https://sqripts.com/?p=106597",
+    "https://sqripts.com/?p=106603",
     "https://tech-blog.tabelog.com/entry/ai-e2e-test-autonomous-generation",
     "https://tech.layerx.co.jp/entry/2026/05/taming-llm-overquestioning",
     "https://tech.layerx.co.jp/entry/articulatin_quality",
@@ -868,6 +869,7 @@
     "https://zenn.dev/kipcop/articles/f35-vue-20-vitest",
     "https://zenn.dev/kipcop/articles/f35-vue-21-component-testing",
     "https://zenn.dev/kipcop/articles/f35-vue-22-msw",
+    "https://zenn.dev/kipcop/articles/f35-vue-23-playwright",
     "https://zenn.dev/kiri_kunn/articles/47cec7b22e4ab1",
     "https://zenn.dev/kiribako_dev/articles/eval-pipeline-stale-detector",
     "https://zenn.dev/kiritani_r/articles/a16f25f3390246",
@@ -1421,5 +1423,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-29T00:03:26.293077+00:00"
+  "last_checked": "2026-10-29T05:58:20.011919+00:00"
 }
