@@ -505,6 +505,7 @@
     "https://zenn.dev/akihide/articles/5e980f31168005",
     "https://zenn.dev/akihide/articles/b01e87fbc81a98",
     "https://zenn.dev/akinori901/articles/20260911-plan033",
+    "https://zenn.dev/akinori901/articles/20260914-00mu0itx",
     "https://zenn.dev/akira_papa/articles/aae2458b546167",
     "https://zenn.dev/akring/articles/11e668bae28707",
     "https://zenn.dev/akring/articles/2bca6f38f3a347",
@@ -990,6 +991,7 @@
     "https://zenn.dev/massanjp/articles/fd731a347dc7b4",
     "https://zenn.dev/matsutake_prgrm/articles/the-coincidence-promoted-a-wrong-explanation",
     "https://zenn.dev/matsutake_prgrm/articles/unit-tests-pass-but-broken",
+    "https://zenn.dev/mayumi_kondou/articles/ad1682dc37209d",
     "https://zenn.dev/mediba/articles/8f9f3ae3fb17d9",
     "https://zenn.dev/melty_inc/articles/ba1b423f323354",
     "https://zenn.dev/menshiba/articles/1975ae40e544a8",
@@ -1141,6 +1143,7 @@
     "https://zenn.dev/pacific_creator/articles/96d74391256936",
     "https://zenn.dev/paledde/articles/2ea792d4dff7d1",
     "https://zenn.dev/paledde/articles/bcfa820fbbdced",
+    "https://zenn.dev/paraponera/articles/2026-10-30-anxious-with-ai-implementation",
     "https://zenn.dev/paseri_kurosawa/articles/db88dc7365511c",
     "https://zenn.dev/pdfractal/articles/9a3f002d6cc448",
     "https://zenn.dev/pepabo/articles/slack-review-notify-off-hours-defer",
@@ -1269,6 +1272,7 @@
     "https://zenn.dev/swdrk/articles/a18eca9e53d582",
     "https://zenn.dev/syuya2036/articles/gpui-testing-guide",
     "https://zenn.dev/t_kuni_0/articles/ad06a19a565023",
+    "https://zenn.dev/taito0816/articles/iot-sensor-data-testing",
     "https://zenn.dev/takaaki/articles/growing-tests-for-untested-code",
     "https://zenn.dev/takabo/articles/ai-guardrails-with-tests",
     "https://zenn.dev/takeyaqa/articles/introducing-design-pairwise-tests",
@@ -1385,6 +1389,7 @@
     "https://zenn.dev/yamato_snow/articles/claude-code-codex-harness-engineering",
     "https://zenn.dev/yamato_snow/articles/llm-as-judge-debugging",
     "https://zenn.dev/yamitake/articles/deepeval-llm-evaluation-getting-started",
+    "https://zenn.dev/yamitake/articles/messy-code-test-driven",
     "https://zenn.dev/yasuflatland/articles/65ff4247674c04",
     "https://zenn.dev/yasuflatland/articles/c05ea63986d70e",
     "https://zenn.dev/yasuhiro_test/articles/65eba13298c9c2",
@@ -1435,5 +1440,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-30T02:42:19.420108+00:00"
+  "last_checked": "2026-10-30T10:12:08.852578+00:00"
 }
