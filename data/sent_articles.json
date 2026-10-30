@@ -108,6 +108,7 @@
     "https://arxiv.org/abs/2610.25233v1",
     "https://arxiv.org/abs/2610.26889v1",
     "https://arxiv.org/abs/2610.29549v1",
+    "https://arxiv.org/abs/2610.38438v1",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -223,6 +224,7 @@
     "https://note.com/ms_tsu_tsu/n/n29a93ee4a02b",
     "https://note.com/ms_tsu_tsu/n/n82119bc31523",
     "https://note.com/ms_tsu_tsu/n/nab01e79ed9fa",
+    "https://note.com/nkc_ta/n/n052847e09f3d",
     "https://note.com/nkc_ta/n/n8ed5b78567d6",
     "https://note.com/nkc_ta/n/nec9a7638f842",
     "https://note.com/pika123/n/n6173ce659c9b",
@@ -391,6 +393,7 @@
     "https://sqripts.com/?p=106586",
     "https://sqripts.com/?p=106597",
     "https://sqripts.com/?p=106603",
+    "https://sqripts.com/?p=106615",
     "https://tech-blog.tabelog.com/entry/ai-e2e-test-autonomous-generation",
     "https://tech.layerx.co.jp/entry/2026/05/taming-llm-overquestioning",
     "https://tech.layerx.co.jp/entry/articulatin_quality",
@@ -804,6 +807,7 @@
     "https://zenn.dev/jinno_ai/articles/poc-success-metrics",
     "https://zenn.dev/jisaku_net/articles/3d-knee-bend-foot-pelvis-direction",
     "https://zenn.dev/jisaku_net/articles/cloudflare-oauth-fetch-redirect-manual",
+    "https://zenn.dev/jisaku_net/articles/fetch-http200-invalid-json-null",
     "https://zenn.dev/jisaku_net/articles/json-import-stable-id-local-edits",
     "https://zenn.dev/jisaku_net/articles/localstorage-multiple-keys-recovery",
     "https://zenn.dev/jisaku_net/articles/threejs-needle-mesh-tip-clearance",
@@ -827,6 +831,7 @@
     "https://zenn.dev/junsuke0825/articles/pc-monitor-2026-04-14",
     "https://zenn.dev/jutaro0428/articles/911bdeafd49c57",
     "https://zenn.dev/jwcalendar/articles/7a88ee9a4eb264",
+    "https://zenn.dev/k__k/articles/261f30e9c33d30",
     "https://zenn.dev/k_iijima/articles/2de917c5b6c953",
     "https://zenn.dev/k_iijima/articles/c93db4323345ec",
     "https://zenn.dev/k_sak/articles/b45763b0cb9434",
@@ -1430,5 +1435,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-29T23:22:12.254802+00:00"
+  "last_checked": "2026-10-30T02:42:19.420108+00:00"
 }
