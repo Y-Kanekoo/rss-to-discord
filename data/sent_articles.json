@@ -767,6 +767,7 @@
     "https://zenn.dev/hk_work/articles/guess-volume-from-book-title",
     "https://zenn.dev/hk_work/articles/sqflite-migration-test-old-schema",
     "https://zenn.dev/hokan_blog/articles/20260306-test-brush-up",
+    "https://zenn.dev/horibe/articles/build-the-ruler-before-the-model",
     "https://zenn.dev/horibe/articles/pronunciation-api-null-traps",
     "https://zenn.dev/horibe/articles/verify-llm-output-mechanically",
     "https://zenn.dev/horicchy/articles/401fe5e9e36fef",
@@ -818,6 +819,7 @@
     "https://zenn.dev/jissokulog/articles/498e691f7f287d",
     "https://zenn.dev/jissokulog/books/80bd312adb868e",
     "https://zenn.dev/jodycraft/articles/5f660b4eba9ec1",
+    "https://zenn.dev/joemike/articles/supabase-playwright-test-data-pollution-2026",
     "https://zenn.dev/joinclass/articles/claude-code-computer-use-review",
     "https://zenn.dev/jojojo_no_jo/articles/20260319-atn27",
     "https://zenn.dev/jojojo_no_jo/articles/how-to-enjoy-jasst26niigata",
@@ -1440,5 +1442,5 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-30T10:12:08.852578+00:00"
+  "last_checked": "2026-10-30T16:43:41.558519+00:00"
 }
