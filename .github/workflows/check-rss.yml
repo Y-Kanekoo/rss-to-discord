@@ -43,6 +43,10 @@ jobs:
         id: notify
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_BLOG: ${{ secrets.DISCORD_WEBHOOK_BLOG }}
+          DISCORD_WEBHOOK_RELEASE: ${{ secrets.DISCORD_WEBHOOK_RELEASE }}
+          DISCORD_WEBHOOK_ARXIV: ${{ secrets.DISCORD_WEBHOOK_ARXIV }}
+          DISCORD_WEBHOOK_VIDEO: ${{ secrets.DISCORD_WEBHOOK_VIDEO }}
         run: uv run --locked --no-dev python scripts/check_rss.py
 
       - name: 成功済みの状態を競合安全にコミット

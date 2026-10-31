@@ -38,22 +38,38 @@ def git(root: Path, *args: str) -> str:
 def merge_states(remote: dict, local: dict) -> dict:
     validate_state(remote)
     validate_state(local)
-    merged = dict(remote)
-    for key, value in local.items():
-        if key in ('sent_guids', 'last_checked'):
-            continue
-        if key in remote and remote[key] != value:
-            raise PersistenceError('state_metadata_conflict')
-        merged[key] = value
-    merged['sent_guids'] = sorted(set(remote['sent_guids']) | set(local['sent_guids']))
-    checked = [s['last_checked'] for s in (remote, local) if s['last_checked'] is not None]
-    try:
-        def timestamp(value):
-            parsed = datetime.fromisoformat(value)
-            return parsed.replace(tzinfo=timezone.utc) if parsed.tzinfo is None else parsed
-        merged['last_checked'] = max(checked, key=timestamp) if checked else None
-    except ValueError as error:
-        raise PersistenceError('state_timestamp_invalid') from error
+    def merge_snapshot(first: dict, second: dict, *, root: bool = False) -> dict:
+        merged = dict(first)
+        special = ('sent_guids', 'last_checked', 'version', 'feeds') if root else ('sent_guids', 'last_checked')
+        for key, value in second.items():
+            if key in special:
+                continue
+            if key in first and first[key] != value:
+                raise PersistenceError('state_metadata_conflict')
+            merged[key] = value
+        merged['sent_guids'] = sorted(set(first['sent_guids']) | set(second['sent_guids']))
+        checked = [s['last_checked'] for s in (first, second) if s['last_checked'] is not None]
+        try:
+            def timestamp(value):
+                parsed = datetime.fromisoformat(value)
+                return parsed.replace(tzinfo=timezone.utc) if parsed.tzinfo is None else parsed
+            merged['last_checked'] = max(checked, key=timestamp) if checked else None
+        except ValueError as error:
+            raise PersistenceError('state_timestamp_invalid') from error
+        return merged
+
+    merged = merge_snapshot(remote, local, root=True)
+    if 'version' in remote or 'version' in local:
+        merged['version'] = 2
+        remote_feeds = remote.get('feeds', {})
+        local_feeds = local.get('feeds', {})
+        merged['feeds'] = dict(remote_feeds)
+        for feed_id, feed_state in local_feeds.items():
+            if feed_id in remote_feeds:
+                merged['feeds'][feed_id] = merge_snapshot(remote_feeds[feed_id], feed_state)
+            else:
+                merged['feeds'][feed_id] = feed_state
+    validate_state(merged)
     return merged
 
 

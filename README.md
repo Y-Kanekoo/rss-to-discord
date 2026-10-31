@@ -1,250 +1,77 @@
 # RSS to Discord 通知
 
-テスト・QA関連ブログの[RSSフィード](https://yoshikiito.github.io/test-qa-rss-feed/)を毎時23分にチェックし、新着記事をDiscordに通知します。
+`config/feeds.yml` に登録したRSS/Atomフィードの新着を、毎時23分にDiscordへ通知します。通知処理はGitHub Actionsのmainブランチ限定です。
 
-```mermaid
-flowchart LR
-    RSS[📡 RSSフィード] -->|毎時チェック| Actions[⚙️ GitHub Actions]
-    Actions -->|新着記事を検知| Discord[💬 Discord]
-    Actions -->|送信済みIDを記録| State[📄 sent_articles.json]
-```
+## 対応フィード
 
-## 前提条件
+| ID | 内容 | 通知先のSecret |
+|---|---|---|
+| `ja-blog` | テスト・QAブログ | `DISCORD_WEBHOOK_BLOG` または従来の `DISCORD_WEBHOOK_URL` |
+| `release-playwright` | Playwrightリリース | `DISCORD_WEBHOOK_RELEASE` |
+| `release-cypress` | Cypressリリース | `DISCORD_WEBHOOK_RELEASE` |
+| `release-pytest` | pytestリリース | `DISCORD_WEBHOOK_RELEASE` |
+| `release-k6` | k6リリース | `DISCORD_WEBHOOK_RELEASE` |
+| `release-playwright-python` | Playwright for Pythonリリース | `DISCORD_WEBHOOK_RELEASE` |
+| `arxiv-testing` | arXivのSoftware Engineering論文からテスト関連を選択 | `DISCORD_WEBHOOK_ARXIV` |
+| `youtube-jasst` | JaSST動画 | `DISCORD_WEBHOOK_VIDEO` |
 
-- GitHubアカウント
-- Discordサーバーの管理権限（Webhook作成に必要）
+`DISCORD_WEBHOOK_URL` だけが設定されている既存環境では、従来どおり `ja-blog` のみを処理します。追加カテゴリは対応するSecretを設定すると有効になります。未設定の追加カテゴリは `WARNING: missing_webhook` を出してスキップします。JaSST動画のチャンネルIDは `config/feeds.yml` に記載しています。
 
 ## セットアップ
 
-### 1. Discord Webhookの作成
+1. Discordの通知先チャンネルでWebhookを作成します。
+2. GitHubリポジトリの **Settings → Secrets and variables → Actions** に、上表のSecretを登録します。既存の `DISCORD_WEBHOOK_URL` は引き続き使用できます。
+3. **Actions → Check RSS Feed → Run workflow** でmainブランチから実行します。実行すると実際に投稿・状態更新が発生します。
 
-1. Discordで通知先チャンネルの設定（歯車アイコン）を開く
-2. **連携サービス** → **ウェブフック** → **新しいウェブフック** をクリック
-3. 名前を設定（例: `RSS通知Bot`）
-4. **ウェブフックURLをコピー** をクリック
+各カテゴリを別チャンネルへ送る場合は、カテゴリごとにWebhookを作成してください。Secretの値をコードや設定ファイルに書かないでください。
 
-### 2. GitHubリポジトリの設定
+## 処理と状態
 
-1. このリポジトリをForkまたはクローンしてGitHubにプッシュ
-2. **Settings** → **Secrets and variables** → **Actions** を開く
-3. **New repository secret** をクリック
-4. Name: `DISCORD_WEBHOOK_URL`、Secret: コピーしたWebhook URL を入力
+1. 有効なフィードとWebhookを選び、`data/sent_articles.json` を読み込みます。
+2. フィードごとに未送信GUIDを選び、古い順に処理します。初回はフィードごとに最新5件、arXivとYouTubeは最新3件を送信対象とし、除いた過去分のGUIDも先に記録します。
+3. arXivはタイトルと概要のテスト関連語をスコアで判定します。Embedはカテゴリ別の色を使い、リリース名・出典・日時・サムネイルを表示します。
+4. 送信前に状態を原子的に保存できることを確認し、Discordの2xx応答を得た記事だけを各送信直後に保存します。429は待機値が0〜60秒のときだけ1回再試行します。
+5. あるフィードの取得や配信が失敗しても他フィードの処理を続け、全体はexit 1にします。保存失敗時は以後の送信を止めます。
 
-### 3. 動作確認
+従来形式の `sent_guids` と `last_checked` は `ja-blog` の履歴としてそのまま読み込みます。フィードを正常に取得できた実行で `version: 2` とフィード別の `feeds` を追加します。既存の状態ファイルを手作業で変更する必要はありません。`ja-blog` の履歴は互換性のためトップレベルに残ります。他フィードは `feeds.<id>.sent_guids` と `last_checked` を使います。
 
-**Actions** → **Check RSS Feed** → **Run workflow** で手動実行し、Discordに通知が届くことを確認してください。
+stdout末尾のJSONには `status`, `selected`, `sent`, `failed`, `delivery_unknown`, `unpersisted_sent`, `errors` を出力します。Actionsではフィード別の処理結果をジョブサマリにも書きます。例外本文、Webhook URL、フィードURL、応答本文、記事タイトル、GUIDはログに出しません。
 
-## 仕組み
-
-| ステップ | 処理内容 |
-|---|---|
-| 1. トリガー | GitHub Actionsが毎時23分に起動（手動実行も可） |
-| 2. 状態読み込み | `data/sent_articles.json` から送信済み記事IDを取得 |
-| 3. RSS取得 | フィードをパースし、未送信の記事を抽出 |
-| 4. Discord送信 | Embed形式で送信（タイトル・リンク・要約・サムネイル付き） |
-| 5. 状態保存 | 送信前と各成功直後に原子的保存。部分失敗でも成功分をmainへ競合安全にコミット・プッシュ |
-
-- 初回実行時は最新5件のみ送信（チャンネルが埋まるのを防止）
-- 送信失敗した記事は送信済み扱いにせず、フィードに残っていれば次回実行で再試行
-- 同じGUIDは1回の実行で1度のみ処理。429のみ最大1回再試行（待機は0〜60秒）
-- 部分失敗・状態破損・設定不足は非ゼロ終了。stdout末尾のJSONで結果を判定
-- タイムアウト等は配信済みか不明。次回の再試行で重複し得るため、exactly-onceは保証しません
-- 通知ワークフローはmain限定。通常のpush/PRで通知は実行されません
+部分失敗・状態破損・ブログWebhook不足は非ゼロ終了します。通知stepが失敗しても `persist_state.py` が成功済みの状態を最新mainにGUID和集合で反映し、jobは失敗のままです。永続化失敗時は検証済み状態だけを7日間の回復artifactに保管します。タイムアウトなどは配送結果が不明で、exactly-onceは保証できません。
 
 ## カスタマイズ
 
-`scripts/check_rss.py` の定数を編集してください。
+フィードの追加・URL・カテゴリ・通知先環境変数・初回上限・送信間隔は `config/feeds.yml` を編集します。フィードIDは一意にし、追加カテゴリ用WebhookのSecretも設定してください。頻度は `.github/workflows/check-rss.yml` のcronを編集します。
 
-| 定数 | デフォルト | 説明 |
-|---|---|---|
-| `RSS_URL` | テスト・QAフィード | 監視するRSSフィードのURL |
-| `MAX_ARTICLES_FIRST_RUN` | `5` | 初回実行時の最大送信数 |
-| `RATE_LIMIT_INTERVAL` | `2.0` | 送信間隔（秒） |
-| `DESCRIPTION_MAX_LENGTH` | `300` | 要約の最大文字数 |
+## ローカル開発
 
-チェック頻度を変更する場合は `.github/workflows/check-rss.yml` の cron 式を編集してください。
+Python 3.12と [uv 0.12.19](https://docs.astral.sh/uv/getting-started/installation/) を使います。依存は `pyproject.toml` と `uv.lock` で固定し、PyPIとuv既定の `first-index` 方針を使います。Requestsは2.33.0です。依存を変えるときは宣言を編集して `uv lock` を実行します。
 
-```yaml
-# 例: 6時間ごと
-- cron: '0 */6 * * *'
+```sh
+uv sync --locked
+uv run python -m unittest discover -s tests -v
 ```
 
-## ローカル開発と依存管理
+テストは通信を遮断し、実際のWebhookやSecretsを使いません。送信・状態保存をせずに取得件数を確認する場合は明示的なdry-runを使います。
 
-Python 3.12 と [uv 0.12.19](https://docs.astral.sh/uv/getting-started/installation/) を使います。
-依存の宣言は `pyproject.toml`、解決済みバージョンと配布物のハッシュは `uv.lock` で管理します。
-旧 `requirements.txt` の直接依存を `pyproject.toml` に移し、Requestsは別のセキュリティ更新として2.33.0に更新しています。
-
-```bash
-uv sync --locked --no-dev
-uv run --locked --no-dev python -m unittest discover -s tests -v
-```
-
-ユニットテストは外部通信をブロックし、RSS取得・Discord送信をモックに置き換えます。
-実際のWebhook URLやトークンは不要です。CIのテストジョブにもSecretsを渡しません。
-
-送信せず確認する場合は、明示的なdry-runを使います。RSS取得は行いますが、
-Webhook不要でDiscord送信・状態更新は行いません。
-
-```bash
+```sh
 uv run --locked --no-dev python scripts/check_rss.py --dry-run
 ```
 
-実運用の通知をローカルで実行する場合のみ、事前に `DISCORD_WEBHOOK_URL` を設定して実行します。
-このコマンドはDiscordへ送信し、状態ファイルも更新します。
+実際に送信する場合だけWebhook環境変数を設定し、`uv run --locked --no-dev python scripts/check_rss.py` を実行します。状態ファイルも更新されます。
 
-```bash
-uv run --locked --no-dev python scripts/check_rss.py
-```
-
-依存を意図的に変更するときは `pyproject.toml` を変更して `uv lock` を実行し、
-両ファイルの差分とユニットテストを確認してください。通常のCI・通知処理では `--locked` により
-宣言とlockの不一致をエラーにし、暗黙の更新を防ぎます。
-PyPIとuv既定の `first-index` 方針を使い、追加indexや認証情報は設定しません。
-
-uvへの移行だけでは脆弱な依存や悪意あるパッケージは安全になりません。
-Requestsは2.33.0へ更新し、CVE-2024-47081とCVE-2026-25645の対象範囲を外しています。
-依存・実行環境の継続的な確認は引き続き必要です。
-詳細は [Requestsの公式セキュリティ情報](https://github.com/psf/requests/security/advisories) を参照してください。
+uvへの移行だけで依存が安全になるわけではありません。Requests 2.33.0はCVE-2024-47081とCVE-2026-25645の対象範囲を外しています。詳細は[公式のセキュリティ情報](https://github.com/psf/requests/security/advisories)を参照してください。
 
 ## トラブルシューティング
 
-| 症状 | 原因と対処 |
+| コード・症状 | 対処 |
 |---|---|
-| 通知が来ない | Actionsタブでワークフローの実行履歴を確認。赤い×ならログを見る |
-| `missing_webhook` | GitHub Secretsの設定を確認（名前が正確に `DISCORD_WEBHOOK_URL` か） |
-| `state_unreadable_or_invalid` | 送信せず停止します。空状態へリセットせず、正常な履歴・最新の状態・回復artifactを比較し、送信済みGUIDを失わないよう手動で復旧 |
-| `delivery_unknown` | 応答を確認できず配信結果が不明。Discordの実投稿を確認してから必要な復旧を判断 |
-| `state_save_failed_after_send` | 成功応答後のローカル保存失敗。次の送信は停止し、`unpersisted_sent` を報告。Discordを確認して状態を修復 |
-| `state_persistence_failed` | mainへの保存に失敗。Actionsの `sent-state-recovery-<run_id>` artifact（7日間）を確認し、最新mainの状態とのGUID和集合で復旧。古いsnapshotで上書きしない |
-| Actionsが実行されない | リポジトリの **Settings** → **Actions** → **General** で Actions が有効か確認 |
+| `missing_webhook` | ブログ用の `DISCORD_WEBHOOK_BLOG` または `DISCORD_WEBHOOK_URL` を設定 |
+| `WARNING: missing_webhook` | 対応する追加カテゴリのSecretを設定すると処理開始 |
+| `feeds_config_invalid` | `config/feeds.yml` のID、URL、カテゴリ、設定値を確認 |
+| `state_unreadable_or_invalid` | 空状態へリセットせず、正常な履歴と実投稿を照合して復旧 |
+| `delivery_unknown` | Discordの実投稿を確認してから再実行・復旧を判断 |
+| `state_save_failed_after_send` | 以後の送信は停止。`unpersisted_sent` と実投稿を照合して状態を修復 |
+| `state_persistence_failed` | `sent-state-recovery-<run_id>` artifactと最新mainのGUID和集合を確認。古いsnapshotで上書きしない |
 
-失敗時の意味・復旧条件は [ADR 001](docs/adr/001-failure-and-state.md)、
-検証範囲は [機能別テスト方針](docs/testing-failure-contract.md) を参照してください。
-
-## 設計図
-
-<details>
-<summary>クラス図（クリックで展開）</summary>
-
-```mermaid
-classDiagram
-    class GitHubActions {
-        +cron: 毎時23分
-        +workflow_dispatch: 手動実行
-        +concurrency: rss-check
-        checkout()
-        setup_python()
-        run_script()
-        commit_and_push()
-    }
-
-    class CheckRSS {
-        -RSS_URL: str
-        -STATE_FILE: str
-        -MAX_ARTICLES_FIRST_RUN: int
-        -RATE_LIMIT_INTERVAL: float
-        +main()
-        +load_state(path) dict
-        +save_state(path, state)
-        +fetch_feed(url) FeedParserDict
-        +build_embed(entry) dict
-        +send_to_discord(webhook_url, embed)
-    }
-
-    class State {
-        +sent_guids: list~str~
-        +last_checked: str
-    }
-
-    class RSSEntry {
-        +title: str
-        +link: str
-        +guid: str
-        +published: str
-        +description: str
-        +enclosures: list
-    }
-
-    class DiscordEmbed {
-        +title: str
-        +url: str
-        +description: str
-        +color: int
-        +footer: dict
-        +timestamp: str
-        +thumbnail: dict
-    }
-
-    class DiscordWebhook {
-        +url: str
-        +post(embeds)
-        +レート制限: 30msg/min
-    }
-
-    class RSSFeed {
-        +entries: list~RSSEntry~
-        +bozo: bool
-    }
-
-    GitHubActions --> CheckRSS : 実行
-    CheckRSS --> State : 読み書き
-    CheckRSS --> RSSFeed : フェッチ
-    RSSFeed "1" *-- "*" RSSEntry
-    CheckRSS --> DiscordEmbed : 構築
-    RSSEntry ..> DiscordEmbed : 変換
-    CheckRSS --> DiscordWebhook : 送信
-    DiscordWebhook --> DiscordEmbed : 受信
-```
-
-</details>
-
-<details>
-<summary>シーケンス図（クリックで展開）</summary>
-
-```mermaid
-sequenceDiagram
-    participant Cron as GitHub Actions<br/>(毎時23分)
-    participant Script as check_rss.py
-    participant JSON as sent_articles.json
-    participant RSS as RSSフィード<br/>(GitHub Pages)
-    participant Discord as Discord Webhook
-
-    Cron->>Script: python scripts/check_rss.py
-
-    Script->>JSON: load_state()
-    JSON-->>Script: sent_guids, last_checked
-
-    Script->>RSS: feedparser.parse(RSS_URL)
-    RSS-->>Script: feed.entries
-
-    Script->>Script: 新着記事を抽出<br/>(guid ∉ sent_guids)
-
-    alt 初回実行 かつ 新着 > 5件
-        Script->>Script: 最新5件のみ送信対象<br/>残りはguid記録のみ
-    end
-
-    loop 新着記事ごと
-        Script->>Script: build_embed(entry)<br/>タイトル分離・要約切り詰め
-        Script->>Discord: POST /webhooks/{id}/{token}<br/>{"embeds": [embed]}
-        alt 成功 (200)
-            Discord-->>Script: OK
-            Script->>Script: sent_guidsにguidを追加
-        else レート制限 (429)
-            Discord-->>Script: retry_after
-            Script->>Script: retry_after秒待機
-            Script->>Discord: 再送信
-            Discord-->>Script: OK
-        else エラー (4xx/5xx)
-            Discord-->>Script: エラー
-            Script->>Script: スキップ（次回リトライ）
-        end
-        Script->>Script: 2秒待機
-    end
-
-    Script->>JSON: save_state()<br/>sent_guids + last_checked更新
-
-    Cron->>Cron: git add → commit → push<br/>(変更がある場合のみ)
-```
-
-</details>
+失敗時の意味と復旧条件は[ADR 001](docs/adr/001-failure-and-state.md)、検証範囲は[機能別テスト方針](docs/testing-failure-contract.md)を参照してください。

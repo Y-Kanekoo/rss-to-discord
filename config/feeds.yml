@@ -1,0 +1,62 @@
+defaults:
+  max_articles_first_run: 5
+  rate_limit_interval: 2.0
+
+feeds:
+  - id: ja-blog
+    name: "テスト・QAブログ（日本語）"
+    url: "https://yoshikiito.github.io/test-qa-rss-feed/feeds/rss.xml"
+    category: ja_blog
+    webhook_env: DISCORD_WEBHOOK_BLOG
+    enabled: true
+
+  - id: release-playwright
+    name: "Playwright"
+    url: "https://github.com/microsoft/playwright/releases.atom"
+    category: release
+    webhook_env: DISCORD_WEBHOOK_RELEASE
+    enabled: true
+
+  - id: release-cypress
+    name: "Cypress"
+    url: "https://github.com/cypress-io/cypress/releases.atom"
+    category: release
+    webhook_env: DISCORD_WEBHOOK_RELEASE
+    enabled: true
+
+  - id: release-pytest
+    name: "pytest"
+    url: "https://github.com/pytest-dev/pytest/releases.atom"
+    category: release
+    webhook_env: DISCORD_WEBHOOK_RELEASE
+    enabled: true
+
+  - id: release-k6
+    name: "k6"
+    url: "https://github.com/grafana/k6/releases.atom"
+    category: release
+    webhook_env: DISCORD_WEBHOOK_RELEASE
+    enabled: true
+
+  - id: release-playwright-python
+    name: "Playwright for Python"
+    url: "https://github.com/microsoft/playwright-python/releases.atom"
+    category: release
+    webhook_env: DISCORD_WEBHOOK_RELEASE
+    enabled: true
+
+  - id: arxiv-testing
+    name: "arXiv: Software Testing"
+    url: "https://rss.arxiv.org/rss/cs.SE"
+    category: arxiv
+    webhook_env: DISCORD_WEBHOOK_ARXIV
+    enabled: true
+    max_articles_first_run: 3
+
+  - id: youtube-jasst
+    name: "JaSST動画"
+    url: "https://www.youtube.com/feeds/videos.xml?channel_id=UCKNO4SmQ7KRs4i2v_fLmCfA"
+    category: youtube
+    webhook_env: DISCORD_WEBHOOK_VIDEO
+    enabled: true
+    max_articles_first_run: 3
