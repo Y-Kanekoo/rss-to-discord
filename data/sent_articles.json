@@ -450,6 +450,7 @@
     "https://wacate.jp/?p=5202",
     "https://wacate.jp/?p=5210",
     "https://wacate.jp/?p=5228",
+    "https://wacate.jp/?p=5262",
     "https://www.m3tech.blog/entry/2026/04/17/150000",
     "https://www.m3tech.blog/entry/2026/04/20/090035",
     "https://www.m3tech.blog/entry/2026/04/30/110000",
@@ -1443,5 +1444,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-10-31T08:30:47.630414+00:00"
+  "last_checked": "2026-10-31T15:23:20.889556+00:00",
+  "version": 2,
+  "feeds": {}
 }
