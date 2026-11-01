@@ -542,6 +542,7 @@
     "https://zenn.dev/atamaplus/articles/ef919329f4cc12",
     "https://zenn.dev/atlassystemtech/articles/33c863d520a15e",
     "https://zenn.dev/atlassystemtech/articles/5df7750c7e8250",
+    "https://zenn.dev/atsushi_apps/articles/ai-xcodebuild-test-tips",
     "https://zenn.dev/au/articles/realistic-coding-test",
     "https://zenn.dev/au/articles/tdd-from-issue-to-test",
     "https://zenn.dev/auder/articles/0607338da02143",
@@ -667,6 +668,7 @@
     "https://zenn.dev/ekusibhrm/articles/ai-auth-matrix-bug",
     "https://zenn.dev/ekusibhrm/articles/article_mutation_test",
     "https://zenn.dev/ekusibhrm/books/laravel-claude-code-guide",
+    "https://zenn.dev/elletech/articles/bbadfc622f2cd2",
     "https://zenn.dev/elyza/articles/954e7c76e68340",
     "https://zenn.dev/ereignis121/articles/400809e7ef3d5f",
     "https://zenn.dev/erenoa6622/articles/chi-routepattern-unresolved-in-middleware",
@@ -1294,6 +1296,7 @@
     "https://zenn.dev/tauridev/articles/numbers-dont-match-4-layers",
     "https://zenn.dev/team_lab/articles/b1ecb06d94a3f6",
     "https://zenn.dev/techquant/articles/extractor-precondition-independent-verifier",
+    "https://zenn.dev/techstudiolab/articles/review-ai-generated-code-business-assumptions",
     "https://zenn.dev/test123/articles/68b4c09066cae9",
     "https://zenn.dev/testsntips/articles/2a00737da2fc1b",
     "https://zenn.dev/testsntips/articles/4b7e0515b94129",
@@ -1447,7 +1450,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-01T13:38:40.184940+00:00",
+  "last_checked": "2026-11-01T18:59:02.958601+00:00",
   "version": 2,
   "feeds": {}
 }
