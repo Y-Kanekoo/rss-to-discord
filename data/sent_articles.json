@@ -110,6 +110,7 @@
     "https://arxiv.org/abs/2610.29549v1",
     "https://arxiv.org/abs/2610.38438v1",
     "https://arxiv.org/abs/2611.02248v1",
+    "https://arxiv.org/abs/2611.05121v1",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -340,6 +341,7 @@
     "https://qiita.com/y0us91/items/b3fd1d601a04302995d8",
     "https://qiita.com/y0us91/items/c0f6a3df288add548943",
     "https://qiita.com/y0us91/items/dfcc274fd5c038eec8f3",
+    "https://qiita.com/yanwang/items/1620ab41dea32d700ed4",
     "https://qiita.com/yanwang/items/210b8ee5077b89c93b0e",
     "https://qiita.com/yanwang/items/5a1fd5c939d3115b9b71",
     "https://qiita.com/yanwang/items/817e17e818e185553833",
@@ -402,6 +404,7 @@
     "https://sqripts.com/?p=106603",
     "https://sqripts.com/?p=106615",
     "https://tech-blog.tabelog.com/entry/ai-e2e-test-autonomous-generation",
+    "https://tech-blog.tabelog.com/entry/connecting-qa-data-for-ai-driven-test-repair",
     "https://tech.layerx.co.jp/entry/2026/05/taming-llm-overquestioning",
     "https://tech.layerx.co.jp/entry/articulatin_quality",
     "https://tech.legalforce.co.jp/entry/jasst-2026-eventreport",
@@ -589,6 +592,7 @@
     "https://zenn.dev/bricks/articles/csv-results-expire-with-inputs",
     "https://zenn.dev/bricks/articles/dev-env-hid-eight-bugs",
     "https://zenn.dev/bricks/articles/no-network-test-needs-negative-control",
+    "https://zenn.dev/bricks/articles/review-copy-must-match-revision",
     "https://zenn.dev/bricks/articles/unknown-note-category-stops-write",
     "https://zenn.dev/bricks/articles/verify-video-receipt-and-release",
     "https://zenn.dev/bswebdev/articles/where-the-check-was-01-retry-interceptor",
@@ -748,6 +752,7 @@
     "https://zenn.dev/gzer0/articles/real-play-save-fixtures-for-ai-tests",
     "https://zenn.dev/habco/articles/21e80182787df3",
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
+    "https://zenn.dev/hackbox_ai/articles/0c1707bfff7898",
     "https://zenn.dev/hampen2929/books/ai-agent-evaluation-guide",
     "https://zenn.dev/hampen2929/books/ai-software-factory-architecture",
     "https://zenn.dev/handesen/articles/exists-vs-usable",
@@ -1476,7 +1481,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-04T07:33:47.410211+00:00",
+  "last_checked": "2026-11-04T22:40:35.815312+00:00",
   "version": 2,
   "feeds": {}
 }
