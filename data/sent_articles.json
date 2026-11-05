@@ -732,6 +732,7 @@
     "https://zenn.dev/genda_jp/articles/e2697df23813a5",
     "https://zenn.dev/genda_jp/articles/ec3e59c156925f",
     "https://zenn.dev/genkunjc/articles/9f9ebc54a18544",
+    "https://zenn.dev/gesu/articles/rapid-property-based-testing",
     "https://zenn.dev/gingakuwagata/articles/mobile-app-testing-guide",
     "https://zenn.dev/gingakuwagata/articles/software-testing-classification",
     "https://zenn.dev/globis/articles/rspec-to-minitest",
@@ -1055,6 +1056,7 @@
     "https://zenn.dev/miyanaga/articles/bs-smoke-20260628aa",
     "https://zenn.dev/miyanaga/articles/zenn-2026-06-28",
     "https://zenn.dev/miyanaga/articles/zenn-2026-07-21",
+    "https://zenn.dev/miyanaga/articles/zenn-2026-11-05",
     "https://zenn.dev/miyoki_labs/articles/daily-stock-collect-sqlserver",
     "https://zenn.dev/miyuu128/articles/0240b31e2323c9",
     "https://zenn.dev/mizchi/articles/jev-test-filter-intro",
@@ -1134,6 +1136,7 @@
     "https://zenn.dev/north_to_now/articles/reqlox-evaluation-design",
     "https://zenn.dev/north_to_now/articles/reqlox-failure-knowledge-qualification",
     "https://zenn.dev/nozeon/articles/unit-test-minimum-understanding",
+    "https://zenn.dev/nozomi720/articles/spec-gate-harness",
     "https://zenn.dev/nttdata_tech/articles/14a0528ac5c085",
     "https://zenn.dev/nttdata_tech/articles/2520a84d392c8e",
     "https://zenn.dev/nttdata_tech/articles/313886880cae85",
@@ -1481,7 +1484,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-04T22:40:35.815312+00:00",
+  "last_checked": "2026-11-05T03:32:37.030004+00:00",
   "version": 2,
   "feeds": {}
 }
