@@ -296,6 +296,7 @@
     "https://qiita.com/DaokFrontier/items/52c496d7486a66a56fdf",
     "https://qiita.com/ExtraFur/items/b97a89fb8242256a5e18",
     "https://qiita.com/ExtraFur/items/db5ca32ce312530694a3",
+    "https://qiita.com/Fujisakkun/items/2058c59fc65d38ee301d",
     "https://qiita.com/KIM_BK/items/e76523f1683ad424d580",
     "https://qiita.com/K_Hisui/items/79482c6c949a399daf47",
     "https://qiita.com/Maku-Inc/items/3486663a9f7b89775cd2",
@@ -379,6 +380,7 @@
     "https://shiftevolve.connpass.com/event/408153/",
     "https://shiftevolve.connpass.com/event/408225/",
     "https://shiftevolve.connpass.com/event/409434/",
+    "https://shiftevolve.connpass.com/event/409441/",
     "https://speakerdeck.com/ishikawafyu/professional-engineer-education-in-the-llm-era-insights-from-the-topse-program",
     "https://speakerdeck.com/makky_tyuyan/jasstniguan-warukotodebian-watutaren-sheng-guan-number-jasstnano",
     "https://speakerdeck.com/mineo_matsuya/rethinking-the-fundamentals-of-testing-in-the-ai-era",
@@ -1026,6 +1028,8 @@
     "https://zenn.dev/masamune0625/articles/bffe4b9637589e",
     "https://zenn.dev/masatake_i/articles/e46bd37ec019f3",
     "https://zenn.dev/massanjp/articles/fd731a347dc7b4",
+    "https://zenn.dev/matasuke_t/articles/32fd6cd3722313",
+    "https://zenn.dev/matsutake_prgrm/articles/hasattribute-returns-true-for-aria-disabled-false",
     "https://zenn.dev/matsutake_prgrm/articles/the-coincidence-promoted-a-wrong-explanation",
     "https://zenn.dev/matsutake_prgrm/articles/unit-tests-pass-but-broken",
     "https://zenn.dev/mayumi_kondou/articles/0a2752c328c4c1",
@@ -1327,6 +1331,7 @@
     "https://zenn.dev/takushio2525/articles/20260818-unity-serialize-empty-cache",
     "https://zenn.dev/talks_tldr_jp/articles/tldr29-gustavsson-summary",
     "https://zenn.dev/tanakin36/books/go-fundamentals",
+    "https://zenn.dev/taru_neko/articles/ai-agent-testing-design",
     "https://zenn.dev/tatsuo_0/articles/todo-app-playwright-pom-fixture",
     "https://zenn.dev/tauridev/articles/4bb102996181fe",
     "https://zenn.dev/tauridev/articles/ai-code-breaks-3-patterns",
@@ -1490,7 +1495,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-06T09:29:55.669546+00:00",
+  "last_checked": "2026-11-06T17:33:12.924009+00:00",
   "version": 2,
   "feeds": {}
 }
