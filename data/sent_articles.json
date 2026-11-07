@@ -795,6 +795,7 @@
     "https://zenn.dev/hk_work/articles/sqflite-migration-test-old-schema",
     "https://zenn.dev/hokan_blog/articles/20260306-test-brush-up",
     "https://zenn.dev/horibe/articles/build-the-ruler-before-the-model",
+    "https://zenn.dev/horibe/articles/dictation-scoring-edit-distance",
     "https://zenn.dev/horibe/articles/pronunciation-api-null-traps",
     "https://zenn.dev/horibe/articles/verify-llm-output-mechanically",
     "https://zenn.dev/horicchy/articles/401fe5e9e36fef",
@@ -805,6 +806,7 @@
     "https://zenn.dev/i_ichi/articles/annona-test-publish",
     "https://zenn.dev/ichikawa_y/articles/assurance-audit-grading-engine",
     "https://zenn.dev/idealive_kmon/articles/android-inappreview-internal-app-sharing",
+    "https://zenn.dev/idealog/articles/b73f4a307ceeff",
     "https://zenn.dev/ikurah/articles/invoice-withholding-tax-calc",
     "https://zenn.dev/ikurah/articles/predeploy-gate-design",
     "https://zenn.dev/imyaaiteam/articles/a5840ee692a064",
@@ -1057,6 +1059,7 @@
     "https://zenn.dev/mitna/books/context-rot-qa-defense",
     "https://zenn.dev/miyakona/articles/buttons-from-posted-panel",
     "https://zenn.dev/miyakona/articles/interleaving-test-must-interleave",
+    "https://zenn.dev/miyakona/articles/stream-json-ledger-equivalence",
     "https://zenn.dev/miyan/articles/ai-driven-dev-testing-tdd",
     "https://zenn.dev/miyan/articles/ci-pact-contract-testing-guide",
     "https://zenn.dev/miyan/articles/ci-test-bloat-pipeline-optimization-guide",
@@ -1416,6 +1419,7 @@
     "https://zenn.dev/vaonvn/articles/0fbeb2f9a2e57d",
     "https://zenn.dev/vaonvn/articles/56d2d637dc6956",
     "https://zenn.dev/vaonvn/articles/98ea7278df2c68",
+    "https://zenn.dev/vaonvn/articles/d839a1ad1273e9",
     "https://zenn.dev/viralana/articles/viralana-auto-post-test-jaao",
     "https://zenn.dev/voidmatcha/articles/b0e9b9d33407c7",
     "https://zenn.dev/waiteu/articles/0c85f8c6ec326c",
@@ -1496,7 +1500,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-06T23:16:15.753876+00:00",
+  "last_checked": "2026-11-07T16:54:03.278609+00:00",
   "version": 2,
   "feeds": {}
 }
