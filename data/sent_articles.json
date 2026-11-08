@@ -478,6 +478,7 @@
     "https://zenn.dev/417/articles/ai-era-domain-knowledge-placement",
     "https://zenn.dev/444444442/articles/8d4358d05169b4",
     "https://zenn.dev/93ch/articles/test-viewpoint-cycle",
+    "https://zenn.dev/a1221/articles/cron-parser-coverage-found-bugs",
     "https://zenn.dev/a1221/articles/untested-code-found-bugs",
     "https://zenn.dev/a_maru/articles/2b2507342a765c",
     "https://zenn.dev/a_sugai/articles/befd96f3f691ca",
@@ -602,6 +603,7 @@
     "https://zenn.dev/bricks/articles/verify-video-receipt-and-release",
     "https://zenn.dev/bswebdev/articles/where-the-check-was-01-retry-interceptor",
     "https://zenn.dev/bugitdev/articles/dbfa1909be1dec",
+    "https://zenn.dev/buko106/articles/why-ai-tests-feel-bloodless",
     "https://zenn.dev/canly/articles/cba399cbfb112f",
     "https://zenn.dev/casti/articles/laravel-contract-test-after-dredd",
     "https://zenn.dev/catatsuy/articles/254b155f8d5992",
@@ -655,6 +657,7 @@
     "https://zenn.dev/cyberdog_ai_lab/articles/20260817-ai-degrade-guard",
     "https://zenn.dev/d_treasure0712/articles/20260706-swift-import-smoke-test",
     "https://zenn.dev/daichi01278/articles/billing-api-parsers-without-keys",
+    "https://zenn.dev/daisosha/articles/44201667ed2110",
     "https://zenn.dev/daisuke37/articles/20260910_zenn_github_yato",
     "https://zenn.dev/daisuke37/articles/20260915_zenn_github_yato",
     "https://zenn.dev/danilapryadko/articles/184624e3f3ff21",
@@ -1313,6 +1316,7 @@
     "https://zenn.dev/studist/articles/qaas_vol31_report",
     "https://zenn.dev/sugitakenji/articles/66e76aec7d9043",
     "https://zenn.dev/sumasate_tec/articles/72f680c25c141a",
+    "https://zenn.dev/sumumu26/articles/b1afde3b0e06f2",
     "https://zenn.dev/sumx21t/articles/coding-agent-categorical-imperative",
     "https://zenn.dev/sunagaku/articles/stop-putting-everything-in-e2e",
     "https://zenn.dev/sunny9/articles/why-status-testing-is-hard",
@@ -1450,6 +1454,7 @@
     "https://zenn.dev/yamitake/articles/deepeval-llm-evaluation-getting-started",
     "https://zenn.dev/yamitake/articles/messy-code-test-driven",
     "https://zenn.dev/yasuakiomokawa/articles/3d1f83458053d9",
+    "https://zenn.dev/yasuakiomokawa/articles/97ffb5a31f1c6d",
     "https://zenn.dev/yasuflatland/articles/65ff4247674c04",
     "https://zenn.dev/yasuflatland/articles/c05ea63986d70e",
     "https://zenn.dev/yasuhiro_test/articles/65eba13298c9c2",
@@ -1501,7 +1506,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-08T07:28:26.365307+00:00",
+  "last_checked": "2026-11-08T15:21:22.674397+00:00",
   "version": 2,
   "feeds": {}
 }
