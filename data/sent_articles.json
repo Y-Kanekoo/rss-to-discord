@@ -322,6 +322,7 @@
     "https://qiita.com/km_1018/items/eb6093e65b3d505997e4",
     "https://qiita.com/locolisu/items/4c0cb461776f129581bb",
     "https://qiita.com/locolisu/items/5092bf9c35ee418950ad",
+    "https://qiita.com/m-sugio/items/46930f95b44e4e3134c1",
     "https://qiita.com/manabi_biyori/items/8b96994de4ddf9d9a894",
     "https://qiita.com/realbios/items/a33587f762bbd22e412d",
     "https://qiita.com/ryucciarati/items/601836f5840258cd5554",
@@ -517,6 +518,7 @@
     "https://zenn.dev/ailmira/articles/300e0aee9997a2",
     "https://zenn.dev/aimetaclean/articles/edcc424ccc7c92",
     "https://zenn.dev/aiofficelab/articles/3b78ce039ba19d",
+    "https://zenn.dev/aishigoto/articles/claude-code-legacy-code-test-order",
     "https://zenn.dev/aiya000/articles/e7e8794ccc2997",
     "https://zenn.dev/aj_1905/articles/efbf185c4c49f8",
     "https://zenn.dev/akari_chan/articles/dbdc046d91decb",
@@ -635,6 +637,7 @@
     "https://zenn.dev/codecraft/articles/jp-stock-197-ideas-all-failed",
     "https://zenn.dev/codecraft/articles/nikkei-200day-filter-61years",
     "https://zenn.dev/codecraft/articles/same-change-measured-four-ways",
+    "https://zenn.dev/codecraft/articles/signal-vs-execution-spread",
     "https://zenn.dev/coffee_break/books/bi-dashboard-test-design",
     "https://zenn.dev/cognitiveosmdl/articles/0c90c60418d3ab",
     "https://zenn.dev/cognitiveosmdl/articles/17a2c9db83a5d2",
@@ -844,6 +847,7 @@
     "https://zenn.dev/jisaku_net/articles/3d-knee-bend-foot-pelvis-direction",
     "https://zenn.dev/jisaku_net/articles/cloudflare-oauth-fetch-redirect-manual",
     "https://zenn.dev/jisaku_net/articles/fetch-http200-invalid-json-null",
+    "https://zenn.dev/jisaku_net/articles/git-generated-artifact-line-ending-hash",
     "https://zenn.dev/jisaku_net/articles/json-import-stable-id-local-edits",
     "https://zenn.dev/jisaku_net/articles/localstorage-multiple-keys-recovery",
     "https://zenn.dev/jisaku_net/articles/threejs-needle-mesh-tip-clearance",
@@ -1507,7 +1511,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-08T19:47:00.719853+00:00",
+  "last_checked": "2026-11-09T06:49:52.131169+00:00",
   "version": 2,
   "feeds": {}
 }
