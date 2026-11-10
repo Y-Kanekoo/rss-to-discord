@@ -557,6 +557,7 @@
     "https://zenn.dev/ara_ta3/articles/thinking-about-obscure-test-with-working-memory",
     "https://zenn.dev/arsaga/articles/laravel-ai-quality-gates",
     "https://zenn.dev/arufian/articles/aeb300d7cf9b1b",
+    "https://zenn.dev/asagiman/articles/6177de40f34d06",
     "https://zenn.dev/asayi_megumi/articles/8e137fa95f5481",
     "https://zenn.dev/asuene/articles/e2e-test-ai-driven-management",
     "https://zenn.dev/atamaplus/articles/ef919329f4cc12",
@@ -1275,6 +1276,8 @@
     "https://zenn.dev/saytooy_arch/articles/18-detect-process-deep-dive",
     "https://zenn.dev/sbkm/articles/4ad26d225c9dcb",
     "https://zenn.dev/sbsb/articles/5e3545f7931972",
+    "https://zenn.dev/scalar_sol_blog/articles/frontend-quality-checklist",
+    "https://zenn.dev/scalar_sol_blog/articles/frontend-quality-plugin",
     "https://zenn.dev/scalar_sol_blog/articles/report-studio-05-pdf-parity",
     "https://zenn.dev/scalar_sol_blog/articles/scalar-sales-ai-07-qa-delivery",
     "https://zenn.dev/schottman13/articles/f17ea3b2c19cf0",
@@ -1289,6 +1292,7 @@
     "https://zenn.dev/shin2738/articles/970e57aed6c1b1",
     "https://zenn.dev/shinkano/articles/4ad88d17e435d8",
     "https://zenn.dev/shinsei99/articles/color-is-not-an-input-field",
+    "https://zenn.dev/shinsei99/articles/missing-row-shifts-every-bracket",
     "https://zenn.dev/shinsei99/articles/rounded-the-parts-not-the-whole",
     "https://zenn.dev/shintaroamaike/articles/1d73c017285bdc",
     "https://zenn.dev/shoebill_dev27/articles/ai-code-silent-bugs-checklist",
@@ -1517,7 +1521,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-10T09:59:16.004467+00:00",
+  "last_checked": "2026-11-10T17:56:56.626297+00:00",
   "version": 2,
   "feeds": {}
 }
