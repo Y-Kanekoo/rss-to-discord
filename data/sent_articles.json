@@ -528,6 +528,7 @@
     "https://zenn.dev/akihide/articles/b01e87fbc81a98",
     "https://zenn.dev/akinori901/articles/20260911-plan033",
     "https://zenn.dev/akinori901/articles/20260914-00mu0itx",
+    "https://zenn.dev/akinori901/articles/20261009-plan068",
     "https://zenn.dev/akira_papa/articles/aae2458b546167",
     "https://zenn.dev/akring/articles/11e668bae28707",
     "https://zenn.dev/akring/articles/2bca6f38f3a347",
@@ -614,6 +615,7 @@
     "https://zenn.dev/ceres_tech_blog/articles/292155ba6ea8e8",
     "https://zenn.dev/chankita/articles/396e9424001019",
     "https://zenn.dev/chinmayajha/articles/100bd4e7a8269b",
+    "https://zenn.dev/chinmayajha/articles/3c34eebead824a",
     "https://zenn.dev/chinmayajha/articles/fe0db59af5088e",
     "https://zenn.dev/chiwapome/articles/ai-automation-silent-failures",
     "https://zenn.dev/chiwapome/articles/fire-drill-safety-nets",
@@ -765,6 +767,7 @@
     "https://zenn.dev/habco/articles/21e80182787df3",
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
     "https://zenn.dev/hackbox_ai/articles/0c1707bfff7898",
+    "https://zenn.dev/hackbox_ai/articles/0d04112d363a1b",
     "https://zenn.dev/hampen2929/books/ai-agent-evaluation-guide",
     "https://zenn.dev/hampen2929/books/ai-software-factory-architecture",
     "https://zenn.dev/handesen/articles/exists-vs-usable",
@@ -804,6 +807,7 @@
     "https://zenn.dev/horibe/articles/build-the-ruler-before-the-model",
     "https://zenn.dev/horibe/articles/dictation-scoring-edit-distance",
     "https://zenn.dev/horibe/articles/pronunciation-api-null-traps",
+    "https://zenn.dev/horibe/articles/rank-by-failures-not-retries",
     "https://zenn.dev/horibe/articles/verify-llm-output-mechanically",
     "https://zenn.dev/horicchy/articles/401fe5e9e36fef",
     "https://zenn.dev/horicchy/articles/6f92a18454b085",
@@ -896,6 +900,7 @@
     "https://zenn.dev/karamem0/articles/2026_05_09_090000",
     "https://zenn.dev/kauche/articles/722e642a6692a1",
     "https://zenn.dev/kauche/articles/e748aa14bc7667",
+    "https://zenn.dev/kawanode/articles/e3f2e44bc5de0e",
     "https://zenn.dev/kazeusagi/articles/0a1e5862a8d4d4",
     "https://zenn.dev/kei_concierge/articles/llm-quality-testing-audit-process-part2",
     "https://zenn.dev/keisukekarijuku/articles/77898511cee5a4",
@@ -1511,7 +1516,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-09T06:49:52.131169+00:00",
+  "last_checked": "2026-11-10T01:38:03.165981+00:00",
   "version": 2,
   "feeds": {}
 }
