@@ -998,6 +998,7 @@
     "https://zenn.dev/lincwell_inc/articles/e8e288ee35f5b4",
     "https://zenn.dev/litalico/articles/20261029-test-with-ai",
     "https://zenn.dev/logdriven/articles/ai-filter-8-reviews-missed-katakana",
+    "https://zenn.dev/logdriven/articles/sonnet5-tool-input-json-string",
     "https://zenn.dev/logdriven/books/verify-ai-written-code",
     "https://zenn.dev/loglass/articles/54c4f9688dab9f",
     "https://zenn.dev/loglass/articles/b6c1a24c7e4759",
@@ -1362,6 +1363,7 @@
     "https://zenn.dev/takushio2525/articles/20260818-unity-serialize-empty-cache",
     "https://zenn.dev/talks_tldr_jp/articles/tldr29-gustavsson-summary",
     "https://zenn.dev/tanakin36/books/go-fundamentals",
+    "https://zenn.dev/tarowhitey/articles/2072fbeb9f6d07",
     "https://zenn.dev/tarowhitey/articles/ffmpeg-vertical-video-frame-check",
     "https://zenn.dev/taru_neko/articles/ai-agent-testing-design",
     "https://zenn.dev/tatsuo_0/articles/todo-app-playwright-pom-fixture",
@@ -1530,7 +1532,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-11T22:47:06.042028+00:00",
+  "last_checked": "2026-11-12T03:53:39.270174+00:00",
   "version": 2,
   "feeds": {}
 }
