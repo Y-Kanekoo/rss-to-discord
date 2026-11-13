@@ -111,6 +111,7 @@
     "https://arxiv.org/abs/2610.38438v1",
     "https://arxiv.org/abs/2611.02248v1",
     "https://arxiv.org/abs/2611.05121v1",
+    "https://arxiv.org/abs/2611.14940v1",
     "https://blog.cybozu.io/entry/2026/04/03/090000",
     "https://blog.cybozu.io/entry/2026/04/03/170000",
     "https://blog.cybozu.io/entry/2026/04/06/090000",
@@ -864,6 +865,7 @@
     "https://zenn.dev/jisaku_net/articles/git-generated-artifact-line-ending-hash",
     "https://zenn.dev/jisaku_net/articles/json-import-stable-id-local-edits",
     "https://zenn.dev/jisaku_net/articles/localstorage-multiple-keys-recovery",
+    "https://zenn.dev/jisaku_net/articles/swipe-navigation-existing-buttons",
     "https://zenn.dev/jisaku_net/articles/threejs-needle-mesh-tip-clearance",
     "https://zenn.dev/jisaku_net/articles/weekly-calculation-exhaustive-tests",
     "https://zenn.dev/jisaku_net/articles/zip-launcher-nested-folder-check",
@@ -1539,7 +1541,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-12T20:55:23.762591+00:00",
+  "last_checked": "2026-11-13T09:41:56.041112+00:00",
   "version": 2,
   "feeds": {}
 }
