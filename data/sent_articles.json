@@ -303,6 +303,7 @@
     "https://qiita.com/K_Hisui/items/79482c6c949a399daf47",
     "https://qiita.com/Maku-Inc/items/3486663a9f7b89775cd2",
     "https://qiita.com/Maku-Inc/items/44c6bf6bceb69ca7c920",
+    "https://qiita.com/Necoze/items/513b9678a7339316b718",
     "https://qiita.com/QAmah/items/cf96a81f36454c96e91f",
     "https://qiita.com/SystemConcierge/items/00f053b3139026772087",
     "https://qiita.com/YuukiYoshida/items/ca4b49b847825f6971e2",
@@ -389,6 +390,7 @@
     "https://speakerdeck.com/goyoki/shift-left-approach-for-team-improvement",
     "https://speakerdeck.com/ishikawafyu/professional-engineer-education-in-the-llm-era-insights-from-the-topse-program",
     "https://speakerdeck.com/makky_tyuyan/jasstniguan-warukotodebian-watutaren-sheng-guan-number-jasstnano",
+    "https://speakerdeck.com/masasuna/qa-enjinia-mo-domein-kudou-sekkei-o-manabu-imi",
     "https://speakerdeck.com/mineo_matsuya/rethinking-the-fundamentals-of-testing-in-the-ai-era",
     "https://speakerdeck.com/mineo_matsuya/vlm-test-execution-agent-for-running-manual-test-cases-as-is",
     "https://speakerdeck.com/nihonbuson/quality-assurance-big-picture-vol2",
@@ -791,6 +793,7 @@
     "https://zenn.dev/headwaters/articles/579d5f94907dcd",
     "https://zenn.dev/heftykoo/articles/19bf8f1ed6638c",
     "https://zenn.dev/heftykoo/articles/634c18e93e11c4",
+    "https://zenn.dev/heftykoo/articles/8c4ed503a7cdb6",
     "https://zenn.dev/heftykoo/articles/b754c6bee93d0c",
     "https://zenn.dev/heftykoo/articles/c4866f6b416ea8",
     "https://zenn.dev/henyo245/articles/47e0a4d108553f",
@@ -1541,7 +1544,127 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-13T09:41:56.041112+00:00",
+  "last_checked": "2026-11-13T17:51:09.200894+00:00",
   "version": 2,
-  "feeds": {}
+  "feeds": {
+    "release-playwright": {
+      "sent_guids": [
+        "tag:github.com,2008:Repository/221981891/v1.59.1",
+        "tag:github.com,2008:Repository/221981891/v1.60.0",
+        "tag:github.com,2008:Repository/221981891/v1.61.0",
+        "tag:github.com,2008:Repository/221981891/v1.61.1",
+        "tag:github.com,2008:Repository/221981891/v1.62.0",
+        "tag:github.com,2008:Repository/221981891/v1.62.1",
+        "tag:github.com,2008:Repository/221981891/v1.63.0",
+        "tag:github.com,2008:Repository/221981891/v1.64.0",
+        "tag:github.com,2008:Repository/221981891/v1.64.1",
+        "tag:github.com,2008:Repository/221981891/v1.65.0"
+      ],
+      "last_checked": "2026-11-13T17:51:18.990164+00:00"
+    },
+    "release-cypress": {
+      "sent_guids": [
+        "tag:github.com,2008:Repository/31629751/@cypress/puppeteer-v0.1.10",
+        "tag:github.com,2008:Repository/31629751/@cypress/puppeteer-v1.0.0",
+        "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.0",
+        "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.1",
+        "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.2",
+        "tag:github.com,2008:Repository/31629751/v15.21.2",
+        "tag:github.com,2008:Repository/31629751/v16.1.1",
+        "tag:github.com,2008:Repository/31629751/v16.2.0",
+        "tag:github.com,2008:Repository/31629751/v16.2.1",
+        "tag:github.com,2008:Repository/31629751/v16.3.0"
+      ],
+      "last_checked": "2026-11-13T17:51:28.835499+00:00"
+    },
+    "release-pytest": {
+      "sent_guids": [
+        "tag:github.com,2008:Repository/37489525/10.0.0.dev0",
+        "tag:github.com,2008:Repository/37489525/9.0.0",
+        "tag:github.com,2008:Repository/37489525/9.0.1",
+        "tag:github.com,2008:Repository/37489525/9.0.2",
+        "tag:github.com,2008:Repository/37489525/9.0.3",
+        "tag:github.com,2008:Repository/37489525/9.1.0",
+        "tag:github.com,2008:Repository/37489525/9.1.0.dev0",
+        "tag:github.com,2008:Repository/37489525/9.1.1",
+        "tag:github.com,2008:Repository/37489525/9.2.0",
+        "tag:github.com,2008:Repository/37489525/9.2.0.dev0"
+      ],
+      "last_checked": "2026-11-13T17:51:38.758537+00:00"
+    },
+    "release-k6": {
+      "sent_guids": [
+        "tag:github.com,2008:Repository/54400687/v1.8.0",
+        "tag:github.com,2008:Repository/54400687/v1.8.1",
+        "tag:github.com,2008:Repository/54400687/v1.8.2",
+        "tag:github.com,2008:Repository/54400687/v1.8.3",
+        "tag:github.com,2008:Repository/54400687/v2.0.0",
+        "tag:github.com,2008:Repository/54400687/v2.0.0-rc1",
+        "tag:github.com,2008:Repository/54400687/v2.1.0",
+        "tag:github.com,2008:Repository/54400687/v2.2.0",
+        "tag:github.com,2008:Repository/54400687/v2.3.0",
+        "tag:github.com,2008:Repository/54400687/v2.4.0"
+      ],
+      "last_checked": "2026-11-13T17:51:49.328308+00:00"
+    },
+    "release-playwright-python": {
+      "sent_guids": [
+        "tag:github.com,2008:Repository/276414382/v1.58.0",
+        "tag:github.com,2008:Repository/276414382/v1.59.0",
+        "tag:github.com,2008:Repository/276414382/v1.60.0",
+        "tag:github.com,2008:Repository/276414382/v1.61.0",
+        "tag:github.com,2008:Repository/276414382/v1.62.0",
+        "tag:github.com,2008:Repository/276414382/v1.63.0",
+        "tag:github.com,2008:Repository/276414382/v1.64.0",
+        "tag:github.com,2008:Repository/276414382/v1.64.1",
+        "tag:github.com,2008:Repository/276414382/v1.65.0",
+        "tag:github.com,2008:Repository/276414382/v1.65.1"
+      ],
+      "last_checked": "2026-11-13T17:51:59.255175+00:00"
+    },
+    "arxiv-testing": {
+      "sent_guids": [
+        "oai:arXiv.org:2511.00125v2",
+        "oai:arXiv.org:2607.01494v2",
+        "oai:arXiv.org:2610.38610v2",
+        "oai:arXiv.org:2611.10304v2",
+        "oai:arXiv.org:2611.14664v1",
+        "oai:arXiv.org:2611.14777v1",
+        "oai:arXiv.org:2611.14946v1",
+        "oai:arXiv.org:2611.15207v1",
+        "oai:arXiv.org:2611.15441v1",
+        "oai:arXiv.org:2611.15506v1",
+        "oai:arXiv.org:2611.15543v1",
+        "oai:arXiv.org:2611.15548v1",
+        "oai:arXiv.org:2611.15596v1",
+        "oai:arXiv.org:2611.15920v1",
+        "oai:arXiv.org:2611.16114v1",
+        "oai:arXiv.org:2611.16143v1",
+        "oai:arXiv.org:2611.16215v1",
+        "oai:arXiv.org:2611.16886v1",
+        "oai:arXiv.org:2611.17123v1"
+      ],
+      "last_checked": "2026-11-13T17:52:04.382465+00:00"
+    },
+    "youtube-jasst": {
+      "sent_guids": [
+        "yt:video:-a2aR017dWk",
+        "yt:video:2o72VT4f0EY",
+        "yt:video:3Ksg1Ffv9RM",
+        "yt:video:6IZhUQnvZR8",
+        "yt:video:IJBTbrJW4nU",
+        "yt:video:JIrTb6ZZKg8",
+        "yt:video:Ltj7E1HJmXQ",
+        "yt:video:OMbBHVZ5HdM",
+        "yt:video:QFrZYGJaQAI",
+        "yt:video:gaKMpTSn4is",
+        "yt:video:jpIpSyd6ld8",
+        "yt:video:lPfhr8mspws",
+        "yt:video:lRz-NvdAyhM",
+        "yt:video:mZ1dOgpNyzI",
+        "yt:video:y4erji1sJZ8"
+      ],
+      "last_checked": "2026-11-13T17:52:12.594636+00:00"
+    }
+  }
 }
