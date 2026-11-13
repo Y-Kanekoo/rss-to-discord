@@ -783,6 +783,7 @@
     "https://zenn.dev/hackbox_ai/articles/0d04112d363a1b",
     "https://zenn.dev/hampen2929/books/ai-agent-evaluation-guide",
     "https://zenn.dev/hampen2929/books/ai-software-factory-architecture",
+    "https://zenn.dev/handa_lab/articles/09-ai-report-verification",
     "https://zenn.dev/handesen/articles/exists-vs-usable",
     "https://zenn.dev/harumikun/articles/34d3e9d0cda52a",
     "https://zenn.dev/hashidev/articles/8dc58d13b1bf9b",
@@ -1311,6 +1312,7 @@
     "https://zenn.dev/shinkano/articles/4ad88d17e435d8",
     "https://zenn.dev/shinsei99/articles/color-is-not-an-input-field",
     "https://zenn.dev/shinsei99/articles/missing-row-shifts-every-bracket",
+    "https://zenn.dev/shinsei99/articles/offline-test-was-not-offline",
     "https://zenn.dev/shinsei99/articles/rounded-the-parts-not-the-whole",
     "https://zenn.dev/shintaroamaike/articles/1d73c017285bdc",
     "https://zenn.dev/shoebill_dev27/articles/ai-code-silent-bugs-checklist",
@@ -1477,6 +1479,7 @@
     "https://zenn.dev/wongi_jeong/articles/c5c45f389eb363",
     "https://zenn.dev/wwwave/articles/20e9ee5ca019d2",
     "https://zenn.dev/xtm_blog/articles/9b7fa5f94eae28",
+    "https://zenn.dev/xtone/articles/detection-regression",
     "https://zenn.dev/y1rks/articles/65757ccfc24d00",
     "https://zenn.dev/y_devlog/articles/4b98a8bf1077d4",
     "https://zenn.dev/y_shinoda/articles/pydocstyle-d401",
@@ -1544,7 +1547,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-13T17:51:09.200894+00:00",
+  "last_checked": "2026-11-13T23:40:17.984711+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1558,9 +1561,10 @@
         "tag:github.com,2008:Repository/221981891/v1.63.0",
         "tag:github.com,2008:Repository/221981891/v1.64.0",
         "tag:github.com,2008:Repository/221981891/v1.64.1",
-        "tag:github.com,2008:Repository/221981891/v1.65.0"
+        "tag:github.com,2008:Repository/221981891/v1.65.0",
+        "tag:github.com,2008:Repository/221981891/v1.65.1"
       ],
-      "last_checked": "2026-11-13T17:51:18.990164+00:00"
+      "last_checked": "2026-11-13T23:40:18.538017+00:00"
     },
     "release-cypress": {
       "sent_guids": [
