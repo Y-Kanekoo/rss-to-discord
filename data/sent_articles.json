@@ -536,6 +536,7 @@
     "https://zenn.dev/akinori901/articles/20260911-plan033",
     "https://zenn.dev/akinori901/articles/20260914-00mu0itx",
     "https://zenn.dev/akinori901/articles/20260914-00mu0kt1",
+    "https://zenn.dev/akinori901/articles/20260914-00mu0ktj",
     "https://zenn.dev/akinori901/articles/20261009-plan068",
     "https://zenn.dev/akira_papa/articles/aae2458b546167",
     "https://zenn.dev/akring/articles/11e668bae28707",
@@ -781,6 +782,7 @@
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
     "https://zenn.dev/hackbox_ai/articles/0c1707bfff7898",
     "https://zenn.dev/hackbox_ai/articles/0d04112d363a1b",
+    "https://zenn.dev/hamasyou/articles/7ae3b3dcaf4f52",
     "https://zenn.dev/hampen2929/books/ai-agent-evaluation-guide",
     "https://zenn.dev/hampen2929/books/ai-software-factory-architecture",
     "https://zenn.dev/handa_lab/articles/09-ai-report-verification",
@@ -816,6 +818,7 @@
     "https://zenn.dev/hirotoshiuchida/articles/20260815_test",
     "https://zenn.dev/hiruma_devlog/articles/2ada6427571a11",
     "https://zenn.dev/hk_work/articles/guess-volume-from-book-title",
+    "https://zenn.dev/hk_work/articles/reuse-common-parts-third-app",
     "https://zenn.dev/hk_work/articles/series-subtitle-in-parentheses",
     "https://zenn.dev/hk_work/articles/sqflite-migration-test-old-schema",
     "https://zenn.dev/hokan_blog/articles/20260306-test-brush-up",
@@ -1440,6 +1443,7 @@
     "https://zenn.dev/tsukimi_soba/articles/exe-short-term-quality-improvement",
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-flow",
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-structure",
+    "https://zenn.dev/tsukimi_soba/articles/opt-spec-vs-usability-improvement",
     "https://zenn.dev/tsukimi_soba/articles/sos-how-to-improve-quality-first-step",
     "https://zenn.dev/tsumu26/articles/526ce667f80d21",
     "https://zenn.dev/tsumu26/articles/7fb72c2a79a0d8",
@@ -1548,7 +1552,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-14T06:41:49.166110+00:00",
+  "last_checked": "2026-11-14T19:14:30.830416+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
