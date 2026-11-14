@@ -1361,6 +1361,7 @@
     "https://zenn.dev/sunnyside/books/qa-ai-skills-2026",
     "https://zenn.dev/sunsun_eng/articles/n8n-template-e2e",
     "https://zenn.dev/sutokei/articles/wait-two-seconds-short",
+    "https://zenn.dev/sutokei/articles/workers-rate-limit-d1",
     "https://zenn.dev/suwash/articles/ai-assurance-enterprise-testing-strategy_20260526",
     "https://zenn.dev/suzuki_tech/articles/e90b94e1bce2cf",
     "https://zenn.dev/swdrk/articles/a18eca9e53d582",
@@ -1547,7 +1548,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-13T23:40:17.984711+00:00",
+  "last_checked": "2026-11-14T06:41:49.166110+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1573,13 +1574,14 @@
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.0",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.1",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.2",
+        "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.2.0",
         "tag:github.com,2008:Repository/31629751/v15.21.2",
         "tag:github.com,2008:Repository/31629751/v16.1.1",
         "tag:github.com,2008:Repository/31629751/v16.2.0",
         "tag:github.com,2008:Repository/31629751/v16.2.1",
         "tag:github.com,2008:Repository/31629751/v16.3.0"
       ],
-      "last_checked": "2026-11-13T17:51:28.835499+00:00"
+      "last_checked": "2026-11-14T06:41:50.061861+00:00"
     },
     "release-pytest": {
       "sent_guids": [
@@ -1622,9 +1624,10 @@
         "tag:github.com,2008:Repository/276414382/v1.64.0",
         "tag:github.com,2008:Repository/276414382/v1.64.1",
         "tag:github.com,2008:Repository/276414382/v1.65.0",
-        "tag:github.com,2008:Repository/276414382/v1.65.1"
+        "tag:github.com,2008:Repository/276414382/v1.65.1",
+        "tag:github.com,2008:Repository/276414382/v1.65.2"
       ],
-      "last_checked": "2026-11-13T17:51:59.255175+00:00"
+      "last_checked": "2026-11-14T06:41:52.340353+00:00"
     },
     "arxiv-testing": {
       "sent_guids": [
