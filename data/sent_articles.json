@@ -154,6 +154,7 @@
     "https://magicpod.com/blog/e2e-test-workflow/",
     "https://magicpod.com/blog/failure-analysis/",
     "https://magicpod.com/blog/failure-investigation-with-ai-agent/",
+    "https://magicpod.com/blog/magicpod-mcp-ai-agent/",
     "https://magicpod.com/blog/qa-organization-future/",
     "https://magicpod.com/blog/qa-success-panel-2-after-talk/",
     "https://magicpod.com/blog/qa-success-panel-3/",
@@ -730,6 +731,7 @@
     "https://zenn.dev/explaza/articles/f9db1be2dc5a4c",
     "https://zenn.dev/ferretcode/articles/fixing-e2e-without-touching-app",
     "https://zenn.dev/finatext/articles/1823a019925c1f",
+    "https://zenn.dev/fitness_densuke/articles/2026-11-14-let-ai-verify",
     "https://zenn.dev/fivot/articles/4ad88d17e435d8",
     "https://zenn.dev/fixu/articles/ai-multi-agent-verify-authenticity",
     "https://zenn.dev/fixu/articles/ai-native-qcd-large-scale-two-weeks",
@@ -1356,6 +1358,7 @@
     "https://zenn.dev/sonicmoov/articles/design-standardization-project-collaboration",
     "https://zenn.dev/sorapenguin/articles/ai-agent-qa-story-2026-08",
     "https://zenn.dev/sotakobayashi/articles/prereg-discipline-solo-research",
+    "https://zenn.dev/sre_holdings/articles/29458d1ff4cc39",
     "https://zenn.dev/sre_holdings/articles/d4acb079680a79",
     "https://zenn.dev/stadium/articles/5ec31c631f574d",
     "https://zenn.dev/stagea_tech/articles/20260824-pj14-devlog",
@@ -1565,7 +1568,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-16T02:50:31.572041+00:00",
+  "last_checked": "2026-11-16T22:17:15.770083+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
