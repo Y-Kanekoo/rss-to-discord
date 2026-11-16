@@ -1648,9 +1648,13 @@
     },
     "arxiv-testing": {
       "sent_guids": [
+        "oai:arXiv.org:2406.15877v5",
         "oai:arXiv.org:2511.00125v2",
         "oai:arXiv.org:2607.01494v2",
+        "oai:arXiv.org:2609.04218v4",
+        "oai:arXiv.org:2610.00890v2",
         "oai:arXiv.org:2610.38610v2",
+        "oai:arXiv.org:2611.08442v2",
         "oai:arXiv.org:2611.10304v2",
         "oai:arXiv.org:2611.14664v1",
         "oai:arXiv.org:2611.14777v1",
@@ -1666,9 +1670,12 @@
         "oai:arXiv.org:2611.16143v1",
         "oai:arXiv.org:2611.16215v1",
         "oai:arXiv.org:2611.16886v1",
-        "oai:arXiv.org:2611.17123v1"
+        "oai:arXiv.org:2611.17123v1",
+        "oai:arXiv.org:2611.17440v1",
+        "oai:arXiv.org:2611.17581v1",
+        "oai:arXiv.org:2611.18477v1"
       ],
-      "last_checked": "2026-11-13T17:52:04.382465+00:00"
+      "last_checked": "2026-11-16T11:42:28.690089+00:00"
     },
     "youtube-jasst": {
       "sent_guids": [
