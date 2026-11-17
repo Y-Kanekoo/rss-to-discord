@@ -594,6 +594,7 @@
     "https://zenn.dev/banapan/articles/15b514076b287d",
     "https://zenn.dev/beeeegle/articles/3d52461f7ea187",
     "https://zenn.dev/beeeegle/articles/e8b82f2fcac497",
+    "https://zenn.dev/believe/articles/playwright-only-failures-20261112-d91c",
     "https://zenn.dev/belka_dolphin/articles/ae2126c1720663",
     "https://zenn.dev/belka_dolphin/articles/c885376e01b59d",
     "https://zenn.dev/belka_dolphin/articles/d491dbfafdaa59",
@@ -751,6 +752,7 @@
     "https://zenn.dev/fruitriin/articles/19d2caf87cf130",
     "https://zenn.dev/fujiritsu/articles/a547594c955449",
     "https://zenn.dev/fujishu/articles/daf10672b7e975",
+    "https://zenn.dev/fujishu/articles/e5791afa6f215f",
     "https://zenn.dev/gakken_leap/articles/72b7b800d164e9",
     "https://zenn.dev/gallu/books/18b1859947da0e",
     "https://zenn.dev/garplab/articles/083e25df1be2fa",
@@ -1464,6 +1466,7 @@
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-flow",
     "https://zenn.dev/tsukimi_soba/articles/mgt-requirements-mapping-structure",
     "https://zenn.dev/tsukimi_soba/articles/opt-spec-vs-usability-improvement",
+    "https://zenn.dev/tsukimi_soba/articles/opt-vosk-keyword-recognition-benchmark",
     "https://zenn.dev/tsukimi_soba/articles/sos-how-to-improve-quality-first-step",
     "https://zenn.dev/tsumu26/articles/526ce667f80d21",
     "https://zenn.dev/tsumu26/articles/7fb72c2a79a0d8",
@@ -1472,6 +1475,7 @@
     "https://zenn.dev/tsumu26/articles/f065a25c6803ae",
     "https://zenn.dev/tyler0702/articles/9be3e93935d19f",
     "https://zenn.dev/tzp/articles/db03567f248575",
+    "https://zenn.dev/uenonao/articles/5b6a2241392046",
     "https://zenn.dev/uenonao/articles/b2fd482dc5310d",
     "https://zenn.dev/uenonao/articles/bb578afdd4891f",
     "https://zenn.dev/uenonao/books/5c76abb37b84ec",
@@ -1575,7 +1579,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-17T14:37:56.465620+00:00",
+  "last_checked": "2026-11-17T22:58:23.967989+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1598,6 +1602,7 @@
       "sent_guids": [
         "tag:github.com,2008:Repository/31629751/@cypress/puppeteer-v0.1.10",
         "tag:github.com,2008:Repository/31629751/@cypress/puppeteer-v1.0.0",
+        "tag:github.com,2008:Repository/31629751/@cypress/vite-plugin-cypress-esm-v2.0.1",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.0",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.1",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.2",
@@ -1608,7 +1613,7 @@
         "tag:github.com,2008:Repository/31629751/v16.2.1",
         "tag:github.com,2008:Repository/31629751/v16.3.0"
       ],
-      "last_checked": "2026-11-14T06:41:50.061861+00:00"
+      "last_checked": "2026-11-17T22:58:25.088408+00:00"
     },
     "release-pytest": {
       "sent_guids": [
