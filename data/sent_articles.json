@@ -309,6 +309,7 @@
     "https://qiita.com/Maku-Inc/items/3486663a9f7b89775cd2",
     "https://qiita.com/Maku-Inc/items/44c6bf6bceb69ca7c920",
     "https://qiita.com/Necoze/items/513b9678a7339316b718",
+    "https://qiita.com/Oursship/items/b63fa21532f340fa467d",
     "https://qiita.com/QAmah/items/cf96a81f36454c96e91f",
     "https://qiita.com/SystemConcierge/items/00f053b3139026772087",
     "https://qiita.com/YuukiYoshida/items/ca4b49b847825f6971e2",
@@ -691,6 +692,7 @@
     "https://zenn.dev/cyberdog_ai_lab/articles/20260817-ai-degrade-guard",
     "https://zenn.dev/d_aiba1/articles/xcuitest-ishittable-tap-bottom-edge",
     "https://zenn.dev/d_treasure0712/articles/20260706-swift-import-smoke-test",
+    "https://zenn.dev/daiaoki/articles/webterm-ai-era-testing",
     "https://zenn.dev/daichi01278/articles/billing-api-parsers-without-keys",
     "https://zenn.dev/daisosha/articles/44201667ed2110",
     "https://zenn.dev/daisuke37/articles/20260910_zenn_github_yato",
@@ -845,6 +847,7 @@
     "https://zenn.dev/hk_work/articles/reuse-common-parts-third-app",
     "https://zenn.dev/hk_work/articles/series-subtitle-in-parentheses",
     "https://zenn.dev/hk_work/articles/sqflite-migration-test-old-schema",
+    "https://zenn.dev/ho377/articles/2026-11-18-cndw2026-report",
     "https://zenn.dev/hokan_blog/articles/20260306-test-brush-up",
     "https://zenn.dev/horibe/articles/build-the-ruler-before-the-model",
     "https://zenn.dev/horibe/articles/dictation-scoring-edit-distance",
@@ -1124,6 +1127,7 @@
     "https://zenn.dev/miyakona/articles/buttons-from-posted-panel",
     "https://zenn.dev/miyakona/articles/frozen-tests-real-clock",
     "https://zenn.dev/miyakona/articles/interleaving-test-must-interleave",
+    "https://zenn.dev/miyakona/articles/static-migration-live-html-parity",
     "https://zenn.dev/miyakona/articles/stream-json-ledger-equivalence",
     "https://zenn.dev/miyan/articles/ai-driven-dev-testing-tdd",
     "https://zenn.dev/miyan/articles/ci-pact-contract-testing-guide",
@@ -1595,7 +1599,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-19T13:27:50.243306+00:00",
+  "last_checked": "2026-11-19T22:16:12.314038+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
