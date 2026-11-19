@@ -789,6 +789,7 @@
     "https://zenn.dev/good_relax/articles/6855d0ee4a7d54",
     "https://zenn.dev/goofmint/articles/af0aa7b1-1bf0-4811-9a21-3b1c24d94d1c",
     "https://zenn.dev/gracefullight/articles/1427d2a09cd326",
+    "https://zenn.dev/growthmktg/articles/0e61a3abbb8bad",
     "https://zenn.dev/gunma/articles/agent-exploratory-qa-playwright",
     "https://zenn.dev/gyu07/articles/224d0518adeb50",
     "https://zenn.dev/gyu07/articles/5bbe48279ec7bc",
@@ -813,6 +814,7 @@
     "https://zenn.dev/hashidev/articles/8dc58d13b1bf9b",
     "https://zenn.dev/hashitoz/articles/2026-08-02-fleet-devlog-amazon-site-zenn",
     "https://zenn.dev/hashitoz/articles/2026-08-24-fleet-devlog-cve-watch-recheck-zenn",
+    "https://zenn.dev/hasib105/articles/f01b4bf2deaa95",
     "https://zenn.dev/hawk_claws/articles/zenn-02-independent-crosscheck",
     "https://zenn.dev/hchwr01/articles/10121283d2c6d6",
     "https://zenn.dev/headwaters/articles/579d5f94907dcd",
@@ -941,6 +943,7 @@
     "https://zenn.dev/karamage/articles/4788b0b791ef2d",
     "https://zenn.dev/karamage/articles/ac71f1c89c73ff",
     "https://zenn.dev/karamage/articles/bbc1d1861f2bab",
+    "https://zenn.dev/karamage/books/50c18e52e7d19e",
     "https://zenn.dev/karamem0/articles/2026_05_09_090000",
     "https://zenn.dev/kauche/articles/722e642a6692a1",
     "https://zenn.dev/kauche/articles/78c7ad781c8076",
@@ -1414,6 +1417,7 @@
     "https://zenn.dev/talks_tldr_jp/articles/tldr29-gustavsson-summary",
     "https://zenn.dev/tanakin36/books/go-fundamentals",
     "https://zenn.dev/tarowhitey/articles/2072fbeb9f6d07",
+    "https://zenn.dev/tarowhitey/articles/abc7bf0b0226e1",
     "https://zenn.dev/tarowhitey/articles/ffmpeg-vertical-video-frame-check",
     "https://zenn.dev/taru_neko/articles/ai-agent-testing-design",
     "https://zenn.dev/tatsuo_0/articles/todo-app-playwright-pom-fixture",
@@ -1591,7 +1595,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-18T14:14:05.865870+00:00",
+  "last_checked": "2026-11-19T13:27:50.243306+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1752,9 +1756,33 @@
         "oai:arXiv.org:2611.22613v1",
         "oai:arXiv.org:2611.22888v1",
         "oai:arXiv.org:2611.22905v1",
-        "oai:arXiv.org:2611.23091v1"
+        "oai:arXiv.org:2611.23091v1",
+        "oai:arXiv.org:2611.23249v1",
+        "oai:arXiv.org:2611.23256v1",
+        "oai:arXiv.org:2611.23257v1",
+        "oai:arXiv.org:2611.23266v1",
+        "oai:arXiv.org:2611.23267v1",
+        "oai:arXiv.org:2611.23273v1",
+        "oai:arXiv.org:2611.23275v1",
+        "oai:arXiv.org:2611.23276v1",
+        "oai:arXiv.org:2611.23282v1",
+        "oai:arXiv.org:2611.23287v1",
+        "oai:arXiv.org:2611.23296v1",
+        "oai:arXiv.org:2611.23306v1",
+        "oai:arXiv.org:2611.23311v1",
+        "oai:arXiv.org:2611.23323v1",
+        "oai:arXiv.org:2611.23329v1",
+        "oai:arXiv.org:2611.23375v1",
+        "oai:arXiv.org:2611.23732v1",
+        "oai:arXiv.org:2611.23839v1",
+        "oai:arXiv.org:2611.23864v1",
+        "oai:arXiv.org:2611.23905v1",
+        "oai:arXiv.org:2611.23931v1",
+        "oai:arXiv.org:2611.24682v1",
+        "oai:arXiv.org:2611.24804v1",
+        "oai:arXiv.org:2611.24872v1"
       ],
-      "last_checked": "2026-11-18T14:14:48.064135+00:00"
+      "last_checked": "2026-11-19T13:28:47.398220+00:00"
     },
     "youtube-jasst": {
       "sent_guids": [
