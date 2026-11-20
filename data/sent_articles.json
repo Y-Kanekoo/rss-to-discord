@@ -645,6 +645,7 @@
     "https://zenn.dev/chinmayajha/articles/100bd4e7a8269b",
     "https://zenn.dev/chinmayajha/articles/3c34eebead824a",
     "https://zenn.dev/chinmayajha/articles/fe0db59af5088e",
+    "https://zenn.dev/chiwamaru/articles/aws-emulator-guide-announcement",
     "https://zenn.dev/chiwamaru/books/aws-emulator-guide",
     "https://zenn.dev/chiwapome/articles/ai-automation-silent-failures",
     "https://zenn.dev/chiwapome/articles/fire-drill-safety-nets",
@@ -1098,6 +1099,7 @@
     "https://zenn.dev/masahiroid/articles/a2b-api-authorization",
     "https://zenn.dev/masamune0625/articles/bffe4b9637589e",
     "https://zenn.dev/masatake_i/articles/e46bd37ec019f3",
+    "https://zenn.dev/massanjp/articles/0eb654183d4c74",
     "https://zenn.dev/massanjp/articles/fd731a347dc7b4",
     "https://zenn.dev/matasuke_t/articles/32fd6cd3722313",
     "https://zenn.dev/matsunaopen/articles/ai-era-sdlc-rework-visibility",
@@ -1145,6 +1147,7 @@
     "https://zenn.dev/mizchi/articles/jev-test-filter-intro",
     "https://zenn.dev/mk668a/articles/8e2bbd38694ebb",
     "https://zenn.dev/mocha_engineer/articles/reproduce-ui-states-with-msw",
+    "https://zenn.dev/mochiai/articles/3b19394d853c7e",
     "https://zenn.dev/moetosu/articles/bd55161f05c582",
     "https://zenn.dev/moneytools_lab/articles/1d533b62bb11a2",
     "https://zenn.dev/more_tech_blog/articles/37fe1eb4661823",
@@ -1603,7 +1606,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-20T13:08:34.312482+00:00",
+  "last_checked": "2026-11-20T21:15:58.355476+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
