@@ -397,6 +397,7 @@
     "https://shiftevolve.connpass.com/event/408225/",
     "https://shiftevolve.connpass.com/event/409434/",
     "https://shiftevolve.connpass.com/event/409441/",
+    "https://speakerdeck.com/____rina____/jasst26-kyushu-v01",
     "https://speakerdeck.com/goyoki/shift-left-approach-for-team-improvement",
     "https://speakerdeck.com/ishikawafyu/professional-engineer-education-in-the-llm-era-insights-from-the-topse-program",
     "https://speakerdeck.com/makky_tyuyan/jasstniguan-warukotodebian-watutaren-sheng-guan-number-jasstnano",
@@ -587,6 +588,7 @@
     "https://zenn.dev/atamaplus/articles/ef919329f4cc12",
     "https://zenn.dev/atlassystemtech/articles/33c863d520a15e",
     "https://zenn.dev/atlassystemtech/articles/5df7750c7e8250",
+    "https://zenn.dev/atsu1979/articles/93b40ea690eb1a",
     "https://zenn.dev/atsushi_apps/articles/ai-xcodebuild-test-tips",
     "https://zenn.dev/au/articles/realistic-coding-test",
     "https://zenn.dev/au/articles/tdd-from-issue-to-test",
@@ -761,6 +763,7 @@
     "https://zenn.dev/fujiritsu/articles/a547594c955449",
     "https://zenn.dev/fujishu/articles/daf10672b7e975",
     "https://zenn.dev/fujishu/articles/e5791afa6f215f",
+    "https://zenn.dev/fuyu/articles/6e42367390c963",
     "https://zenn.dev/gakken_leap/articles/72b7b800d164e9",
     "https://zenn.dev/gallu/books/18b1859947da0e",
     "https://zenn.dev/garplab/articles/083e25df1be2fa",
@@ -1311,6 +1314,7 @@
     "https://zenn.dev/rets/articles/3f9a7c4c62bf10",
     "https://zenn.dev/revo1290/articles/a8f3c2d91b4e7f",
     "https://zenn.dev/revo1290/articles/slicetest-between-unit-and-e2e",
+    "https://zenn.dev/riko111/articles/5ec7158ba72dba",
     "https://zenn.dev/riko111/articles/97003febb578e9",
     "https://zenn.dev/rinov/books/3524fa1fc98f46",
     "https://zenn.dev/risa1123/articles/test-first-zenn-post",
@@ -1599,7 +1603,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-19T22:16:12.314038+00:00",
+  "last_checked": "2026-11-20T13:08:34.312482+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1689,6 +1693,7 @@
         "oai:arXiv.org:2603.05026v4",
         "oai:arXiv.org:2604.07789v4",
         "oai:arXiv.org:2605.15226v2",
+        "oai:arXiv.org:2605.21347v5",
         "oai:arXiv.org:2607.01494v2",
         "oai:arXiv.org:2607.06873v2",
         "oai:arXiv.org:2607.25987v3",
@@ -1743,6 +1748,7 @@
         "oai:arXiv.org:2611.20856v1",
         "oai:arXiv.org:2611.20969v1",
         "oai:arXiv.org:2611.21176v1",
+        "oai:arXiv.org:2611.21176v2",
         "oai:arXiv.org:2611.21214v1",
         "oai:arXiv.org:2611.21421v1",
         "oai:arXiv.org:2611.21452v1",
@@ -1784,9 +1790,14 @@
         "oai:arXiv.org:2611.23931v1",
         "oai:arXiv.org:2611.24682v1",
         "oai:arXiv.org:2611.24804v1",
-        "oai:arXiv.org:2611.24872v1"
+        "oai:arXiv.org:2611.24872v1",
+        "oai:arXiv.org:2611.25066v1",
+        "oai:arXiv.org:2611.25170v1",
+        "oai:arXiv.org:2611.25471v1",
+        "oai:arXiv.org:2611.25732v1",
+        "oai:arXiv.org:2611.26588v1"
       ],
-      "last_checked": "2026-11-19T13:28:47.398220+00:00"
+      "last_checked": "2026-11-20T13:08:51.467878+00:00"
     },
     "youtube-jasst": {
       "sent_guids": [
