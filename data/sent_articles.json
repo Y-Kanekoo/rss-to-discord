@@ -948,6 +948,7 @@
     "https://zenn.dev/kanta13jp1/articles/astra-price-boundary-fifteen-cases",
     "https://zenn.dev/kanta13jp1/articles/flutter-adaptive-inbox-dismissal",
     "https://zenn.dev/karamage/articles/4788b0b791ef2d",
+    "https://zenn.dev/karamage/articles/73027ee36796dc",
     "https://zenn.dev/karamage/articles/ac71f1c89c73ff",
     "https://zenn.dev/karamage/articles/bbc1d1861f2bab",
     "https://zenn.dev/karamage/books/50c18e52e7d19e",
@@ -1367,6 +1368,7 @@
     "https://zenn.dev/shoebill_dev27/books/python-pitfalls",
     "https://zenn.dev/shoyomayabot/articles/ai-coding-beta-quality-gates",
     "https://zenn.dev/shoyomayabot/articles/ai-scoring-improvement-loop",
+    "https://zenn.dev/shoyomayabot/articles/excel-test-spec-to-junit",
     "https://zenn.dev/shoyomayabot/articles/spec-driven-vs-test-driven",
     "https://zenn.dev/shuent/articles/a14f435eb03927",
     "https://zenn.dev/shunsuke_stack/articles/ai-qa-career-strategy",
@@ -1606,7 +1608,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-20T21:15:58.355476+00:00",
+  "last_checked": "2026-11-21T11:22:55.986273+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
