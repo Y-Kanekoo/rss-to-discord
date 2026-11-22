@@ -187,6 +187,7 @@
     "https://note.com/akiyama924/n/n294f18bd388f",
     "https://note.com/akiyama924/n/n2a7c9dbfd56a",
     "https://note.com/akiyama924/n/n3fe98b324f97",
+    "https://note.com/akiyama924/n/n492d7f8d7a69",
     "https://note.com/akiyama924/n/n49e178f049bf",
     "https://note.com/akiyama924/n/n57175e1f40a6",
     "https://note.com/akiyama924/n/n575b5f57b76f",
@@ -327,6 +328,7 @@
     "https://qiita.com/k-sak/items/067216bed3adc7f8eac1",
     "https://qiita.com/keigo1450/items/d05e3082cdb4f1944e06",
     "https://qiita.com/kinoto-r/items/f54e0dadd2e50af6065c",
+    "https://qiita.com/kishimin/items/543153e8377494ed24a0",
     "https://qiita.com/km_1018/items/eb6093e65b3d505997e4",
     "https://qiita.com/locolisu/items/4c0cb461776f129581bb",
     "https://qiita.com/locolisu/items/5092bf9c35ee418950ad",
@@ -645,6 +647,7 @@
     "https://zenn.dev/chinmayajha/articles/100bd4e7a8269b",
     "https://zenn.dev/chinmayajha/articles/3c34eebead824a",
     "https://zenn.dev/chinmayajha/articles/fe0db59af5088e",
+    "https://zenn.dev/chiwamaru/articles/aws-emulator-fidelity-scores",
     "https://zenn.dev/chiwamaru/articles/aws-emulator-guide-announcement",
     "https://zenn.dev/chiwamaru/books/aws-emulator-guide",
     "https://zenn.dev/chiwapome/articles/ai-automation-silent-failures",
@@ -1208,6 +1211,7 @@
     "https://zenn.dev/nekomimimi/articles/80246eab6410b0",
     "https://zenn.dev/nenene01/articles/agency-agents-codex-hands-on",
     "https://zenn.dev/nenene01/articles/rethinking-code-review-ai",
+    "https://zenn.dev/neoru/articles/129eb359653fe5",
     "https://zenn.dev/netoto/articles/ceaefed0dabdc9",
     "https://zenn.dev/nexta_/articles/4319a84dece1ba",
     "https://zenn.dev/nexta_/articles/51fdb6f774d1ca",
@@ -1595,6 +1599,7 @@
     "https://zenn.dev/yuralume/articles/4d66cd990ca5bc",
     "https://zenn.dev/yushiyamamoto/articles/ai-approval-bound-execution-security-2026",
     "https://zenn.dev/yusuke_shiki/articles/ee2753984e4ca3",
+    "https://zenn.dev/yutaka8484/articles/kobayashi-20261122-acceptance-criteria-genba",
     "https://zenn.dev/yutakacraft/articles/d6b106720c3358",
     "https://zenn.dev/yutwo_tech/articles/anipal-testing-strategy",
     "https://zenn.dev/yutwo_tech/articles/floci-vs-aws-emulator-dynamodb",
@@ -1614,7 +1619,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-21T18:05:54.627215+00:00",
+  "last_checked": "2026-11-22T07:03:49.421319+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
