@@ -477,6 +477,7 @@
     "https://testradio.fm/?p=1809",
     "https://testradio.fm/?p=1811",
     "https://testradio.fm/?p=1822",
+    "https://testradio.fm/?p=1826",
     "https://tonono.hatenablog.com/entry/2026/06/23/083000",
     "https://tonono.hatenablog.com/entry/2026/10/26/080000",
     "https://toshimana.hatenablog.com/entry/2026/08/08/201941",
@@ -1629,7 +1630,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-22T21:53:52.461227+00:00",
+  "last_checked": "2026-11-23T13:10:29.635083+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1724,6 +1725,7 @@
         "oai:arXiv.org:2607.06873v2",
         "oai:arXiv.org:2607.25987v3",
         "oai:arXiv.org:2607.28591v3",
+        "oai:arXiv.org:2608.11095v2",
         "oai:arXiv.org:2609.04218v4",
         "oai:arXiv.org:2610.00890v2",
         "oai:arXiv.org:2610.09142v3",
@@ -1784,6 +1786,7 @@
         "oai:arXiv.org:2611.21626v1",
         "oai:arXiv.org:2611.21635v1",
         "oai:arXiv.org:2611.21797v1",
+        "oai:arXiv.org:2611.21797v2",
         "oai:arXiv.org:2611.21845v1",
         "oai:arXiv.org:2611.22291v1",
         "oai:arXiv.org:2611.22394v1",
@@ -1821,9 +1824,14 @@
         "oai:arXiv.org:2611.25170v1",
         "oai:arXiv.org:2611.25471v1",
         "oai:arXiv.org:2611.25732v1",
-        "oai:arXiv.org:2611.26588v1"
+        "oai:arXiv.org:2611.26588v1",
+        "oai:arXiv.org:2611.26665v1",
+        "oai:arXiv.org:2611.26815v1",
+        "oai:arXiv.org:2611.27144v1",
+        "oai:arXiv.org:2611.27368v1",
+        "oai:arXiv.org:2611.27829v1"
       ],
-      "last_checked": "2026-11-20T13:08:51.467878+00:00"
+      "last_checked": "2026-11-23T13:10:45.663154+00:00"
     },
     "youtube-jasst": {
       "sent_guids": [
