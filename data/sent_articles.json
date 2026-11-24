@@ -402,10 +402,12 @@
     "https://shiftevolve.connpass.com/event/409434/",
     "https://shiftevolve.connpass.com/event/409441/",
     "https://speakerdeck.com/____rina____/jasst26-kyushu-v01",
+    "https://speakerdeck.com/goyoki/building-up-of-quality",
     "https://speakerdeck.com/goyoki/shift-left-approach-for-team-improvement",
     "https://speakerdeck.com/ishikawafyu/professional-engineer-education-in-the-llm-era-insights-from-the-topse-program",
     "https://speakerdeck.com/makky_tyuyan/jasstniguan-warukotodebian-watutaren-sheng-guan-number-jasstnano",
     "https://speakerdeck.com/masasuna/qa-enjinia-mo-domein-kudou-sekkei-o-manabu-imi",
+    "https://speakerdeck.com/mineo_matsuya/jidouka-no-saki-tesuto-jiritsuka-ni-muke-te-pptx",
     "https://speakerdeck.com/mineo_matsuya/rethinking-the-fundamentals-of-testing-in-the-ai-era",
     "https://speakerdeck.com/mineo_matsuya/vlm-test-execution-agent-for-running-manual-test-cases-as-is",
     "https://speakerdeck.com/nihonbuson/quality-assurance-big-picture-vol2",
@@ -432,6 +434,7 @@
     "https://sqripts.com/?p=106615",
     "https://sqripts.com/?p=106631",
     "https://sqripts.com/?p=106643",
+    "https://sqripts.com/?p=106661",
     "https://tech-blog.tabelog.com/entry/ai-e2e-test-autonomous-generation",
     "https://tech-blog.tabelog.com/entry/connecting-qa-data-for-ai-driven-test-repair",
     "https://tech.layerx.co.jp/entry/2026/05/taming-llm-overquestioning",
@@ -1341,6 +1344,8 @@
     "https://zenn.dev/ren_i24/articles/5f5bd5c5ad6965",
     "https://zenn.dev/ren_in_ren/articles/89095c1e124862",
     "https://zenn.dev/rets/articles/3f9a7c4c62bf10",
+    "https://zenn.dev/rets/articles/5354737d85d5fd",
+    "https://zenn.dev/rets/articles/d00f322961513e",
     "https://zenn.dev/revo1290/articles/a8f3c2d91b4e7f",
     "https://zenn.dev/revo1290/articles/slicetest-between-unit-and-e2e",
     "https://zenn.dev/riko111/articles/5ec7158ba72dba",
@@ -1465,6 +1470,7 @@
     "https://zenn.dev/tauridev/articles/ai-code-breaks-3-patterns",
     "https://zenn.dev/tauridev/articles/numbers-dont-match-4-layers",
     "https://zenn.dev/team_lab/articles/b1ecb06d94a3f6",
+    "https://zenn.dev/team_nishika/articles/2e9c34a33618c5",
     "https://zenn.dev/techquant/articles/extractor-precondition-independent-verifier",
     "https://zenn.dev/techstudiolab/articles/review-ai-generated-code-business-assumptions",
     "https://zenn.dev/test123/articles/68b4c09066cae9",
@@ -1594,6 +1600,7 @@
     "https://zenn.dev/yoggydev/articles/70096fad4de909",
     "https://zenn.dev/yoiyoi_rat/articles/b6c1a24c7e4759",
     "https://zenn.dev/yook/articles/spec-driven-test-code-blind-spots-revised-draft",
+    "https://zenn.dev/yoshidam/articles/hissan-fixtures",
     "https://zenn.dev/yoshiki_a/articles/e85a6077372242",
     "https://zenn.dev/yoshiki_a/books/07f972b88c5bdc",
     "https://zenn.dev/yoshio_matsuda/articles/unit_test_guidelines",
@@ -1640,7 +1647,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-24T01:00:24.656500+00:00",
+  "last_checked": "2026-11-24T11:05:38.180026+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1669,13 +1676,14 @@
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.1",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.2",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.2.0",
+        "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.2.1",
         "tag:github.com,2008:Repository/31629751/v15.21.2",
         "tag:github.com,2008:Repository/31629751/v16.1.1",
         "tag:github.com,2008:Repository/31629751/v16.2.0",
         "tag:github.com,2008:Repository/31629751/v16.2.1",
         "tag:github.com,2008:Repository/31629751/v16.3.0"
       ],
-      "last_checked": "2026-11-24T01:00:25.361562+00:00"
+      "last_checked": "2026-11-24T11:05:38.985551+00:00"
     },
     "release-pytest": {
       "sent_guids": [
@@ -1732,12 +1740,14 @@
         "oai:arXiv.org:2604.07789v4",
         "oai:arXiv.org:2605.15226v2",
         "oai:arXiv.org:2605.21347v5",
+        "oai:arXiv.org:2606.16364v3",
         "oai:arXiv.org:2607.01494v2",
         "oai:arXiv.org:2607.06873v2",
         "oai:arXiv.org:2607.25987v3",
         "oai:arXiv.org:2607.28591v3",
         "oai:arXiv.org:2608.11095v2",
         "oai:arXiv.org:2609.04218v4",
+        "oai:arXiv.org:2609.11076v5",
         "oai:arXiv.org:2610.00890v2",
         "oai:arXiv.org:2610.09142v3",
         "oai:arXiv.org:2610.10258v2",
@@ -1840,9 +1850,23 @@
         "oai:arXiv.org:2611.26815v1",
         "oai:arXiv.org:2611.27144v1",
         "oai:arXiv.org:2611.27368v1",
-        "oai:arXiv.org:2611.27829v1"
+        "oai:arXiv.org:2611.27829v1",
+        "oai:arXiv.org:2611.28027v1",
+        "oai:arXiv.org:2611.28159v1",
+        "oai:arXiv.org:2611.28174v1",
+        "oai:arXiv.org:2611.28426v1",
+        "oai:arXiv.org:2611.28584v1",
+        "oai:arXiv.org:2611.28667v1",
+        "oai:arXiv.org:2611.29018v1",
+        "oai:arXiv.org:2611.29745v1",
+        "oai:arXiv.org:2611.29800v1",
+        "oai:arXiv.org:2611.30017v1",
+        "oai:arXiv.org:2611.30034v1",
+        "oai:arXiv.org:2611.30517v1",
+        "oai:arXiv.org:2611.30624v1",
+        "oai:arXiv.org:2611.30655v1"
       ],
-      "last_checked": "2026-11-23T13:10:45.663154+00:00"
+      "last_checked": "2026-11-24T11:06:15.204234+00:00"
     },
     "youtube-jasst": {
       "sent_guids": [
