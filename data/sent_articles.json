@@ -540,6 +540,7 @@
     "https://zenn.dev/ai_jidoka_lab/articles/test_dummy_delete_me",
     "https://zenn.dev/ai_shihan/articles/332d79d1739497",
     "https://zenn.dev/ai_shihan/articles/6a6b61819a86ba",
+    "https://zenn.dev/aianime/articles/f052bc3e1bb600",
     "https://zenn.dev/aiforall/articles/070cc6f0451f1e",
     "https://zenn.dev/aikawaproject/articles/sound-workshop-foundation",
     "https://zenn.dev/ailmira/articles/300e0aee9997a2",
@@ -557,6 +558,7 @@
     "https://zenn.dev/akinori901/articles/20260914-00mu0itx",
     "https://zenn.dev/akinori901/articles/20260914-00mu0kt1",
     "https://zenn.dev/akinori901/articles/20260914-00mu0ktj",
+    "https://zenn.dev/akinori901/articles/20261005-20261005",
     "https://zenn.dev/akinori901/articles/20261009-plan068",
     "https://zenn.dev/akira_papa/articles/aae2458b546167",
     "https://zenn.dev/akring/articles/11e668bae28707",
@@ -659,6 +661,7 @@
     "https://zenn.dev/chiwapome/articles/green-tests-that-assert-nothing",
     "https://zenn.dev/churadata/articles/c5fe2be07fa703",
     "https://zenn.dev/ciel_lab/articles/81bde10474dd93",
+    "https://zenn.dev/claire_ai/articles/chiisaku-iriguchi",
     "https://zenn.dev/cliffy/articles/a3f55476dba1a1",
     "https://zenn.dev/clopy/articles/deno29-test-each-snapshot",
     "https://zenn.dev/clopy/articles/node26-context-log-test-log-attribution",
@@ -817,6 +820,7 @@
     "https://zenn.dev/gzer0/articles/godot-write-movie-script-capture-with-audio",
     "https://zenn.dev/gzer0/articles/local-llm-fallback-hides-context-overflow",
     "https://zenn.dev/gzer0/articles/real-play-save-fixtures-for-ai-tests",
+    "https://zenn.dev/h_aso/articles/isolated-spec-tests-claude-code",
     "https://zenn.dev/habco/articles/21e80182787df3",
     "https://zenn.dev/hach/articles/chat-agent-prompt-regression-eval-design",
     "https://zenn.dev/hackbox_ai/articles/0c1707bfff7898",
@@ -863,6 +867,7 @@
     "https://zenn.dev/hk_work/articles/sqflite-migration-test-old-schema",
     "https://zenn.dev/ho377/articles/2026-11-18-cndw2026-report",
     "https://zenn.dev/hokan_blog/articles/20260306-test-brush-up",
+    "https://zenn.dev/honabochi/articles/codex-collection-unread-log",
     "https://zenn.dev/horibe/articles/build-the-ruler-before-the-model",
     "https://zenn.dev/horibe/articles/dictation-scoring-edit-distance",
     "https://zenn.dev/horibe/articles/pronunciation-api-null-traps",
@@ -899,6 +904,7 @@
     "https://zenn.dev/j_sakamoto/articles/ad08773420bd2e",
     "https://zenn.dev/jadaq/articles/e613624871125a",
     "https://zenn.dev/jam0824/articles/58f8056fb80b03",
+    "https://zenn.dev/jam0824/articles/6c236656e7bbdf",
     "https://zenn.dev/jam0824/articles/c84a2ef393ee70",
     "https://zenn.dev/japannomu/articles/20260322_ai-test-fraud-prevention",
     "https://zenn.dev/jca02266/articles/ai-continuous-debugging-vba-runner",
@@ -1039,6 +1045,7 @@
     "https://zenn.dev/kotanpolin/articles/response-query-preservation",
     "https://zenn.dev/kotanpolin/articles/trajexa-revision-and-trial-history",
     "https://zenn.dev/kotaro_y/books/go-test-strategy",
+    "https://zenn.dev/koukyosyumei/articles/31c8fcf4da45b7",
     "https://zenn.dev/koyasama/articles/llm-qat-model-migration",
     "https://zenn.dev/kswr/books/opt_production",
     "https://zenn.dev/kt3k/articles/b41b78ba6ae65f",
@@ -1065,6 +1072,7 @@
     "https://zenn.dev/loglass/articles/54c4f9688dab9f",
     "https://zenn.dev/loglass/articles/b6c1a24c7e4759",
     "https://zenn.dev/loglass/articles/ef099b123153cf",
+    "https://zenn.dev/luizfigueiredo/articles/d9dfd85dda6c64",
     "https://zenn.dev/lux123/articles/9ed63128152e3e",
     "https://zenn.dev/lxdesign_blog/articles/c57e8c62404005",
     "https://zenn.dev/m_sakaaai/articles/0d39d5642813bf",
@@ -1146,6 +1154,7 @@
     "https://zenn.dev/miyakona/articles/buttons-from-posted-panel",
     "https://zenn.dev/miyakona/articles/checkpoint-failure-keeps-pending",
     "https://zenn.dev/miyakona/articles/frozen-tests-real-clock",
+    "https://zenn.dev/miyakona/articles/git-tests-inherit-user-config",
     "https://zenn.dev/miyakona/articles/interleaving-test-must-interleave",
     "https://zenn.dev/miyakona/articles/static-migration-live-html-parity",
     "https://zenn.dev/miyakona/articles/stream-json-ledger-equivalence",
@@ -1604,6 +1613,7 @@
     "https://zenn.dev/yuki_2021/articles/fee532ef7a31bc",
     "https://zenn.dev/yuki_engineer08/articles/2026-07-04-crosspost-test",
     "https://zenn.dev/yukke_dev/articles/20260916-partial-deep-array-match",
+    "https://zenn.dev/yuli626/articles/5f42c0b163a6c1",
     "https://zenn.dev/yumemi_inc/articles/eslint-ruletester-node-test",
     "https://zenn.dev/yuninaka/articles/ai-review-philosophy",
     "https://zenn.dev/yuninaka/articles/characterization-testing-blind-spot",
@@ -1630,7 +1640,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-23T13:10:29.635083+00:00",
+  "last_checked": "2026-11-24T01:00:24.656500+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1653,6 +1663,7 @@
       "sent_guids": [
         "tag:github.com,2008:Repository/31629751/@cypress/puppeteer-v0.1.10",
         "tag:github.com,2008:Repository/31629751/@cypress/puppeteer-v1.0.0",
+        "tag:github.com,2008:Repository/31629751/@cypress/puppeteer-v2.0.0",
         "tag:github.com,2008:Repository/31629751/@cypress/vite-plugin-cypress-esm-v2.0.1",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.0",
         "tag:github.com,2008:Repository/31629751/@cypress/webpack-dev-server-v6.1.1",
@@ -1664,7 +1675,7 @@
         "tag:github.com,2008:Repository/31629751/v16.2.1",
         "tag:github.com,2008:Repository/31629751/v16.3.0"
       ],
-      "last_checked": "2026-11-17T22:58:25.088408+00:00"
+      "last_checked": "2026-11-24T01:00:25.361562+00:00"
     },
     "release-pytest": {
       "sent_guids": [
