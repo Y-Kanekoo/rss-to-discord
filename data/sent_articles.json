@@ -414,6 +414,7 @@
     "https://speakerdeck.com/nihonbuson/scaling-qa-organization",
     "https://speakerdeck.com/nihonbuson/shadow-testing",
     "https://speakerdeck.com/o3/2026-devsumi-ozono",
+    "https://speakerdeck.com/tarappo/fuguai-deta-o-mochiita-purodakuto-kodo-no-jakuten-kashika",
     "https://speakerdeck.com/tarappo/sukeruatupuqi-ye-deqazu-zhi-gaji-neng-sisok-kerutamenozu-zhi-she-ji-toshi-zu-mi-botomuatuputototupudaunwoliang-lun-tositaapuroti",
     "https://sqripts.com/?p=106313",
     "https://sqripts.com/?p=106319",
@@ -507,6 +508,7 @@
     "https://zenn.dev/38_38/articles/f9c9cfa0fa2482",
     "https://zenn.dev/417/articles/ai-era-domain-knowledge-placement",
     "https://zenn.dev/444444442/articles/8d4358d05169b4",
+    "https://zenn.dev/55_ymzn/articles/software_testing_inspection_advanced",
     "https://zenn.dev/93ch/articles/test-viewpoint-cycle",
     "https://zenn.dev/93ch/books/testing-not-equals-qa",
     "https://zenn.dev/a1221/articles/cron-parser-coverage-found-bugs",
@@ -996,6 +998,7 @@
     "https://zenn.dev/kent8192/articles/building-huge-rust-lib-with-claude-code",
     "https://zenn.dev/kenyamaneko/articles/457fc13cdc4aab",
     "https://zenn.dev/kenyamaneko/articles/a0c955df8de986",
+    "https://zenn.dev/keploy/articles/48aea3cb9271d3",
     "https://zenn.dev/kimshoshi/articles/ai-code-expected-results",
     "https://zenn.dev/kinuuu/articles/ai-coding-criteria-evidence-explanation",
     "https://zenn.dev/kinzal/articles/80d230f075f4b1",
@@ -1449,6 +1452,7 @@
     "https://zenn.dev/swdrk/articles/a18eca9e53d582",
     "https://zenn.dev/syuya2036/articles/gpui-testing-guide",
     "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24",
+    "https://zenn.dev/t_azk/articles/judge-by-exit-code-not-by-llm",
     "https://zenn.dev/t_kuni_0/articles/ad06a19a565023",
     "https://zenn.dev/taito0816/articles/iot-sensor-data-testing",
     "https://zenn.dev/takaaki/articles/growing-tests-for-untested-code",
@@ -1647,7 +1651,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-24T11:05:38.180026+00:00",
+  "last_checked": "2026-11-24T21:21:41.055355+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
