@@ -316,6 +316,7 @@
     "https://qiita.com/SystemConcierge/items/00f053b3139026772087",
     "https://qiita.com/YuukiYoshida/items/ca4b49b847825f6971e2",
     "https://qiita.com/acsuzuki/items/a1f4533a4d7c724c097f",
+    "https://qiita.com/after6labo/items/443169879878bc696404",
     "https://qiita.com/aipapalog/items/25c03a629f807d35f5ca",
     "https://qiita.com/akihidem/items/6e7d55c8d59b3e5526e8",
     "https://qiita.com/daikou223/items/664f60ab8232b51a2d26",
@@ -1658,7 +1659,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-25T14:39:07.155180+00:00",
+  "last_checked": "2026-11-25T23:41:19.676128+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1692,9 +1693,10 @@
         "tag:github.com,2008:Repository/31629751/v16.1.1",
         "tag:github.com,2008:Repository/31629751/v16.2.0",
         "tag:github.com,2008:Repository/31629751/v16.2.1",
-        "tag:github.com,2008:Repository/31629751/v16.3.0"
+        "tag:github.com,2008:Repository/31629751/v16.3.0",
+        "tag:github.com,2008:Repository/31629751/v16.4.0"
       ],
-      "last_checked": "2026-11-24T11:05:38.985551+00:00"
+      "last_checked": "2026-11-25T23:41:20.738233+00:00"
     },
     "release-pytest": {
       "sent_guids": [
