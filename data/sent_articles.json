@@ -435,6 +435,7 @@
     "https://sqripts.com/?p=106615",
     "https://sqripts.com/?p=106631",
     "https://sqripts.com/?p=106643",
+    "https://sqripts.com/?p=106653",
     "https://sqripts.com/?p=106661",
     "https://tech-blog.tabelog.com/entry/ai-e2e-test-autonomous-generation",
     "https://tech-blog.tabelog.com/entry/connecting-qa-data-for-ai-driven-test-repair",
@@ -687,6 +688,7 @@
     "https://zenn.dev/codecraft/articles/limit-order-misses-best-trades",
     "https://zenn.dev/codecraft/articles/nikkei-200day-filter-61years",
     "https://zenn.dev/codecraft/articles/same-change-measured-four-ways",
+    "https://zenn.dev/codecraft/articles/short-return-formula-fake-gravity",
     "https://zenn.dev/codecraft/articles/signal-vs-execution-spread",
     "https://zenn.dev/codecraft/articles/weekly-momentum-universe-lookahead",
     "https://zenn.dev/coffee_break/books/bi-dashboard-test-design",
@@ -771,6 +773,7 @@
     "https://zenn.dev/fixu/articles/outside-the-diff-batch-double-run-incident",
     "https://zenn.dev/flinters_blog/articles/23dec74646d902",
     "https://zenn.dev/flip451/articles/sotohe-test-obligation-gate",
+    "https://zenn.dev/freddiefujiwara/articles/abnormal-and-property-tests",
     "https://zenn.dev/frontendflat/articles/automated-test-size-tradeoff",
     "https://zenn.dev/frontline/articles/3a912df20d9210",
     "https://zenn.dev/frontline/articles/a153d936f224a6",
@@ -859,6 +862,7 @@
     "https://zenn.dev/highfar/articles/fighting-ai-hallucination-with-kani",
     "https://zenn.dev/highfar/articles/mutation-tests-only-your-own-blindspots",
     "https://zenn.dev/highfar/articles/vacuous-weak-misaligned-constraints",
+    "https://zenn.dev/higutest/articles/5715dc49c17ddb",
     "https://zenn.dev/hina_dev/articles/maestro-mobile-e2e-testing-intro",
     "https://zenn.dev/hint_editroom/articles/1899c47457c30c",
     "https://zenn.dev/hiro_cactus/articles/1ef34c60024259",
@@ -898,6 +902,7 @@
     "https://zenn.dev/ishizakahiroshi/articles/20261005-dots-dev-flow",
     "https://zenn.dev/islaree/articles/dfa5a75d42e50e",
     "https://zenn.dev/itaraiguma/articles/ai-agent-tests-kept-growing",
+    "https://zenn.dev/itaraiguma/articles/e2e-first-hid-duplicate-tabs",
     "https://zenn.dev/itaraiguma/articles/sitemap-md5-sqlite-emulation",
     "https://zenn.dev/itdevnote/articles/ai-review-fix-created-regression",
     "https://zenn.dev/itdevnote/articles/bench-hash-match-output-differs",
@@ -1374,6 +1379,7 @@
     "https://zenn.dev/saytooy_arch/articles/07-ai-agent-test-fail-excuse",
     "https://zenn.dev/saytooy_arch/articles/10-vitest-silent-pass",
     "https://zenn.dev/saytooy_arch/articles/18-detect-process-deep-dive",
+    "https://zenn.dev/sbkm/articles/0a8d9931015ba9",
     "https://zenn.dev/sbkm/articles/4ad26d225c9dcb",
     "https://zenn.dev/sbsb/articles/5e3545f7931972",
     "https://zenn.dev/scalar_sol_blog/articles/frontend-quality-checklist",
@@ -1435,6 +1441,7 @@
     "https://zenn.dev/strixai/articles/9dc1d77ba67b4b",
     "https://zenn.dev/studist/articles/qaas_vol31_report",
     "https://zenn.dev/sugitakenji/articles/66e76aec7d9043",
+    "https://zenn.dev/sugitakenji/articles/cfcc0b3887726d",
     "https://zenn.dev/sumasate_tec/articles/72f680c25c141a",
     "https://zenn.dev/sumumu26/articles/b1afde3b0e06f2",
     "https://zenn.dev/sumx21t/articles/coding-agent-categorical-imperative",
@@ -1651,7 +1658,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-24T21:21:41.055355+00:00",
+  "last_checked": "2026-11-25T14:39:07.155180+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1739,6 +1746,7 @@
       "sent_guids": [
         "oai:arXiv.org:2406.15877v5",
         "oai:arXiv.org:2504.15564v4",
+        "oai:arXiv.org:2509.01612v2",
         "oai:arXiv.org:2511.00125v2",
         "oai:arXiv.org:2603.05026v4",
         "oai:arXiv.org:2604.07789v4",
@@ -1752,6 +1760,7 @@
         "oai:arXiv.org:2608.11095v2",
         "oai:arXiv.org:2609.04218v4",
         "oai:arXiv.org:2609.11076v5",
+        "oai:arXiv.org:2609.21190v3",
         "oai:arXiv.org:2610.00890v2",
         "oai:arXiv.org:2610.09142v3",
         "oai:arXiv.org:2610.10258v2",
@@ -1868,9 +1877,14 @@
         "oai:arXiv.org:2611.30034v1",
         "oai:arXiv.org:2611.30517v1",
         "oai:arXiv.org:2611.30624v1",
-        "oai:arXiv.org:2611.30655v1"
+        "oai:arXiv.org:2611.30655v1",
+        "oai:arXiv.org:2611.31839v1",
+        "oai:arXiv.org:2611.32089v1",
+        "oai:arXiv.org:2611.32381v1",
+        "oai:arXiv.org:2611.32636v1",
+        "oai:arXiv.org:2611.32973v1"
       ],
-      "last_checked": "2026-11-24T11:06:15.204234+00:00"
+      "last_checked": "2026-11-25T14:39:25.527671+00:00"
     },
     "youtube-jasst": {
       "sent_guids": [
