@@ -437,6 +437,7 @@
     "https://sqripts.com/?p=106631",
     "https://sqripts.com/?p=106643",
     "https://sqripts.com/?p=106653",
+    "https://sqripts.com/?p=106657",
     "https://sqripts.com/?p=106661",
     "https://tech-blog.tabelog.com/entry/ai-e2e-test-autonomous-generation",
     "https://tech-blog.tabelog.com/entry/connecting-qa-data-for-ai-driven-test-repair",
@@ -531,6 +532,7 @@
     "https://zenn.dev/aew2sbee/articles/test-design-document-template",
     "https://zenn.dev/aew2sbee/articles/test-perspectives",
     "https://zenn.dev/aew2sbee/articles/test-procedure-document",
+    "https://zenn.dev/agent_dev_field/articles/42e52ce5f8ce3f",
     "https://zenn.dev/agentmemories/articles/agent-task-lease",
     "https://zenn.dev/agentmemories/articles/approval-payload-hash-binding",
     "https://zenn.dev/agentmemories/articles/automatic-recovery-dispatcher",
@@ -581,6 +583,7 @@
     "https://zenn.dev/alphapolis_tech/articles/4b81005f615b1a",
     "https://zenn.dev/amamiya_chan/articles/a0f68ec5d3e1ab",
     "https://zenn.dev/ament3/articles/ai-digest-2026-10-23-0026",
+    "https://zenn.dev/anas_alkhatib/articles/e020386e251ca9",
     "https://zenn.dev/anikuma/articles/ffmpeg-contact-sheet-review",
     "https://zenn.dev/anzy/articles/367090a9f9a409",
     "https://zenn.dev/aoi_0411/articles/github-actions-ci-beginner",
@@ -818,6 +821,7 @@
     "https://zenn.dev/goofmint/articles/af0aa7b1-1bf0-4811-9a21-3b1c24d94d1c",
     "https://zenn.dev/gracefullight/articles/1427d2a09cd326",
     "https://zenn.dev/growthmktg/articles/0e61a3abbb8bad",
+    "https://zenn.dev/growthmktg/articles/1e7aef129fb1e7",
     "https://zenn.dev/gunma/articles/agent-exploratory-qa-playwright",
     "https://zenn.dev/gyu07/articles/224d0518adeb50",
     "https://zenn.dev/gyu07/articles/5bbe48279ec7bc",
@@ -1461,6 +1465,7 @@
     "https://zenn.dev/syuya2036/articles/gpui-testing-guide",
     "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24",
     "https://zenn.dev/t_azk/articles/judge-by-exit-code-not-by-llm",
+    "https://zenn.dev/t_azk/articles/postgres-privileges-count-not-configure",
     "https://zenn.dev/t_kuni_0/articles/ad06a19a565023",
     "https://zenn.dev/taito0816/articles/iot-sensor-data-testing",
     "https://zenn.dev/takaaki/articles/growing-tests-for-untested-code",
@@ -1548,6 +1553,7 @@
     "https://zenn.dev/tsumu26/articles/da753f20f98df7",
     "https://zenn.dev/tsumu26/articles/f065a25c6803ae",
     "https://zenn.dev/ttomo_tommy/articles/ifixai-final-gate",
+    "https://zenn.dev/twinharness/articles/flaky-tests-six-causes",
     "https://zenn.dev/tyler0702/articles/9be3e93935d19f",
     "https://zenn.dev/tzp/articles/db03567f248575",
     "https://zenn.dev/uenonao/articles/5b6a2241392046",
@@ -1613,6 +1619,7 @@
     "https://zenn.dev/yoiyoi_rat/articles/b6c1a24c7e4759",
     "https://zenn.dev/yook/articles/spec-driven-test-code-blind-spots-revised-draft",
     "https://zenn.dev/yoshidam/articles/hissan-fixtures",
+    "https://zenn.dev/yoshidam/articles/hissan-multiplication-division",
     "https://zenn.dev/yoshiki_a/articles/e85a6077372242",
     "https://zenn.dev/yoshiki_a/books/07f972b88c5bdc",
     "https://zenn.dev/yoshio_matsuda/articles/unit_test_guidelines",
@@ -1659,7 +1666,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-25T23:41:19.676128+00:00",
+  "last_checked": "2026-11-26T08:35:25.797353+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
@@ -1755,11 +1762,13 @@
         "oai:arXiv.org:2605.15226v2",
         "oai:arXiv.org:2605.21347v5",
         "oai:arXiv.org:2606.16364v3",
+        "oai:arXiv.org:2607.00107v4",
         "oai:arXiv.org:2607.01494v2",
         "oai:arXiv.org:2607.06873v2",
         "oai:arXiv.org:2607.25987v3",
         "oai:arXiv.org:2607.28591v3",
         "oai:arXiv.org:2608.11095v2",
+        "oai:arXiv.org:2608.13077v2",
         "oai:arXiv.org:2609.04218v4",
         "oai:arXiv.org:2609.11076v5",
         "oai:arXiv.org:2609.21190v3",
@@ -1884,9 +1893,12 @@
         "oai:arXiv.org:2611.32089v1",
         "oai:arXiv.org:2611.32381v1",
         "oai:arXiv.org:2611.32636v1",
-        "oai:arXiv.org:2611.32973v1"
+        "oai:arXiv.org:2611.32973v1",
+        "oai:arXiv.org:2611.33396v1",
+        "oai:arXiv.org:2611.34202v1",
+        "oai:arXiv.org:2611.34617v1"
       ],
-      "last_checked": "2026-11-25T14:39:25.527671+00:00"
+      "last_checked": "2026-11-26T08:35:38.134074+00:00"
     },
     "youtube-jasst": {
       "sent_guids": [
