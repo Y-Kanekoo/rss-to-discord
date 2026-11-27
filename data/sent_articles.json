@@ -548,6 +548,7 @@
     "https://zenn.dev/ai_eris_log/articles/eris-20260311-c8f3a2",
     "https://zenn.dev/ai_hacchu/articles/ai-app-acceptance-test-8-items",
     "https://zenn.dev/ai_jidoka_lab/articles/test_dummy_delete_me",
+    "https://zenn.dev/ai_makasetai/articles/be6d642de72c8b",
     "https://zenn.dev/ai_shihan/articles/332d79d1739497",
     "https://zenn.dev/ai_shihan/articles/6a6b61819a86ba",
     "https://zenn.dev/aianime/articles/f052bc3e1bb600",
@@ -584,6 +585,7 @@
     "https://zenn.dev/alphapolis_tech/articles/4b81005f615b1a",
     "https://zenn.dev/amamiya_chan/articles/a0f68ec5d3e1ab",
     "https://zenn.dev/ament3/articles/ai-digest-2026-10-23-0026",
+    "https://zenn.dev/amru195704/articles/c6fe8c3de528c5",
     "https://zenn.dev/anas_alkhatib/articles/e020386e251ca9",
     "https://zenn.dev/anikuma/articles/ffmpeg-contact-sheet-review",
     "https://zenn.dev/anzy/articles/367090a9f9a409",
@@ -1010,6 +1012,7 @@
     "https://zenn.dev/kenyamaneko/articles/457fc13cdc4aab",
     "https://zenn.dev/kenyamaneko/articles/a0c955df8de986",
     "https://zenn.dev/keploy/articles/48aea3cb9271d3",
+    "https://zenn.dev/keploy/articles/a330c865e78bb8",
     "https://zenn.dev/kikuvi/articles/b525bf765fe355",
     "https://zenn.dev/kimshoshi/articles/ai-code-expected-results",
     "https://zenn.dev/kinuuu/articles/ai-coding-criteria-evidence-explanation",
@@ -1293,6 +1296,7 @@
     "https://zenn.dev/okamyuji/articles/rails-invariants-evilution-crap",
     "https://zenn.dev/okamyuji/books/ai-agent-harness-guardrails-quality-gates",
     "https://zenn.dev/okamyuji/books/rails-ai-review-invariants",
+    "https://zenn.dev/okinawasoftware/articles/774b23dd5146ee",
     "https://zenn.dev/okinawasoftware/articles/82606f3abe1027",
     "https://zenn.dev/okotokoto/articles/7ff83548142243",
     "https://zenn.dev/okssusucha/articles/af5ed1f7518dd5",
@@ -1671,7 +1675,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-26T19:07:51.004207+00:00",
+  "last_checked": "2026-11-27T02:16:29.258787+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
