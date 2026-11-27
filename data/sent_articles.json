@@ -642,6 +642,7 @@
     "https://zenn.dev/bitkey_dev/articles/test-viewpoint-howto",
     "https://zenn.dev/bitkey_dev/articles/trust-building-for-testers",
     "https://zenn.dev/bizreach_aps/articles/0d758497357167",
+    "https://zenn.dev/bizreach_aps/articles/1452fab8eaa1b0",
     "https://zenn.dev/blizzard/articles/c38c3335fc40be",
     "https://zenn.dev/blue_jam/articles/de575e21962396",
     "https://zenn.dev/blueticks/articles/30e98d768d17f7",
@@ -1676,7 +1677,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-27T10:59:27.280742+00:00",
+  "last_checked": "2026-11-27T20:01:40.534019+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
