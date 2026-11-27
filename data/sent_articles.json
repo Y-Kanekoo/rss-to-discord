@@ -462,6 +462,7 @@
     "https://tech.smarthr.jp/entry/2026/09/29/142202",
     "https://tech.smarthr.jp/entry/2026/10/14/145752",
     "https://tech.smarthr.jp/entry/2026/10/28/112702",
+    "https://tech.smarthr.jp/entry/2026/11/27/120641",
     "https://tech.smarthr.jp/entry/qa_summit",
     "https://tech.yappli.io/entry/apitestautomation",
     "https://tech.yappli.io/entry/create-e2e-test-with-claude-code",
@@ -1675,7 +1676,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-27T02:16:29.258787+00:00",
+  "last_checked": "2026-11-27T10:59:27.280742+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
