@@ -1253,6 +1253,7 @@
     "https://zenn.dev/nenene01/articles/agency-agents-codex-hands-on",
     "https://zenn.dev/nenene01/articles/rethinking-code-review-ai",
     "https://zenn.dev/neoru/articles/129eb359653fe5",
+    "https://zenn.dev/neoru/articles/c1c0a4768c6c60",
     "https://zenn.dev/netoto/articles/ceaefed0dabdc9",
     "https://zenn.dev/nexta_/articles/4319a84dece1ba",
     "https://zenn.dev/nexta_/articles/51fdb6f774d1ca",
@@ -1306,6 +1307,7 @@
     "https://zenn.dev/omeroid/articles/df728f3a985b8e",
     "https://zenn.dev/omnikros/books/inspect-ai-written-code",
     "https://zenn.dev/oni_ch_dev/articles/legacy-servlet-untestable-seam",
+    "https://zenn.dev/orca_forge/articles/1650-tests-pass-but-breaks",
     "https://zenn.dev/orectic/articles/horizontal-overflow-detection-playwright",
     "https://zenn.dev/orisend/articles/laravel-multiple-db-migrate-parallel",
     "https://zenn.dev/osakana2dev/articles/quality-check-by-claude",
@@ -1533,6 +1535,7 @@
     "https://zenn.dev/tokoharusame/articles/df4cc1e96279a8",
     "https://zenn.dev/tokunaga08/articles/54d708a15b6242",
     "https://zenn.dev/toms74209200/articles/instrumenting-tests-with-otel",
+    "https://zenn.dev/toms74209200/articles/make-slow-tests-fast",
     "https://zenn.dev/tomu_coelia/articles/coverage-100-with-ai",
     "https://zenn.dev/tonbi_attack/articles/296525dc29445f",
     "https://zenn.dev/tonbi_attack/articles/5c7eaf5f570699",
@@ -1584,6 +1587,7 @@
     "https://zenn.dev/vaonvn/articles/56d2d637dc6956",
     "https://zenn.dev/vaonvn/articles/98ea7278df2c68",
     "https://zenn.dev/vaonvn/articles/d839a1ad1273e9",
+    "https://zenn.dev/veripsa/articles/api-contract-repair-review",
     "https://zenn.dev/viralana/articles/viralana-auto-post-test-jaao",
     "https://zenn.dev/vivisuke/articles/fa7ef581168776",
     "https://zenn.dev/voidmatcha/articles/b0e9b9d33407c7",
@@ -1677,7 +1681,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-27T20:01:40.534019+00:00",
+  "last_checked": "2026-11-28T11:58:37.534562+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
