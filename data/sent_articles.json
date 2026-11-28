@@ -375,6 +375,7 @@
     "https://qiita.com/yasu1109/items/b37b5884fe5e4fd95743",
     "https://qiita.com/yasu1109/items/b6663fc9abd0ae504dfe",
     "https://qiita.com/yasu1109/items/eaf5949cbfb126dbde54",
+    "https://qiita.com/ynakayama/items/3a7dcc690587cff45b88",
     "https://qiita.com/ynakayama/items/82ace591e496a11ec33a",
     "https://qiita.com/yomogi_enginner/items/dd5e3ea9623427b4be7d",
     "https://qiita.com/yzak/items/766d68101d1fe2637465",
@@ -774,6 +775,7 @@
     "https://zenn.dev/ferretcode/articles/fixing-e2e-without-touching-app",
     "https://zenn.dev/finatext/articles/1823a019925c1f",
     "https://zenn.dev/fitness_densuke/articles/2026-11-14-let-ai-verify",
+    "https://zenn.dev/fitness_densuke/articles/2026-11-25-decide-what-to-check-against",
     "https://zenn.dev/fivot/articles/4ad88d17e435d8",
     "https://zenn.dev/fixu/articles/ai-multi-agent-verify-authenticity",
     "https://zenn.dev/fixu/articles/ai-native-qcd-large-scale-two-weeks",
@@ -896,6 +898,7 @@
     "https://zenn.dev/horicchy/articles/6f92a18454b085",
     "https://zenn.dev/hosazaemoooon/articles/4fe6189e1ab869",
     "https://zenn.dev/hoshiorange/articles/10-pytest-test-isolation-clobbered-data",
+    "https://zenn.dev/hs1350/articles/8ae29bc4e4fe06",
     "https://zenn.dev/hwaun_dev_open/articles/preview-upside-down-verification",
     "https://zenn.dev/i_ichi/articles/annona-test-publish",
     "https://zenn.dev/ichikawa_y/articles/assurance-audit-grading-engine",
@@ -1551,6 +1554,7 @@
     "https://zenn.dev/tottoko_hamu/articles/claude-todo-test-selfdestruct",
     "https://zenn.dev/trustdock/articles/3c810da3d5e422",
     "https://zenn.dev/trustdock/articles/e5fef73a67382d",
+    "https://zenn.dev/ts/articles/aws-emulator-cognito-local",
     "https://zenn.dev/tsukimi_soba/articles/def-beyond-coding",
     "https://zenn.dev/tsukimi_soba/articles/exe-how-to-improve-quality-first-step",
     "https://zenn.dev/tsukimi_soba/articles/exe-long-term-quality-improvement",
@@ -1681,7 +1685,7 @@
     "https://zenn.dev/zoetaka38/articles/a5f0c8c3ea4156",
     "https://zenn.dev/zzzzzzz/articles/b6787a4be71109"
   ],
-  "last_checked": "2026-11-28T11:58:37.534562+00:00",
+  "last_checked": "2026-11-28T20:18:08.795294+00:00",
   "version": 2,
   "feeds": {
     "release-playwright": {
